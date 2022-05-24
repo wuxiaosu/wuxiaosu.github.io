@@ -5,15 +5,66 @@
     <link>https://wuxiaosu.github.io/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 24 May 2022 22:06:48 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 24 May 2022 22:55:15 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello</title>
-      <link>https://wuxiaosu.github.io/posts/hello/</link>
+      <title>Ubuntu安装nginx</title>
+      <link>https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</link>
+      <pubDate>Tue, 24 May 2022 22:55:15 +0800</pubDate>
+      
+      <guid>https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</guid>
+      <description>1.命令行安装 直接在终端运行命令进行安装
+$ sudo apt install nginx 如果需要自定义安装，可以参考官方文档
+http://nginx.org/en/linux_packages.html#Ubuntu
+在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功
+2.查看默认配置 $ cat /etc/nginx/nginx.conf  user www-data; worker_processes auto; pid /run/nginx.pid; include /etc/nginx/modules-enabled/*.conf;  events {  worker_connections 768;  # multi_accept on; }  http {   ##  # Basic Settings  ##   sendfile on;  tcp_nopush on;  tcp_nodelay on;  keepalive_timeout 65;  types_hash_max_size 2048;  # server_tokens off;   # server_names_hash_bucket_size 64;  # server_name_in_redirect off;   include /etc/nginx/mime.</description>
+    </item>
+    
+    <item>
+      <title>Android反编译odex</title>
+      <link>https://wuxiaosu.github.io/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</link>
       <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
       
-      <guid>https://wuxiaosu.github.io/posts/hello/</guid>
-      <description>xxx</description>
+      <guid>https://wuxiaosu.github.io/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</guid>
+      <description>0.下载 baksmali.jar 、smali.jar 下载地址 https://bitbucket.org/JesusFreke/smali/downloads/
+Github 地址 https://github.com/JesusFreke/smali
+1. odex -&amp;gt; smali files 把手机系统 /system/framework 下的内容拷贝到工作目录，和需要转换的 .odex、.vdex 文件也拷贝至目录，目录结构如下
+-system -a.odex -a.vdex -baksmali-2.5.2.jar -smali-2.5.2.jar 然后执行以下命令
+java -jar baksmali-2.5.2.jar deodex a.odex -b ./system/framework/arm64/boot.oat -o out -deodex : 指定 odex 文件
+-b : 指定 bootclasspath 文件
+-o : 指定 smali 输出目录
+2. smali files -&amp;gt; dex java -jar smali-2.5.2.jar assemble out -o a.dex -assemble : 指定 smali files 文件夹
+-o : 指定输出文件名
+3. 更多 https://www.</description>
+    </item>
+    
+    <item>
+      <title>Python文件打包</title>
+      <link>https://wuxiaosu.github.io/posts/python%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</link>
+      <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
+      
+      <guid>https://wuxiaosu.github.io/posts/python%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</guid>
+      <description>0.省流助手 pyinstaller -F myfile.py 1.安装 Pyinstaller 1.1 先安装 pywin32 pip install pywin32 1.2 再安装 Pyinstaller pip install PyInstaller 2.使用 Pyinstaller pyinstaller -F myfile.py 2.1 输入参数含义 -F, --onefile 生成单个可执行文件 如果一切正常，会在 .py 文件同目录下的 dist 目录生成 .exe 文件
+查看更多参数
+pyinstaller -h </description>
+    </item>
+    
+    <item>
+      <title>几个 ip 信息获取接口</title>
+      <link>https://wuxiaosu.github.io/posts/%E5%87%A0%E4%B8%AAip%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E6%8E%A5%E5%8F%A3/</link>
+      <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
+      
+      <guid>https://wuxiaosu.github.io/posts/%E5%87%A0%E4%B8%AAip%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E6%8E%A5%E5%8F%A3/</guid>
+      <description> http://ipinfo.io/json  {  &amp;#34;ip&amp;#34;: &amp;#34;59.42.111.132&amp;#34;,  &amp;#34;hostname&amp;#34;: &amp;#34;132.111.42.59.broad.gz.gd.dynamic.163data.com.cn&amp;#34;,  &amp;#34;city&amp;#34;: &amp;#34;Lianjiang&amp;#34;,  &amp;#34;region&amp;#34;: &amp;#34;Guangdong&amp;#34;,  &amp;#34;country&amp;#34;: &amp;#34;CN&amp;#34;,  &amp;#34;loc&amp;#34;: &amp;#34;21.6467,110.2817&amp;#34;,  &amp;#34;org&amp;#34;: &amp;#34;AS4134 CHINANET-BACKBONE&amp;#34;,  &amp;#34;timezone&amp;#34;: &amp;#34;Asia/Urumqi&amp;#34;,  &amp;#34;readme&amp;#34;: &amp;#34;https://ipinfo.io/missingauth&amp;#34; }  http://whois.pconline.com.cn/ip.jsp  广东省广州市天河区 电信ADSL  http://pv.sohu.com/cityjson?ie=utf-8  var returnCitySN = {&amp;#34;cip&amp;#34;: &amp;#34;59.42.111.132&amp;#34;, &amp;#34;cid&amp;#34;: &amp;#34;440106&amp;#34;, &amp;#34;cname&amp;#34;: &amp;#34;广东省广州市天河区&amp;#34;}; </description>
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>https://wuxiaosu.github.io/posts/about/</link>
+      <pubDate>Mon, 24 May 2021 22:44:34 +0800</pubDate>
+      
+      <guid>https://wuxiaosu.github.io/posts/about/</guid>
+      <description>苟且在广州，勉强算个程序员吧。</description>
     </item>
     
   </channel>
