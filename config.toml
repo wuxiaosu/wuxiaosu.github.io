@@ -1,0 +1,3 @@
+baseURL = 'https://wuxiaosu.github.io/'
+languageCode = 'en-us'
+theme = "ananke"
