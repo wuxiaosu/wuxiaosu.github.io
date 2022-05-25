@@ -3,6 +3,7 @@ languageCode: cn-zh
 title: 苏的博客
 paginate: 5
 theme: hugo-PaperMod
+publishDir: docs
 
 enableInlineShortcodes: true
 enableRobotsTXT: true

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Ubuntu安装nginx | 苏的博客</title>
+<meta name="keywords" content="" />
+<meta name="description" content="1.命令行安装 直接在终端运行命令进行安装
+$ sudo apt install nginx 如果需要自定义安装，可以参考官方文档
+http://nginx.org/en/linux_packages.html#Ubuntu
+在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功
+2.查看默认配置 $ cat /etc/nginx/nginx.conf user www-data; worker_processes auto; pid /run/nginx.pid; include /etc/nginx/modules-enabled/*.conf; events { worker_connections 768; # multi_accept on; } http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.types; default_type application/octet-stream; ## # SSL Settings ## ssl_protocols TLSv1 TLSv1.1 TLSv1.">
+<meta name="author" content="su">
+<link rel="canonical" href="/posts/ubuntu%E5%AE%89%E8%A3%85nginx/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.99.1" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Ubuntu安装nginx" />
+<meta property="og:description" content="1.命令行安装 直接在终端运行命令进行安装
+$ sudo apt install nginx 如果需要自定义安装，可以参考官方文档
+http://nginx.org/en/linux_packages.html#Ubuntu
+在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功
+2.查看默认配置 $ cat /etc/nginx/nginx.conf user www-data; worker_processes auto; pid /run/nginx.pid; include /etc/nginx/modules-enabled/*.conf; events { worker_connections 768; # multi_accept on; } http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.types; default_type application/octet-stream; ## # SSL Settings ## ssl_protocols TLSv1 TLSv1.1 TLSv1." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/ubuntu%E5%AE%89%E8%A3%85nginx/" /><meta property="og:image" content="papermod-cover.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-05-24T22:55:15&#43;08:00" />
+<meta property="article:modified_time" content="2022-05-24T22:55:15&#43;08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="papermod-cover.png"/>
+
+<meta name="twitter:title" content="Ubuntu安装nginx"/>
+<meta name="twitter:description" content="1.命令行安装 直接在终端运行命令进行安装
+$ sudo apt install nginx 如果需要自定义安装，可以参考官方文档
+http://nginx.org/en/linux_packages.html#Ubuntu
+在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功
+2.查看默认配置 $ cat /etc/nginx/nginx.conf user www-data; worker_processes auto; pid /run/nginx.pid; include /etc/nginx/modules-enabled/*.conf; events { worker_connections 768; # multi_accept on; } http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.types; default_type application/octet-stream; ## # SSL Settings ## ssl_protocols TLSv1 TLSv1.1 TLSv1."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Ubuntu安装nginx",
+      "item": "/posts/ubuntu%E5%AE%89%E8%A3%85nginx/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Ubuntu安装nginx",
+  "name": "Ubuntu安装nginx",
+  "description": "1.命令行安装 直接在终端运行命令进行安装\n$ sudo apt install nginx 如果需要自定义安装，可以参考官方文档\nhttp://nginx.org/en/linux_packages.html#Ubuntu\n在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功\n2.查看默认配置 $ cat /etc/nginx/nginx.conf user www-data; worker_processes auto; pid /run/nginx.pid; include /etc/nginx/modules-enabled/*.conf; events { worker_connections 768; # multi_accept on; } http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.types; default_type application/octet-stream; ## # SSL Settings ## ssl_protocols TLSv1 TLSv1.1 TLSv1.",
+  "keywords": [
+    
+  ],
+  "articleBody": "1.命令行安装 直接在终端运行命令进行安装\n$ sudo apt install nginx 如果需要自定义安装，可以参考官方文档\nhttp://nginx.org/en/linux_packages.html#Ubuntu\n在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功\n2.查看默认配置 $ cat /etc/nginx/nginx.conf user www-data; worker_processes auto; pid /run/nginx.pid; include /etc/nginx/modules-enabled/*.conf; events { worker_connections 768; # multi_accept on; } http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.types; default_type application/octet-stream; ## # SSL Settings ## ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE ssl_prefer_server_ciphers on; ## # Logging Settings ## access_log /var/log/nginx/access.log; error_log /var/log/nginx/error.log; ## # Gzip Settings ## gzip on; # gzip_vary on; # gzip_proxied any; # gzip_comp_level 6; # gzip_buffers 16 8k; # gzip_http_version 1.1; # gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript; ## # Virtual Host Configs ## include /etc/nginx/conf.d/*.conf; include /etc/nginx/sites-enabled/*; } #mail { # # See sample authentication script at: # # http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript #  # # auth_http localhost/auth.php; # # pop3_capabilities \"TOP\" \"USER\"; # # imap_capabilities \"IMAP4rev1\" \"UIDPLUS\"; #  # server { # listen localhost:110; # protocol pop3; # proxy on; # } #  # server { # listen localhost:143; # protocol imap; # proxy on; # } #} 默认页面的服务器对应这一行配置\ninclude /etc/nginx/sites-enabled/*; 再看一下默认配置长什么样\n$ cat /etc/nginx/sites-enabled/default ## # You should look at the following URL's in order to grasp a solid understanding # of Nginx configuration files in order to fully unleash the power of Nginx. # https://www.nginx.com/resources/wiki/start/ # https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/ # https://wiki.debian.org/Nginx/DirectoryStructure # # In most cases, administrators will remove this file from sites-enabled/ and # leave it as reference inside of sites-available where it will continue to be # updated by the nginx packaging team. # # This file will automatically load configuration files provided by other # applications, such as Drupal or Wordpress. These applications will be made # available underneath a path with that package name, such as /drupal8. # # Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples. ## # Default server configuration # server { listen 80 default_server; listen [::]:80 default_server; # SSL configuration # # listen 443 ssl default_server; # listen [::]:443 ssl default_server; # # Note: You should disable gzip for SSL traffic. # See: https://bugs.debian.org/773332 # # Read up on ssl_ciphers to ensure a secure configuration. # See: https://bugs.debian.org/765782 # # Self signed certs generated by the ssl-cert package # Don't use them in a production server! # # include snippets/snakeoil.conf; root /var/www/html; # Add index.php to the list if you are using PHP index index.html index.htm index.nginx-debian.html; server_name _; location / { # First attempt to serve request as file, then # as directory, then fall back to displaying a 404. try_files $uri $uri/ =404; } # pass PHP scripts to FastCGI server # #location ~ \\.php$ { # include snippets/fastcgi-php.conf; # # # With php-fpm (or other unix sockets): # fastcgi_pass unix:/var/run/php/php7.4-fpm.sock; # # With php-cgi (or other tcp sockets): # fastcgi_pass 127.0.0.1:9000; #} # deny access to .htaccess files, if Apache's document root # concurs with nginx's one # #location ~ /\\.ht { # deny all; #} } # Virtual Host configuration for example.com # # You can move that to a different file under sites-available/ and symlink that # to sites-enabled/ to enable it. # #server { # listen 80; # listen [::]:80; # # server_name example.com; # # root /var/www/example.com; # index index.html; # # location / { # try_files $uri $uri/ =404; # } #} 可以看到只配置了一个静态页面 注释掉默认配置\n# include /etc/nginx/sites-enabled/*; 3.添加自定义配置 在配置文件目录 /etc/nginx/conf.d/ 下添加自己的配置并保存\n4.检查配置是否正确 $ sudo nginx -t 出现以下内容表示没问题了\nnginx: the configuration file /etc/nginx/nginx.conf syntax is ok nginx: configuration file /etc/nginx/nginx.conf test is successful 配置没问题的话就可以重启服务器了\n$ sudo service nginx restart 然后就可以愉快的使用啦\n",
+  "wordCount" : "596",
+  "inLanguage": "zh",
+  "datePublished": "2022-05-24T22:55:15+08:00",
+  "dateModified": "2022-05-24T22:55:15+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "su"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/posts/ubuntu%E5%AE%89%E8%A3%85nginx/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "苏的博客",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="" accesskey="h" title="苏的博客 (Alt + H)">苏的博客</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="archives" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="categories/" title="分类">
+                    <span>分类</span>
+                </a>
+            </li>
+            <li>
+                <a href="search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="">主页</a>&nbsp;»&nbsp;<a href="/posts/">Posts</a></div>
+    <h1 class="post-title">
+      Ubuntu安装nginx
+    </h1>
+    <div class="post-meta"><span title='2022-05-24 22:55:15 +0800 CST'>五月 24, 2022</span>&nbsp;·&nbsp;3 分钟&nbsp;·&nbsp;su&nbsp;|&nbsp;<a href="https://github.com/wuxiaosu/wuxiaosu.github.io/tree/master/content/posts/Ubuntu%e5%ae%89%e8%a3%85nginx.md" rel="noopener noreferrer" target="_blank">修改</a>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#1%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%ae%89%e8%a3%85" aria-label="1.命令行安装">1.命令行安装</a></li>
+                <li>
+                    <a href="#2%e6%9f%a5%e7%9c%8b%e9%bb%98%e8%ae%a4%e9%85%8d%e7%bd%ae" aria-label="2.查看默认配置">2.查看默认配置</a></li>
+                <li>
+                    <a href="#3%e6%b7%bb%e5%8a%a0%e8%87%aa%e5%ae%9a%e4%b9%89%e9%85%8d%e7%bd%ae" aria-label="3.添加自定义配置">3.添加自定义配置</a></li>
+                <li>
+                    <a href="#4%e6%a3%80%e6%9f%a5%e9%85%8d%e7%bd%ae%e6%98%af%e5%90%a6%e6%ad%a3%e7%a1%ae" aria-label="4.检查配置是否正确">4.检查配置是否正确</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="1命令行安装">1.命令行安装<a hidden class="anchor" aria-hidden="true" href="#1命令行安装">#</a></h2>
+<p>直接在终端运行命令进行安装</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo apt install nginx
+</span></span></code></pre></div><p>如果需要自定义安装，可以参考官方文档<br>
+<a href="http://nginx.org/en/linux_packages.html#Ubuntu">http://nginx.org/en/linux_packages.html#Ubuntu</a><br>
+在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功</p>
+<p><img loading="lazy" src="/upload/2022/02/1-5a4869ea0e0d45738ce99011b3323847.png" alt="默认界面"  />
+</p>
+<h2 id="2查看默认配置">2.查看默认配置<a hidden class="anchor" aria-hidden="true" href="#2查看默认配置">#</a></h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ cat /etc/nginx/nginx.conf
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">user www-data<span class="p">;</span>
+</span></span><span class="line"><span class="cl">worker_processes auto<span class="p">;</span>
+</span></span><span class="line"><span class="cl">pid /run/nginx.pid<span class="p">;</span>
+</span></span><span class="line"><span class="cl">include /etc/nginx/modules-enabled/*.conf<span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">events <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    worker_connections 768<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># multi_accept on;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">http <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">##</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Basic Settings</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">##</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    sendfile on<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    tcp_nopush on<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    tcp_nodelay on<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    keepalive_timeout 65<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    types_hash_max_size 2048<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># server_tokens off;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># server_names_hash_bucket_size 64;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># server_name_in_redirect off;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    include /etc/nginx/mime.types<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    default_type application/octet-stream<span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">##</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># SSL Settings</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">##</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3<span class="p">;</span> <span class="c1"># Dropping SSLv3, ref: POODLE</span>
+</span></span><span class="line"><span class="cl">    ssl_prefer_server_ciphers on<span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">##</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Logging Settings</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">##</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    access_log /var/log/nginx/access.log<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    error_log /var/log/nginx/error.log<span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">##</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Gzip Settings</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">##</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    gzip on<span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># gzip_vary on;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># gzip_proxied any;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># gzip_comp_level 6;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># gzip_buffers 16 8k;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># gzip_http_version 1.1;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">##</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Virtual Host Configs</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">##</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    include /etc/nginx/conf.d/*.conf<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    include /etc/nginx/sites-enabled/*<span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#mail {</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    # See sample authentication script at:</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    # http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    # auth_http localhost/auth.php;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    # pop3_capabilities &#34;TOP&#34; &#34;USER&#34;;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    # imap_capabilities &#34;IMAP4rev1&#34; &#34;UIDPLUS&#34;;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    server {</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#        listen     localhost:110;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#        protocol   pop3;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#        proxy      on;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    }</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># </span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    server {</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#        listen     localhost:143;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#        protocol   imap;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#        proxy      on;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    }</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#}</span>
+</span></span></code></pre></div><p>默认页面的服务器对应这一行配置</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">include /etc/nginx/sites-enabled/*<span class="p">;</span>
+</span></span></code></pre></div><p>再看一下默认配置长什么样</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ cat /etc/nginx/sites-enabled/default  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># You should look at the following URL&#39;s in order to grasp a solid understanding</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># of Nginx configuration files in order to fully unleash the power of Nginx.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># https://www.nginx.com/resources/wiki/start/</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># https://wiki.debian.org/Nginx/DirectoryStructure</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># In most cases, administrators will remove this file from sites-enabled/ and</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># leave it as reference inside of sites-available where it will continue to be</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># updated by the nginx packaging team.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># This file will automatically load configuration files provided by other</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># applications, such as Drupal or Wordpress. These applications will be made</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># available underneath a path with that package name, such as /drupal8.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Default server configuration</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">server <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    listen <span class="m">80</span> default_server<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    listen <span class="o">[</span>::<span class="o">]</span>:80 default_server<span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># SSL configuration</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># listen 443 ssl default_server;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># listen [::]:443 ssl default_server;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Note: You should disable gzip for SSL traffic.</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># See: https://bugs.debian.org/773332</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Read up on ssl_ciphers to ensure a secure configuration.</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># See: https://bugs.debian.org/765782</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Self signed certs generated by the ssl-cert package</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Don&#39;t use them in a production server!</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># include snippets/snakeoil.conf;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    root /var/www/html<span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Add index.php to the list if you are using PHP</span>
+</span></span><span class="line"><span class="cl">    index index.html index.htm index.nginx-debian.html<span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    server_name _<span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    location / <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># First attempt to serve request as file, then</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># as directory, then fall back to displaying a 404.</span>
+</span></span><span class="line"><span class="cl">        try_files <span class="nv">$uri</span> <span class="nv">$uri</span>/ <span class="o">=</span>404<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># pass PHP scripts to FastCGI server</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#location ~ \.php$ {</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#    include snippets/fastcgi-php.conf;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#    # With php-fpm (or other unix sockets):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#    fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#    # With php-cgi (or other tcp sockets):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#    fastcgi_pass 127.0.0.1:9000;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># deny access to .htaccess files, if Apache&#39;s document root</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># concurs with nginx&#39;s one</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#location ~ /\.ht {</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#    deny all;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Virtual Host configuration for example.com</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># You can move that to a different file under sites-available/ and symlink that</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># to sites-enabled/ to enable it.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#server {</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    listen 80;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    listen [::]:80;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    server_name example.com;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    root /var/www/example.com;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    index index.html;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    location / {</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#        try_files $uri $uri/ =404;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    }</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#}</span>
+</span></span></code></pre></div><p>可以看到只配置了一个静态页面
+注释掉默认配置</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># include /etc/nginx/sites-enabled/*;</span>
+</span></span></code></pre></div><h2 id="3添加自定义配置">3.添加自定义配置<a hidden class="anchor" aria-hidden="true" href="#3添加自定义配置">#</a></h2>
+<p>在配置文件目录 /etc/nginx/conf.d/ 下添加自己的配置并保存</p>
+<h2 id="4检查配置是否正确">4.检查配置是否正确<a hidden class="anchor" aria-hidden="true" href="#4检查配置是否正确">#</a></h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo nginx -t
+</span></span></code></pre></div><p>出现以下内容表示没问题了</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+</span></span><span class="line"><span class="cl">nginx: configuration file /etc/nginx/nginx.conf <span class="nb">test</span> is successful
+</span></span></code></pre></div><p>配置没问题的话就可以重启服务器了</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo service nginx restart
+</span></span></code></pre></div><p>然后就可以愉快的使用啦</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+<nav class="paginav">
+  <a class="next" href="/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>Android反编译odex</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="">苏的博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = '复制';
+
+        function copyingDone() {
+            copybutton.innerText = '已复制！';
+            setTimeout(() => {
+                copybutton.innerText = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
