@@ -1,7 +1,7 @@
 ---
 title: "Android反编译odex"
 date: 2022-05-24T22:06:48+08:00
-draft: true
+draft: false
 ---
 ## 0.下载 baksmali.jar 、smali.jar  
 

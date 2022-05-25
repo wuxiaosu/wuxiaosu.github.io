@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu安装nginx"
 date: 2022-05-24T22:55:15+08:00
-draft: true
+draft: false
 ---
 ## 1.命令行安装  
 

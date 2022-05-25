@@ -1,4 +1,0 @@
-baseURL = 'https://wuxiaosu.github.io/'
-languageCode = 'zh-cn'
-theme = "ananke"
-publishDir = "docs"
