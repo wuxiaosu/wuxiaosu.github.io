@@ -2,6 +2,7 @@
 title: "Python文件打包"
 date: 2022-05-24T22:06:48+08:00
 draft: false
+tags: ["python"]
 ---
 ## 0.省流助手  
 

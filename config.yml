@@ -49,14 +49,14 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+    description: "苏的博客-wuxiaosu.github.io"
     author: su
     # author: ["Me", "You"] # multiple authors
 
     defaultTheme: auto
     # disableThemeToggle: true
     ShowShareButtons: false
-    ShowReadingTime: true
+    ShowReadingTime: false
     # disableSpecial1stPost: true
     displayFullLangName: true
     ShowPostNavLinks: true
@@ -92,10 +92,10 @@ params:
         #- name: RsS
          # url: "index.xml"
 
-    editPost:
-        URL: "https://github.com/wuxiaosu/wuxiaosu.github.io/tree/master/content"
-        Text: "修改" # edit text
-        appendFilePath: true # to append file path to Edit link
+    #editPost:
+    #    URL: "https://github.com/wuxiaosu/wuxiaosu.github.io/tree/master/content"
+    #    Text: "修改" # edit text
+    #    appendFilePath: true # to append file path to Edit link
 
     # label:
     #     text: "Home"
