@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>反编译 on 苏的博客</title>
+    <link>https://wuxiaosu.github.io/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/</link>
+    <description>Recent content in 反编译 on 苏的博客</description>
+    <image>
+      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
+      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn-zh</language>
+    <lastBuildDate>Tue, 24 May 2022 22:06:48 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android反编译odex</title>
+      <link>https://wuxiaosu.github.io/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</link>
+      <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
+      
+      <guid>https://wuxiaosu.github.io/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</guid>
+      <description>0.下载 baksmali.jar 、smali.jar 下载地址 https://bitbucket.org/JesusFreke/smali/downloads/
+Github 地址 https://github.com/JesusFreke/smali
+1. odex -&amp;gt; smali files 把手机系统 /system/framework 下的内容拷贝到工作目录，和需要转换的 .odex、.vdex 文件也拷贝至目录，目录结构如下
+-system -a.odex -a.vdex -baksmali-2.5.2.jar -smali-2.5.2.jar 然后执行以下命令
+java -jar baksmali-2.5.2.jar deodex a.odex -b ./system/framework/arm64/boot.oat -o out -deodex : 指定 odex 文件
+-b : 指定 bootclasspath 文件
+-o : 指定 smali 输出目录
+2. smali files -&amp;gt; dex java -jar smali-2.5.2.jar assemble out -o a.dex -assemble : 指定 smali files 文件夹
+-o : 指定输出文件名
+3. 更多 https://www.</description>
+    </item>
+    
+  </channel>
+</rss>

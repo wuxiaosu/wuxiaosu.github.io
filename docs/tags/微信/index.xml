@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>微信 on 苏的博客</title>
+    <link>https://wuxiaosu.github.io/tags/%E5%BE%AE%E4%BF%A1/</link>
+    <description>Recent content in 微信 on 苏的博客</description>
+    <image>
+      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
+      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn-zh</language>
+    <lastBuildDate>Mon, 04 Jan 2021 15:09:00 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/tags/%E5%BE%AE%E4%BF%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android微信数据库密码计算</title>
+      <link>https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</link>
+      <pubDate>Mon, 04 Jan 2021 15:09:00 +0800</pubDate>
+      
+      <guid>https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</guid>
+      <description>Android微信数据库密码计算  查找数据文件路径  ls -l /data/user/0/com.tencent.mm/MicroMsg/*/EnMicroMsg.db  查看 uin 值  cat /data/data/com.tencent.mm/shared_prefs/auth_info_key_prefs.xml  查看设备 imei 值  getprop | grep imei  计算 imei + uin md5  echo -n &amp;#34;8667640302870921054025641&amp;#34;|md5sum  密码取前七位  </description>
+    </item>
+    
+  </channel>
+</rss>

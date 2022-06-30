@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>jetbrains on 苏的博客</title>
+    <link>https://wuxiaosu.github.io/tags/jetbrains/</link>
+    <description>Recent content in jetbrains on 苏的博客</description>
+    <image>
+      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
+      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn-zh</language>
+    <lastBuildDate>Thu, 25 Feb 2021 16:30:00 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/tags/jetbrains/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JetBrains 重置试用</title>
+      <link>https://wuxiaosu.github.io/posts/jetbrains/</link>
+      <pubDate>Thu, 25 Feb 2021 16:30:00 +0800</pubDate>
+      
+      <guid>https://wuxiaosu.github.io/posts/jetbrains/</guid>
+      <description>JetBrains 2020.3 系列通用重置 30 天试用（不会影响其他配置） 以 IntelliJIdea 为例  删除此目录下所有文件  C:\Users\Administrator\AppData\Roaming\JetBrains\IntelliJIdea2020.3\eval  删除 other.xml 文件  C:\Users\Administrator\AppData\Roaming\JetBrains\IntelliJIdea2020.3\options\other.xml  删除注册表下所有项  计算机\HKEY_CURRENT_USER\Software\JavaSoft\Prefs\jetbrains\idea 其他诸如 DataGrip、PyCharm 类似 </description>
+    </item>
+    
+  </channel>
+</rss>

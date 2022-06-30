@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>正则表达式 | 苏的博客</title>
+<meta name="keywords" content="正则" />
+<meta name="description" content="正则表达式 正则表达式是计算机科学的一个概念，正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。正则表达式通常用来检索、替换那些匹配某个模式的文本。
+元字符 所谓元字符就是指那些在正则表达式中具有特殊意义的专用字符。
+常用的元字符    代码 说明     . 匹配除换行符以外的任意字符   \w 匹配字母或数字或下划线或汉字   \s 匹配任意的空白符   \d 匹配数字   \b 匹配单词的开始或结束   \B 非单词边界匹配   ^ 匹配字符串的开始   $ 匹配字符串的结束   （） 标记一个子表达式的开始和结束    字符转义 如果你想查找元字符的话，需要使用 \ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \. ，要查找 \ 需要使用 \\ 。
+限定符 指定数量的代码。
+常用的限定符    代码/语法 说明     * 重复0次或更多次   &#43; 重复1次或更多次   ？ 重复0次或1次   {n} 重复 n 次   {n,} 重复 n 次或更多次   {n,m} 重复 n 到 m 次    范围表达式 用于指定一个字符范围。">
+<meta name="author" content="su">
+<link rel="canonical" href="https://wuxiaosu.github.io/posts/%E6%AD%A3%E5%88%99/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://wuxiaosu.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://wuxiaosu.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://wuxiaosu.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://wuxiaosu.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://wuxiaosu.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.99.1" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="正则表达式" />
+<meta property="og:description" content="正则表达式 正则表达式是计算机科学的一个概念，正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。正则表达式通常用来检索、替换那些匹配某个模式的文本。
+元字符 所谓元字符就是指那些在正则表达式中具有特殊意义的专用字符。
+常用的元字符    代码 说明     . 匹配除换行符以外的任意字符   \w 匹配字母或数字或下划线或汉字   \s 匹配任意的空白符   \d 匹配数字   \b 匹配单词的开始或结束   \B 非单词边界匹配   ^ 匹配字符串的开始   $ 匹配字符串的结束   （） 标记一个子表达式的开始和结束    字符转义 如果你想查找元字符的话，需要使用 \ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \. ，要查找 \ 需要使用 \\ 。
+限定符 指定数量的代码。
+常用的限定符    代码/语法 说明     * 重复0次或更多次   &#43; 重复1次或更多次   ？ 重复0次或1次   {n} 重复 n 次   {n,} 重复 n 次或更多次   {n,m} 重复 n 到 m 次    范围表达式 用于指定一个字符范围。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wuxiaosu.github.io/posts/%E6%AD%A3%E5%88%99/" /><meta property="og:image" content="https://wuxiaosu.github.io/papermod-cover.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-04-13T15:23:00&#43;08:00" />
+<meta property="article:modified_time" content="2021-04-13T15:23:00&#43;08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://wuxiaosu.github.io/papermod-cover.png"/>
+
+<meta name="twitter:title" content="正则表达式"/>
+<meta name="twitter:description" content="正则表达式 正则表达式是计算机科学的一个概念，正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。正则表达式通常用来检索、替换那些匹配某个模式的文本。
+元字符 所谓元字符就是指那些在正则表达式中具有特殊意义的专用字符。
+常用的元字符    代码 说明     . 匹配除换行符以外的任意字符   \w 匹配字母或数字或下划线或汉字   \s 匹配任意的空白符   \d 匹配数字   \b 匹配单词的开始或结束   \B 非单词边界匹配   ^ 匹配字符串的开始   $ 匹配字符串的结束   （） 标记一个子表达式的开始和结束    字符转义 如果你想查找元字符的话，需要使用 \ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \. ，要查找 \ 需要使用 \\ 。
+限定符 指定数量的代码。
+常用的限定符    代码/语法 说明     * 重复0次或更多次   &#43; 重复1次或更多次   ？ 重复0次或1次   {n} 重复 n 次   {n,} 重复 n 次或更多次   {n,m} 重复 n 到 m 次    范围表达式 用于指定一个字符范围。"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://wuxiaosu.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "正则表达式",
+      "item": "https://wuxiaosu.github.io/posts/%E6%AD%A3%E5%88%99/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "正则表达式",
+  "name": "正则表达式",
+  "description": "正则表达式 正则表达式是计算机科学的一个概念，正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。正则表达式通常用来检索、替换那些匹配某个模式的文本。\n元字符 所谓元字符就是指那些在正则表达式中具有特殊意义的专用字符。\n常用的元字符    代码 说明     . 匹配除换行符以外的任意字符   \\w 匹配字母或数字或下划线或汉字   \\s 匹配任意的空白符   \\d 匹配数字   \\b 匹配单词的开始或结束   \\B 非单词边界匹配   ^ 匹配字符串的开始   $ 匹配字符串的结束   （） 标记一个子表达式的开始和结束    字符转义 如果你想查找元字符的话，需要使用 \\ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \\. ，要查找 \\ 需要使用 \\\\ 。\n限定符 指定数量的代码。\n常用的限定符    代码/语法 说明     * 重复0次或更多次   + 重复1次或更多次   ？ 重复0次或1次   {n} 重复 n 次   {n,} 重复 n 次或更多次   {n,m} 重复 n 到 m 次    范围表达式 用于指定一个字符范围。",
+  "keywords": [
+    "正则"
+  ],
+  "articleBody": "正则表达式 正则表达式是计算机科学的一个概念，正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。正则表达式通常用来检索、替换那些匹配某个模式的文本。\n元字符 所谓元字符就是指那些在正则表达式中具有特殊意义的专用字符。\n常用的元字符    代码 说明     . 匹配除换行符以外的任意字符   \\w 匹配字母或数字或下划线或汉字   \\s 匹配任意的空白符   \\d 匹配数字   \\b 匹配单词的开始或结束   \\B 非单词边界匹配   ^ 匹配字符串的开始   $ 匹配字符串的结束   （） 标记一个子表达式的开始和结束    字符转义 如果你想查找元字符的话，需要使用 \\ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \\. ，要查找 \\ 需要使用 \\\\ 。\n限定符 指定数量的代码。\n常用的限定符    代码/语法 说明     * 重复0次或更多次   + 重复1次或更多次   ？ 重复0次或1次   {n} 重复 n 次   {n,} 重复 n 次或更多次   {n,m} 重复 n 到 m 次    范围表达式 用于指定一个字符范围。\n比如：\n[aeiou] ：任何一个元音字母。\n[0-9] : 0-9，即一位数字。\n[.?!] ： 标点符号 . 或者 ？ 或者 ！。\n[a-z0-9A-Z_] ： 匹配任意一位数字或字母或者下划线。\n分组 可以用小括号来指定 子表达式 （也叫做 分组），然后可以对子表达式进行一些操作。\n比如：\n(\\d{1,3}\\.){3}\\d{1,3} 是一个简单的 IP 地址匹配表达式，\\d{1,3} 匹配1到3位的数字，(\\d{1,3}\\.){3} 匹配1个数字加一个 .,然后（将表达式）重复3次，最后再加一个1到3位的数字 \\d{1,3}。\n分支条件 指的是有几种规则，如果满足其中任意一种规则都应该当成匹配。具体方式是使用 | 将条件分开。\n比如：\n0\\d{2}-\\d{8}|0\\d{3}-\\d{7} ： 匹配以 - 分割的电话号码：一种是3位区号，8位本地号码（010-12345678）；一种是4位区号，7位本地号码（0101-1234567）。\n零宽断言 用来查找在某些内容（但并不包括这些内容）之前之后的东西，也就是说它们像 \\b,^,$ 那样用于指定一个位置，这个位置需要满足一定的条件（即断言）。\n零宽度正预测先行断言 (?=exp)\n没找到原翻译出处，光是这么几个字真是不好记。可以简单理解为（断言）匹配一个位置，然后匹配出这个位置前的内容。\n比如： 用 \\b\\w+?(?=\\sjust) 查找 The things you say just might be true 会匹配出 say，可以理解为就是先用 \\sjust 匹配到位置，然后匹配到 just 前的一个单词。\n零宽度正回顾后发断言 (?\n跟上面说的相反，断言自身的位置，然后匹配之后的内容。\n比如： 用 (? 查找 The things you say just might be true 会匹配出 might，可以理解为就是先用 \\sjust\\s 匹配到位置，然后匹配到 just 后的一个单词。\n负向零宽断言 跟零宽断言正好相反，用来确保某些内容没有出现。\n零宽度负预测先行断言 (?!exp)\n断言此位置后面不能匹配表达式exp。\n比如： 用 \\bto\\b\\s(?!take\\s) 查找 I am here to take you to a good life 就只能匹配出第二个 to，就是 to 的后面不能跟 take\\s。\n零宽度负回顾后发断言 (?)\n断言此位置的前面不能匹配表达式。\n比如：\n用 (? 查找 I am here to take you to a good life 就只能匹配出第二个 to，就是不要 here\\s 后面跟着的 to。\n贪婪与懒惰 当正则表达式中包含能接受重复的限定符时，通常的行为是（在使整个表达式能得到匹配的前提下）匹配尽可能的字符。\n比如：\n用 a.*b 查找 aabab 的话，会匹配出 aabab，这就叫贪婪匹配。\n懒惰 有时候我们想匹配尽可能少的字符，只要在它后面加上一个问号 ？。这样就意味在匹配任意数量的重复，但是在能使整个匹配成功的前提下使用最少的重复。\n比如：\n用 a.*?b 匹配最短的，以 a 开始，以 b 结束的字符串。如果用于 aabab 的话，它会匹配 aab。\n懒惰限定符    代码 说明     .？ 重复任意次，但尽可能少重复   +？ 重复1次或更多次，但尽可能少重复   ？？ 重复0次或1次，但尽可能少重复   {n,m}? 重复n到m次，但尽可能少重复   {n,}? 重复n次以上，但尽可能少重复    ",
+  "wordCount" : "233",
+  "inLanguage": "zh",
+  "datePublished": "2021-04-13T15:23:00+08:00",
+  "dateModified": "2021-04-13T15:23:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "su"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://wuxiaosu.github.io/posts/%E6%AD%A3%E5%88%99/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "苏的博客",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://wuxiaosu.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://wuxiaosu.github.io/" accesskey="h" title="苏的博客 (Alt + H)">苏的博客</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://wuxiaosu.github.io/archives" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://wuxiaosu.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://wuxiaosu.github.io/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://wuxiaosu.github.io/">主页</a>&nbsp;»&nbsp;<a href="https://wuxiaosu.github.io/posts/">Posts</a></div>
+    <h1 class="post-title">
+      正则表达式
+    </h1>
+    <div class="post-meta"><span title='2021-04-13 15:23:00 +0800 CST'>四月 13, 2021</span>&nbsp;·&nbsp;su
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f" aria-label="正则表达式">正则表达式</a><ul>
+                        
+                <li>
+                    <a href="#%e5%85%83%e5%ad%97%e7%ac%a6" aria-label="元字符">元字符</a><ul>
+                        
+                <li>
+                    <a href="#%e5%b8%b8%e7%94%a8%e7%9a%84%e5%85%83%e5%ad%97%e7%ac%a6" aria-label="常用的元字符">常用的元字符</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e5%ad%97%e7%ac%a6%e8%bd%ac%e4%b9%89" aria-label="字符转义">字符转义</a></li>
+                <li>
+                    <a href="#%e9%99%90%e5%ae%9a%e7%ac%a6" aria-label="限定符">限定符</a><ul>
+                        
+                <li>
+                    <a href="#%e5%b8%b8%e7%94%a8%e7%9a%84%e9%99%90%e5%ae%9a%e7%ac%a6" aria-label="常用的限定符">常用的限定符</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e8%8c%83%e5%9b%b4%e8%a1%a8%e8%be%be%e5%bc%8f" aria-label="范围表达式">范围表达式</a></li>
+                <li>
+                    <a href="#%e5%88%86%e7%bb%84" aria-label="分组">分组</a></li>
+                <li>
+                    <a href="#%e5%88%86%e6%94%af%e6%9d%a1%e4%bb%b6" aria-label="分支条件">分支条件</a></li>
+                <li>
+                    <a href="#%e9%9b%b6%e5%ae%bd%e6%96%ad%e8%a8%80" aria-label="零宽断言">零宽断言</a><ul>
+                        
+                <li>
+                    <a href="#%e9%9b%b6%e5%ae%bd%e5%ba%a6%e6%ad%a3%e9%a2%84%e6%b5%8b%e5%85%88%e8%a1%8c%e6%96%ad%e8%a8%80" aria-label="零宽度正预测先行断言">零宽度正预测先行断言</a></li>
+                <li>
+                    <a href="#%e9%9b%b6%e5%ae%bd%e5%ba%a6%e6%ad%a3%e5%9b%9e%e9%a1%be%e5%90%8e%e5%8f%91%e6%96%ad%e8%a8%80" aria-label="零宽度正回顾后发断言">零宽度正回顾后发断言</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e8%b4%9f%e5%90%91%e9%9b%b6%e5%ae%bd%e6%96%ad%e8%a8%80" aria-label="负向零宽断言">负向零宽断言</a><ul>
+                        
+                <li>
+                    <a href="#%e9%9b%b6%e5%ae%bd%e5%ba%a6%e8%b4%9f%e9%a2%84%e6%b5%8b%e5%85%88%e8%a1%8c%e6%96%ad%e8%a8%80" aria-label="零宽度负预测先行断言">零宽度负预测先行断言</a></li>
+                <li>
+                    <a href="#%e9%9b%b6%e5%ae%bd%e5%ba%a6%e8%b4%9f%e5%9b%9e%e9%a1%be%e5%90%8e%e5%8f%91%e6%96%ad%e8%a8%80" aria-label="零宽度负回顾后发断言">零宽度负回顾后发断言</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e8%b4%aa%e5%a9%aa%e4%b8%8e%e6%87%92%e6%83%b0" aria-label="贪婪与懒惰">贪婪与懒惰</a><ul>
+                        
+                <li>
+                    <a href="#%e6%87%92%e6%83%b0" aria-label="懒惰">懒惰</a></li>
+                <li>
+                    <a href="#%e6%87%92%e6%83%b0%e9%99%90%e5%ae%9a%e7%ac%a6" aria-label="懒惰限定符">懒惰限定符</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="正则表达式">正则表达式<a hidden class="anchor" aria-hidden="true" href="#正则表达式">#</a></h1>
+<p>正则表达式是计算机科学的一个概念，正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。正则表达式通常用来检索、替换那些匹配某个模式的文本。</p>
+<h2 id="元字符">元字符<a hidden class="anchor" aria-hidden="true" href="#元字符">#</a></h2>
+<p>所谓元字符就是指那些在正则表达式中具有特殊意义的专用字符。</p>
+<h3 id="常用的元字符">常用的元字符<a hidden class="anchor" aria-hidden="true" href="#常用的元字符">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>代码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.</td>
+<td>匹配除换行符以外的任意字符</td>
+</tr>
+<tr>
+<td>\w</td>
+<td>匹配字母或数字或下划线或汉字</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>匹配任意的空白符</td>
+</tr>
+<tr>
+<td>\d</td>
+<td>匹配数字</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>匹配单词的开始或结束</td>
+</tr>
+<tr>
+<td>\B</td>
+<td>非单词边界匹配</td>
+</tr>
+<tr>
+<td>^</td>
+<td>匹配字符串的开始</td>
+</tr>
+<tr>
+<td>$</td>
+<td>匹配字符串的结束</td>
+</tr>
+<tr>
+<td>（）</td>
+<td>标记一个子表达式的开始和结束</td>
+</tr>
+</tbody>
+</table>
+<h2 id="字符转义">字符转义<a hidden class="anchor" aria-hidden="true" href="#字符转义">#</a></h2>
+<p>如果你想查找元字符的话，需要使用 <strong>\</strong> 来取消这些字符的特殊含义。比如要查找 <strong>.</strong> 的话需要使用 <strong>\.</strong> ，要查找 <strong>\</strong> 需要使用 <strong>\\</strong> 。</p>
+<h2 id="限定符">限定符<a hidden class="anchor" aria-hidden="true" href="#限定符">#</a></h2>
+<p>指定数量的代码。</p>
+<h3 id="常用的限定符">常用的限定符<a hidden class="anchor" aria-hidden="true" href="#常用的限定符">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>代码/语法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*</td>
+<td>重复0次或更多次</td>
+</tr>
+<tr>
+<td>+</td>
+<td>重复1次或更多次</td>
+</tr>
+<tr>
+<td>？</td>
+<td>重复0次或1次</td>
+</tr>
+<tr>
+<td>{n}</td>
+<td>重复 n 次</td>
+</tr>
+<tr>
+<td>{n,}</td>
+<td>重复 n 次或更多次</td>
+</tr>
+<tr>
+<td>{n,m}</td>
+<td>重复 n 到 m 次</td>
+</tr>
+</tbody>
+</table>
+<h2 id="范围表达式">范围表达式<a hidden class="anchor" aria-hidden="true" href="#范围表达式">#</a></h2>
+<p>用于指定一个字符范围。</p>
+<p>比如：<br>
+<strong>[aeiou]</strong> ：任何一个元音字母。<br>
+<strong>[0-9]</strong> : 0-9，即一位数字。<br>
+<strong>[.?!]</strong> ： 标点符号 <strong>.</strong> 或者 <strong>？</strong> 或者 <strong>！</strong>。<br>
+<strong>[a-z0-9A-Z_]</strong> ： 匹配任意一位数字或字母或者下划线。</p>
+<h2 id="分组">分组<a hidden class="anchor" aria-hidden="true" href="#分组">#</a></h2>
+<p>可以用小括号来指定 <strong>子表达式</strong> （也叫做 <strong>分组</strong>），然后可以对子表达式进行一些操作。<br>
+比如：<br>
+<strong>(\d{1,3}\.){3}\d{1,3}</strong> 是一个简单的 IP 地址匹配表达式，<strong>\d{1,3}</strong> 匹配1到3位的数字，<strong>(\d{1,3}\.){3}</strong> 匹配1个数字加一个 <strong>.</strong>,然后（将表达式）重复3次，最后再加一个1到3位的数字 <strong>\d{1,3}</strong>。</p>
+<h2 id="分支条件">分支条件<a hidden class="anchor" aria-hidden="true" href="#分支条件">#</a></h2>
+<p>指的是有几种规则，如果满足其中任意一种规则都应该当成匹配。具体方式是使用 <strong>|</strong> 将条件分开。<br>
+比如：<br>
+<strong>0\d{2}-\d{8}|0\d{3}-\d{7}</strong> ： 匹配以 <strong>-</strong> 分割的电话号码：一种是3位区号，8位本地号码（010-12345678）；一种是4位区号，7位本地号码（0101-1234567）。</p>
+<h2 id="零宽断言">零宽断言<a hidden class="anchor" aria-hidden="true" href="#零宽断言">#</a></h2>
+<p>用来查找在某些内容（但并不包括这些内容）之前之后的东西，也就是说它们像 <strong>\b</strong>,<strong>^</strong>,<strong>$</strong> 那样用于指定一个位置，这个位置需要满足一定的条件（即断言）。</p>
+<h3 id="零宽度正预测先行断言">零宽度正预测先行断言<a hidden class="anchor" aria-hidden="true" href="#零宽度正预测先行断言">#</a></h3>
+<p><strong>(?=exp)</strong><br>
+没找到原翻译出处，光是这么几个字真是不好记。可以简单理解为（断言）匹配一个位置，然后匹配出这个位置前的内容。<br>
+比如：
+用 <strong>\b\w+?(?=\sjust)</strong> 查找 <strong>The things you say just might be true</strong> 会匹配出 <strong>say</strong>，可以理解为就是先用 <strong>\sjust</strong> 匹配到位置，然后匹配到 <strong>just</strong> 前的一个单词。</p>
+<h3 id="零宽度正回顾后发断言">零宽度正回顾后发断言<a hidden class="anchor" aria-hidden="true" href="#零宽度正回顾后发断言">#</a></h3>
+<p><strong>(?&lt;=exp)</strong><br>
+跟上面说的相反，断言自身的位置，然后匹配之后的内容。<br>
+比如：
+用 <strong>(?&lt;=\sjust\s)\b\w+?\b</strong> 查找 <strong>The things you say just might be true</strong> 会匹配出 <strong>might</strong>，可以理解为就是先用 <strong>\sjust\s</strong> 匹配到位置，然后匹配到 <strong>just</strong> 后的一个单词。</p>
+<h2 id="负向零宽断言">负向零宽断言<a hidden class="anchor" aria-hidden="true" href="#负向零宽断言">#</a></h2>
+<p>跟零宽断言正好相反，用来确保某些内容没有出现。</p>
+<h3 id="零宽度负预测先行断言">零宽度负预测先行断言<a hidden class="anchor" aria-hidden="true" href="#零宽度负预测先行断言">#</a></h3>
+<p><strong>(?!exp)</strong><br>
+断言此位置后面不能匹配表达式exp。<br>
+比如：
+用 <strong>\bto\b\s(?!take\s)</strong> 查找 <strong>I am here to take you to a good life</strong> 就只能匹配出第二个 <strong>to</strong>，就是 <strong>to</strong> 的后面不能跟 <strong>take\s</strong>。</p>
+<h3 id="零宽度负回顾后发断言">零宽度负回顾后发断言<a hidden class="anchor" aria-hidden="true" href="#零宽度负回顾后发断言">#</a></h3>
+<p><strong>(?&lt;!exp&gt;)</strong><br>
+断言此位置的前面不能匹配表达式。<br>
+比如：<br>
+用 <strong>(?&lt;!here\s)\bto\b</strong> 查找 <strong>I am here to take you to a good life</strong> 就只能匹配出第二个 <strong>to</strong>，就是不要 <strong>here\s</strong> 后面跟着的 <strong>to</strong>。</p>
+<h2 id="贪婪与懒惰">贪婪与懒惰<a hidden class="anchor" aria-hidden="true" href="#贪婪与懒惰">#</a></h2>
+<p>当正则表达式中包含能接受重复的限定符时，通常的行为是（在使整个表达式能得到匹配的前提下）匹配尽可能的字符。<br>
+比如：<br>
+用 <strong>a.*b</strong> 查找 <strong>aabab</strong> 的话，会匹配出 <strong>aabab</strong>，这就叫贪婪匹配。</p>
+<h3 id="懒惰">懒惰<a hidden class="anchor" aria-hidden="true" href="#懒惰">#</a></h3>
+<p>有时候我们想匹配尽可能少的字符，只要在它后面加上一个问号 <strong>？</strong>。这样就意味在匹配任意数量的重复，但是在能使整个匹配成功的前提下使用最少的重复。<br>
+比如：<br>
+用 <strong>a.*?b</strong> 匹配最短的，以 <strong>a</strong> 开始，以 <strong>b</strong> 结束的字符串。如果用于 <strong>aabab</strong> 的话，它会匹配 <strong>aab</strong>。</p>
+<h3 id="懒惰限定符">懒惰限定符<a hidden class="anchor" aria-hidden="true" href="#懒惰限定符">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>代码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.？</td>
+<td>重复任意次，但尽可能少重复</td>
+</tr>
+<tr>
+<td>+？</td>
+<td>重复1次或更多次，但尽可能少重复</td>
+</tr>
+<tr>
+<td>？？</td>
+<td>重复0次或1次，但尽可能少重复</td>
+</tr>
+<tr>
+<td>{n,m}?</td>
+<td>重复n到m次，但尽可能少重复</td>
+</tr>
+<tr>
+<td>{n,}?</td>
+<td>重复n次以上，但尽可能少重复</td>
+</tr>
+</tbody>
+</table>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://wuxiaosu.github.io/tags/%E6%AD%A3%E5%88%99/">正则</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://wuxiaosu.github.io/posts/git/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>git 常用操作</span>
+  </a>
+  <a class="next" href="https://wuxiaosu.github.io/posts/ubuntu%E9%98%B2%E7%81%AB%E5%A2%99/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>ubuntu 防火墙</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://wuxiaosu.github.io/">苏的博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = '复制';
+
+        function copyingDone() {
+            copybutton.innerText = '已复制！';
+            setTimeout(() => {
+                copybutton.innerText = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

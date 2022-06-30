@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Android反编译odex | 苏的博客</title>
-<meta name="keywords" content="" />
+<meta name="keywords" content="反编译, android" />
 <meta name="description" content="0.下载 baksmali.jar 、smali.jar 下载地址 https://bitbucket.org/JesusFreke/smali/downloads/
 Github 地址 https://github.com/JesusFreke/smali
 1. odex -&gt; smali files 把手机系统 /system/framework 下的内容拷贝到工作目录，和需要转换的 .odex、.vdex 文件也拷贝至目录，目录结构如下
@@ -126,7 +126,7 @@ java -jar baksmali-2.5.2.jar deodex a.odex -b ./system/framework/arm64/boot.oat 
   "name": "Android反编译odex",
   "description": "0.下载 baksmali.jar 、smali.jar 下载地址 https://bitbucket.org/JesusFreke/smali/downloads/\nGithub 地址 https://github.com/JesusFreke/smali\n1. odex -\u0026gt; smali files 把手机系统 /system/framework 下的内容拷贝到工作目录，和需要转换的 .odex、.vdex 文件也拷贝至目录，目录结构如下\n-system -a.odex -a.vdex -baksmali-2.5.2.jar -smali-2.5.2.jar 然后执行以下命令\njava -jar baksmali-2.5.2.jar deodex a.odex -b ./system/framework/arm64/boot.oat -o out -deodex : 指定 odex 文件\n-b : 指定 bootclasspath 文件\n-o : 指定 smali 输出目录\n2. smali files -\u0026gt; dex java -jar smali-2.5.2.jar assemble out -o a.dex -assemble : 指定 smali files 文件夹\n-o : 指定输出文件名\n3. 更多 https://www.",
   "keywords": [
-    
+    "反编译", "android"
   ],
   "articleBody": "0.下载 baksmali.jar 、smali.jar 下载地址 https://bitbucket.org/JesusFreke/smali/downloads/\nGithub 地址 https://github.com/JesusFreke/smali\n1. odex - smali files 把手机系统 /system/framework 下的内容拷贝到工作目录，和需要转换的 .odex、.vdex 文件也拷贝至目录，目录结构如下\n-system -a.odex -a.vdex -baksmali-2.5.2.jar -smali-2.5.2.jar 然后执行以下命令\njava -jar baksmali-2.5.2.jar deodex a.odex -b ./system/framework/arm64/boot.oat -o out -deodex : 指定 odex 文件\n-b : 指定 bootclasspath 文件\n-o : 指定 smali 输出目录\n2. smali files - dex java -jar smali-2.5.2.jar assemble out -o a.dex -assemble : 指定 smali files 文件夹\n-o : 指定输出文件名\n3. 更多 https://www.cnblogs.com/ysk-china/p/7162203.html?utm_source=itdadao\u0026utm_medium=referral\n",
   "wordCount" : "72",
@@ -271,6 +271,10 @@ Github 地址
   </div>
 
   <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://wuxiaosu.github.io/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/">反编译</a></li>
+      <li><a href="https://wuxiaosu.github.io/tags/android/">android</a></li>
+    </ul>
 <nav class="paginav">
   <a class="prev" href="https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/">
     <span class="title">« 上一页</span>

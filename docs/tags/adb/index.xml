@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>adb on 苏的博客</title>
+    <link>https://wuxiaosu.github.io/tags/adb/</link>
+    <description>Recent content in adb on 苏的博客</description>
+    <image>
+      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
+      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn-zh</language>
+    <lastBuildDate>Wed, 14 Jul 2021 09:52:34 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/tags/adb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>adb常用命令</title>
+      <link>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Wed, 14 Jul 2021 09:52:34 +0800</pubDate>
+      
+      <guid>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>adb 常用命令 1.查看最上层 Activity 名字  Linux  adb shell dumpsys activity | grep &amp;#34;mResumedActivity&amp;#34;  Windows  adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件  启动 Activity  adb shell am start -n com.google.android.network2/com.my.MainActivity  启动 Service  adb shell am startservice -n com.google.android.network2/com.my.MainActivity  发送 Broadcast  adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启  重启到 Recovery 界面  adb reboot recovery  重启到 bootloader 界面  adb reboot bootloader 4.</description>
+    </item>
+    
+  </channel>
+</rss>

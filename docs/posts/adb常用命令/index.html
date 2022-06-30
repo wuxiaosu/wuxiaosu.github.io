@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>adb常用命令 | 苏的博客</title>
+<meta name="keywords" content="adb, android" />
+<meta name="description" content="adb 常用命令 1.查看最上层 Activity 名字  Linux  adb shell dumpsys activity | grep &#34;mResumedActivity&#34;  Windows  adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件  启动 Activity  adb shell am start -n com.google.android.network2/com.my.MainActivity  启动 Service  adb shell am startservice -n com.google.android.network2/com.my.MainActivity  发送 Broadcast  adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启  重启到 Recovery 界面  adb reboot recovery  重启到 bootloader 界面  adb reboot bootloader 4.">
+<meta name="author" content="su">
+<link rel="canonical" href="https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://wuxiaosu.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://wuxiaosu.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://wuxiaosu.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://wuxiaosu.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://wuxiaosu.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.99.1" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="adb常用命令" />
+<meta property="og:description" content="adb 常用命令 1.查看最上层 Activity 名字  Linux  adb shell dumpsys activity | grep &#34;mResumedActivity&#34;  Windows  adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件  启动 Activity  adb shell am start -n com.google.android.network2/com.my.MainActivity  启动 Service  adb shell am startservice -n com.google.android.network2/com.my.MainActivity  发送 Broadcast  adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启  重启到 Recovery 界面  adb reboot recovery  重启到 bootloader 界面  adb reboot bootloader 4." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" /><meta property="og:image" content="https://wuxiaosu.github.io/papermod-cover.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-14T09:52:34&#43;08:00" />
+<meta property="article:modified_time" content="2021-07-14T09:52:34&#43;08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://wuxiaosu.github.io/papermod-cover.png"/>
+
+<meta name="twitter:title" content="adb常用命令"/>
+<meta name="twitter:description" content="adb 常用命令 1.查看最上层 Activity 名字  Linux  adb shell dumpsys activity | grep &#34;mResumedActivity&#34;  Windows  adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件  启动 Activity  adb shell am start -n com.google.android.network2/com.my.MainActivity  启动 Service  adb shell am startservice -n com.google.android.network2/com.my.MainActivity  发送 Broadcast  adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启  重启到 Recovery 界面  adb reboot recovery  重启到 bootloader 界面  adb reboot bootloader 4."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://wuxiaosu.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "adb常用命令",
+      "item": "https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "adb常用命令",
+  "name": "adb常用命令",
+  "description": "adb 常用命令 1.查看最上层 Activity 名字  Linux  adb shell dumpsys activity | grep \u0026#34;mResumedActivity\u0026#34;  Windows  adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件  启动 Activity  adb shell am start -n com.google.android.network2/com.my.MainActivity  启动 Service  adb shell am startservice -n com.google.android.network2/com.my.MainActivity  发送 Broadcast  adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启  重启到 Recovery 界面  adb reboot recovery  重启到 bootloader 界面  adb reboot bootloader 4.",
+  "keywords": [
+    "adb", "android"
+  ],
+  "articleBody": "adb 常用命令 1.查看最上层 Activity 名字  Linux  adb shell dumpsys activity | grep \"mResumedActivity\"  Windows  adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件  启动 Activity  adb shell am start -n com.google.android.network2/com.my.MainActivity  启动 Service  adb shell am startservice -n com.google.android.network2/com.my.MainActivity  发送 Broadcast  adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启  重启到 Recovery 界面  adb reboot recovery  重启到 bootloader 界面  adb reboot bootloader 4.其他  强制结束应用  adb shell am force-stop  5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式\nadb shell am clear-debug-app 6.查看应用安装路径  列出所有安装的包  adb shell pm list packages -f  查看安装包路径  adb shell pm path {package_name}  查看安装包路径  adb shell dumpsys package {package_name} | findstr codePath\radb shell dumpsys package {package_name} | grep codePath  卸载系统应用  adb shell pm uninstall --user 0 {package_name} ",
+  "wordCount" : "118",
+  "inLanguage": "zh",
+  "datePublished": "2021-07-14T09:52:34+08:00",
+  "dateModified": "2021-07-14T09:52:34+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "su"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "苏的博客",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://wuxiaosu.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://wuxiaosu.github.io/" accesskey="h" title="苏的博客 (Alt + H)">苏的博客</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://wuxiaosu.github.io/archives" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://wuxiaosu.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://wuxiaosu.github.io/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://wuxiaosu.github.io/">主页</a>&nbsp;»&nbsp;<a href="https://wuxiaosu.github.io/posts/">Posts</a></div>
+    <h1 class="post-title">
+      adb常用命令
+    </h1>
+    <div class="post-meta"><span title='2021-07-14 09:52:34 +0800 CST'>七月 14, 2021</span>&nbsp;·&nbsp;su
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#adb-%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4" aria-label="adb 常用命令">adb 常用命令</a><ul>
+                        
+                <li>
+                    <a href="#1%e6%9f%a5%e7%9c%8b%e6%9c%80%e4%b8%8a%e5%b1%82-activity-%e5%90%8d%e5%ad%97" aria-label="1.查看最上层 Activity 名字">1.查看最上层 <strong>Activity</strong> 名字</a></li>
+                <li>
+                    <a href="#2%e5%90%af%e5%8a%a8%e7%bb%84%e4%bb%b6" aria-label="2.启动组件">2.启动组件</a></li>
+                <li>
+                    <a href="#3%e9%87%8d%e5%90%af" aria-label="3.重启">3.重启</a></li>
+                <li>
+                    <a href="#4%e5%85%b6%e4%bb%96" aria-label="4.其他">4.其他</a></li>
+                <li>
+                    <a href="#5%e4%bb%a5%e8%b0%83%e8%af%95%e6%a8%a1%e5%bc%8f%e5%90%af%e5%8a%a8%e5%ba%94%e7%94%a8" aria-label="5.以调试模式启动应用">5.以调试模式启动应用</a></li>
+                <li>
+                    <a href="#6%e6%9f%a5%e7%9c%8b%e5%ba%94%e7%94%a8%e5%ae%89%e8%a3%85%e8%b7%af%e5%be%84" aria-label="6.查看应用安装路径">6.查看应用安装路径</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="adb-常用命令">adb 常用命令<a hidden class="anchor" aria-hidden="true" href="#adb-常用命令">#</a></h1>
+<h2 id="1查看最上层-activity-名字">1.查看最上层 <strong>Activity</strong> 名字<a hidden class="anchor" aria-hidden="true" href="#1查看最上层-activity-名字">#</a></h2>
+<ul>
+<li>Linux</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">adb shell dumpsys activity <span class="p">|</span> grep <span class="s2">&#34;mResumedActivity&#34;</span>
+</span></span></code></pre></div><ul>
+<li>Windows</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">adb shell dumpsys activity activities <span class="p">|</span> findstr mResumedActivity
+</span></span></code></pre></div><h2 id="2启动组件">2.启动组件<a hidden class="anchor" aria-hidden="true" href="#2启动组件">#</a></h2>
+<ul>
+<li>启动 <strong>Activity</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">adb shell am start -n com.google.android.network2/com.my.MainActivity
+</span></span></code></pre></div><ul>
+<li>启动 <strong>Service</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">adb shell am startservice -n com.google.android.network2/com.my.MainActivity
+</span></span></code></pre></div><ul>
+<li>发送 <strong>Broadcast</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">adb shell am broadcast -a android.intent.action.BOOT_COMPLETED
+</span></span></code></pre></div><h2 id="3重启">3.重启<a hidden class="anchor" aria-hidden="true" href="#3重启">#</a></h2>
+<ul>
+<li>重启到 <strong>Recovery</strong> 界面</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">adb reboot recovery
+</span></span></code></pre></div><ul>
+<li>重启到 <strong>bootloader</strong> 界面</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">adb reboot bootloader
+</span></span></code></pre></div><h2 id="4其他">4.其他<a hidden class="anchor" aria-hidden="true" href="#4其他">#</a></h2>
+<ul>
+<li>强制结束应用</li>
+</ul>
+<pre tabindex="0"><code>adb shell am force-stop &lt;PACKAGE&gt;
+</code></pre><h2 id="5以调试模式启动应用">5.以调试模式启动应用<a hidden class="anchor" aria-hidden="true" href="#5以调试模式启动应用">#</a></h2>
+<pre tabindex="0"><code>adb shell am set-debug-app -w {package_name}
+</code></pre><p>清除调试模式</p>
+<pre tabindex="0"><code>adb shell am clear-debug-app
+</code></pre><h2 id="6查看应用安装路径">6.查看应用安装路径<a hidden class="anchor" aria-hidden="true" href="#6查看应用安装路径">#</a></h2>
+<ul>
+<li>列出所有安装的包</li>
+</ul>
+<pre tabindex="0"><code>adb shell pm list packages -f
+</code></pre><ul>
+<li>查看安装包路径</li>
+</ul>
+<pre tabindex="0"><code>adb shell pm path {package_name}
+</code></pre><ul>
+<li>查看安装包路径</li>
+</ul>
+<pre tabindex="0"><code>adb shell dumpsys package {package_name} | findstr codePath
+
+adb shell dumpsys package {package_name} | grep codePath
+</code></pre><ul>
+<li>卸载系统应用</li>
+</ul>
+<pre tabindex="0"><code>adb shell pm uninstall --user 0 {package_name}
+</code></pre>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://wuxiaosu.github.io/tags/adb/">adb</a></li>
+      <li><a href="https://wuxiaosu.github.io/tags/android/">android</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://wuxiaosu.github.io/posts/sql/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>sqlite常用操作</span>
+  </a>
+  <a class="next" href="https://wuxiaosu.github.io/posts/mysql/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>mysql 相关</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://wuxiaosu.github.io/">苏的博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = '复制';
+
+        function copyingDone() {
+            copybutton.innerText = '已复制！';
+            setTimeout(() => {
+                copybutton.innerText = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

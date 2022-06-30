@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>python on 苏的博客</title>
+    <link>https://wuxiaosu.github.io/tags/python/</link>
+    <description>Recent content in python on 苏的博客</description>
+    <image>
+      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
+      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn-zh</language>
+    <lastBuildDate>Tue, 24 May 2022 22:06:48 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python文件打包</title>
+      <link>https://wuxiaosu.github.io/posts/python%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</link>
+      <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
+      
+      <guid>https://wuxiaosu.github.io/posts/python%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</guid>
+      <description>0.省流助手 pyinstaller -F myfile.py 1.安装 Pyinstaller 1.1 先安装 pywin32 pip install pywin32 1.2 再安装 Pyinstaller pip install PyInstaller 2.使用 Pyinstaller pyinstaller -F myfile.py 2.1 输入参数含义 -F, --onefile 生成单个可执行文件 如果一切正常，会在 .py 文件同目录下的 dist 目录生成 .exe 文件
+查看更多参数
+pyinstaller -h </description>
+    </item>
+    
+  </channel>
+</rss>

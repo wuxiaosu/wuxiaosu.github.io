@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Android微信数据库密码计算 | 苏的博客</title>
+<meta name="keywords" content="微信, android, 数据库" />
+<meta name="description" content="Android微信数据库密码计算  查找数据文件路径  ls -l /data/user/0/com.tencent.mm/MicroMsg/*/EnMicroMsg.db  查看 uin 值  cat /data/data/com.tencent.mm/shared_prefs/auth_info_key_prefs.xml  查看设备 imei 值  getprop | grep imei  计算 imei &#43; uin md5  echo -n &#34;8667640302870921054025641&#34;|md5sum  密码取前七位  ">
+<meta name="author" content="su">
+<link rel="canonical" href="https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://wuxiaosu.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://wuxiaosu.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://wuxiaosu.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://wuxiaosu.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://wuxiaosu.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.99.1" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Android微信数据库密码计算" />
+<meta property="og:description" content="Android微信数据库密码计算  查找数据文件路径  ls -l /data/user/0/com.tencent.mm/MicroMsg/*/EnMicroMsg.db  查看 uin 值  cat /data/data/com.tencent.mm/shared_prefs/auth_info_key_prefs.xml  查看设备 imei 值  getprop | grep imei  计算 imei &#43; uin md5  echo -n &#34;8667640302870921054025641&#34;|md5sum  密码取前七位  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/" /><meta property="og:image" content="https://wuxiaosu.github.io/papermod-cover.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-01-04T15:09:00&#43;08:00" />
+<meta property="article:modified_time" content="2021-01-04T15:09:00&#43;08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://wuxiaosu.github.io/papermod-cover.png"/>
+
+<meta name="twitter:title" content="Android微信数据库密码计算"/>
+<meta name="twitter:description" content="Android微信数据库密码计算  查找数据文件路径  ls -l /data/user/0/com.tencent.mm/MicroMsg/*/EnMicroMsg.db  查看 uin 值  cat /data/data/com.tencent.mm/shared_prefs/auth_info_key_prefs.xml  查看设备 imei 值  getprop | grep imei  计算 imei &#43; uin md5  echo -n &#34;8667640302870921054025641&#34;|md5sum  密码取前七位  "/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://wuxiaosu.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Android微信数据库密码计算",
+      "item": "https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Android微信数据库密码计算",
+  "name": "Android微信数据库密码计算",
+  "description": "Android微信数据库密码计算  查找数据文件路径  ls -l /data/user/0/com.tencent.mm/MicroMsg/*/EnMicroMsg.db  查看 uin 值  cat /data/data/com.tencent.mm/shared_prefs/auth_info_key_prefs.xml  查看设备 imei 值  getprop | grep imei  计算 imei + uin md5  echo -n \u0026#34;8667640302870921054025641\u0026#34;|md5sum  密码取前七位  ",
+  "keywords": [
+    "微信", "android", "数据库"
+  ],
+  "articleBody": "Android微信数据库密码计算  查找数据文件路径  ls -l /data/user/0/com.tencent.mm/MicroMsg/*/EnMicroMsg.db  查看 uin 值  cat /data/data/com.tencent.mm/shared_prefs/auth_info_key_prefs.xml  查看设备 imei 值  getprop | grep imei  计算 imei + uin md5  echo -n \"8667640302870921054025641\"|md5sum  密码取前七位  ",
+  "wordCount" : "26",
+  "inLanguage": "zh",
+  "datePublished": "2021-01-04T15:09:00+08:00",
+  "dateModified": "2021-01-04T15:09:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "su"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "苏的博客",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://wuxiaosu.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://wuxiaosu.github.io/" accesskey="h" title="苏的博客 (Alt + H)">苏的博客</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://wuxiaosu.github.io/archives" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://wuxiaosu.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://wuxiaosu.github.io/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://wuxiaosu.github.io/">主页</a>&nbsp;»&nbsp;<a href="https://wuxiaosu.github.io/posts/">Posts</a></div>
+    <h1 class="post-title">
+      Android微信数据库密码计算
+    </h1>
+    <div class="post-meta"><span title='2021-01-04 15:09:00 +0800 CST'>一月 4, 2021</span>&nbsp;·&nbsp;su
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#android%e5%be%ae%e4%bf%a1%e6%95%b0%e6%8d%ae%e5%ba%93%e5%af%86%e7%a0%81%e8%ae%a1%e7%ae%97" aria-label="Android微信数据库密码计算">Android微信数据库密码计算</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="android微信数据库密码计算">Android微信数据库密码计算<a hidden class="anchor" aria-hidden="true" href="#android微信数据库密码计算">#</a></h1>
+<ul>
+<li>查找数据文件路径</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ls -l /data/user/0/com.tencent.mm/MicroMsg/*/EnMicroMsg.db
+</span></span></code></pre></div><ul>
+<li>查看 uin 值</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat /data/data/com.tencent.mm/shared_prefs/auth_info_key_prefs.xml
+</span></span></code></pre></div><ul>
+<li>查看设备 imei 值</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">getprop <span class="p">|</span> grep imei
+</span></span></code></pre></div><ul>
+<li>计算 imei + uin md5</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> -n <span class="s2">&#34;8667640302870921054025641&#34;</span><span class="p">|</span>md5sum
+</span></span></code></pre></div><ul>
+<li>密码取前七位</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://wuxiaosu.github.io/tags/%E5%BE%AE%E4%BF%A1/">微信</a></li>
+      <li><a href="https://wuxiaosu.github.io/tags/android/">android</a></li>
+      <li><a href="https://wuxiaosu.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://wuxiaosu.github.io/posts/jetbrains/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>JetBrains 重置试用</span>
+  </a>
+  <a class="next" href="https://wuxiaosu.github.io/posts/pip%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>pip切换国内源</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://wuxiaosu.github.io/">苏的博客</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = '复制';
+
+        function copyingDone() {
+            copybutton.innerText = '已复制！';
+            setTimeout(() => {
+                copybutton.innerText = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
