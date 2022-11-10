@@ -149,6 +149,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>反编译Python打包生成的exe文件
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>1.解压 exe 文件 1.1 下载 pyinstxtractor https://github.com/extremecoders-re/pyinstxtractor
+1.2 执行解压操作 python pyinstxtractor.py &lt;filename&gt; 执行成功会出现一个 filename_extracted 目录,目录里面有相对应的 pyc 文件
+2.反编译 pyc 文件 2.1 安装 uncompyle6 pip install uncompyle6 2.1 反编译 pyc 文件 uncompyle6 xx.pyc 执行成功即可看到可运行的 python 源码</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-11-10 17:41:48 +0800 CST'>十一月 10, 2022</span>&nbsp;·&nbsp;su</footer>
+  <a class="entry-link" aria-label="post link to 反编译Python打包生成的exe文件" href="https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Ubuntu安装nginx
     </h2>
   </header>
@@ -208,20 +222,6 @@ pyinstaller -h </p>
   </section>
   <footer class="entry-footer"><span title='2022-05-24 22:06:48 +0800 CST'>五月 24, 2022</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to 几个ip信息获取接口" href="https://wuxiaosu.github.io/posts/%E5%87%A0%E4%B8%AAip%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E6%8E%A5%E5%8F%A3/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2>sqlite常用操作
-    </h2>
-  </header>
-  <section class="entry-content">
-    <p>sql sqlite 时间戳转日期 selectdatetime(1613714753,&#39;unixepoch&#39;,&#39;localtime&#39;);输出
-2021-02-1914:05:53当前时间戳 selectstrftime(&#39;%s&#39;,&#39;now&#39;);输出
-1613714753查询所有表 SELECT*FROMsqlite_master</p>
-  </section>
-  <footer class="entry-footer"><span title='2022-01-07 13:46:00 +0800 CST'>一月 7, 2022</span>&nbsp;·&nbsp;su</footer>
-  <a class="entry-link" aria-label="post link to sqlite常用操作" href="https://wuxiaosu.github.io/posts/sql/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

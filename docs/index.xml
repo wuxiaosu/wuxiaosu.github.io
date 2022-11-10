@@ -10,7 +10,18 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn-zh</language>
-    <lastBuildDate>Tue, 24 May 2022 22:55:15 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Nov 2022 17:41:48 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>反编译Python打包生成的exe文件</title>
+      <link>https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Thu, 10 Nov 2022 17:41:48 +0800</pubDate>
+      
+      <guid>https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</guid>
+      <description>1.解压 exe 文件 1.1 下载 pyinstxtractor https://github.com/extremecoders-re/pyinstxtractor
+1.2 执行解压操作 python pyinstxtractor.py &amp;lt;filename&amp;gt; 执行成功会出现一个 filename_extracted 目录,目录里面有相对应的 pyc 文件
+2.反编译 pyc 文件 2.1 安装 uncompyle6 pip install uncompyle6 2.1 反编译 pyc 文件 uncompyle6 xx.pyc 执行成功即可看到可运行的 python 源码</description>
+    </item>
+    
     <item>
       <title>Ubuntu安装nginx</title>
       <link>https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</link>
