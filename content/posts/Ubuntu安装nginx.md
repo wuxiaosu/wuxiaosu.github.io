@@ -9,7 +9,7 @@ tags: ["Ubuntu","nginx"]
 直接在终端运行命令进行安装  
 
 ```bash
-$ sudo apt install nginx
+sudo apt install nginx
 ```  
 
 如果需要自定义安装，可以参考官方文档  
@@ -21,8 +21,10 @@ $ sudo apt install nginx
 ## 2.查看默认配置  
 
 ```bash
-$ cat /etc/nginx/nginx.conf
+cat /etc/nginx/nginx.conf
+```
 
+```bash
 user www-data;
 worker_processes auto;
 pid /run/nginx.pid;
@@ -214,7 +216,7 @@ server {
 #}
 ```  
 
-可以看到只配置了一个静态页面
+可以看到只配置了一个静态页面，就是前面看到的默认界面
 注释掉默认配置
 
 ```bash
@@ -228,7 +230,7 @@ server {
 ## 4.检查配置是否正确
 
 ```bash
-$ sudo nginx -t
+sudo nginx -t
 ```
 
 出现以下内容表示没问题了
@@ -241,7 +243,7 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 配置没问题的话就可以重启服务器了
 
 ```bash
-$ sudo service nginx restart
+sudo service nginx restart
 ```
 
 然后就可以愉快的使用啦  
