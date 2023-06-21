@@ -9,7 +9,7 @@
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn-zh</language>
+    <language>zh</language>
     <lastBuildDate>Fri, 18 Jun 2021 14:34:00 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>mysql 相关</title>
@@ -17,12 +17,12 @@
       <pubDate>Fri, 18 Jun 2021 14:34:00 +0800</pubDate>
       
       <guid>https://wuxiaosu.github.io/posts/mysql/</guid>
-      <description>mysql 相关  开启 mysql 远程访问  确认端口是否对外开放，默认是不开放的
+      <description>mysql 相关 开启 mysql 远程访问 确认端口是否对外开放，默认是不开放的
 netstat -an | grep 3306 输出如下
 tcp 0 0 127.0.0.1:3306 0.0.0.0:* LISTEN 修改配置文件（不同版本可能位置不同）
 /etc/mysql/mysql.conf.d/mysqld.cnf 注释掉
-# bind-address = 127.0.0.1  为新增主键赋值  SET@mycnt=0;UPDATExxxxxSETRowNum=(@mycnt:=@mycnt+1) 使用 native_password 连接  ALTERUSER&amp;#39;user&amp;#39;@&amp;#39;%&amp;#39;IDENTIFIEDWITHmysql_native_passwordBY&amp;#39;password&amp;#39;;flushprivileges; 使用默认密码修改数据库密码  查看默认用户密码
-cd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. DO NOT TOUCH! [client] host = localhost user = debian-sys-maint password = G0Gis29yv0dtUhng socket = /var/run/mysqld/mysqld.sock [mysql_upgrade] host = localhost user = debian-sys-maint password = G0Gis29yv0dtUhng socket = /var/run/mysqld/mysqld.</description>
+# bind-address = 127.0.0.1 为新增主键赋值 SET @mycnt = 0; UPDATE xxxxx SET RowNum=(@mycnt := @mycnt + 1) 使用 native_password 连接 ALTER USER &amp;#39;user&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED WITH mysql_native_password BY &amp;#39;password&amp;#39;; flush privileges; 使用默认密码修改数据库密码 查看默认用户密码
+cd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. DO NOT TOUCH! [client] host = localhost user = debian-sys-maint password = G0Gis29yv0dtUhng socket = /var/run/mysqld/mysqld.</description>
     </item>
     
   </channel>

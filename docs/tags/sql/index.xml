@@ -9,7 +9,7 @@
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn-zh</language>
+    <language>zh</language>
     <lastBuildDate>Fri, 07 Jan 2022 13:46:00 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>sqlite常用操作</title>
@@ -17,9 +17,9 @@
       <pubDate>Fri, 07 Jan 2022 13:46:00 +0800</pubDate>
       
       <guid>https://wuxiaosu.github.io/posts/sql/</guid>
-      <description>sql sqlite 时间戳转日期 selectdatetime(1613714753,&amp;#39;unixepoch&amp;#39;,&amp;#39;localtime&amp;#39;);输出
-2021-02-1914:05:53当前时间戳 selectstrftime(&amp;#39;%s&amp;#39;,&amp;#39;now&amp;#39;);输出
-1613714753查询所有表 SELECT*FROMsqlite_master</description>
+      <description>sql sqlite 时间戳转日期 select datetime(1613714753, &amp;#39;unixepoch&amp;#39;, &amp;#39;localtime&amp;#39;); 输出
+2021-02-19 14:05:53 当前时间戳 select strftime(&amp;#39;%s&amp;#39;,&amp;#39;now&amp;#39;); 输出
+1613714753 查询所有表 SELECT * FROM sqlite_master </description>
     </item>
     
   </channel>

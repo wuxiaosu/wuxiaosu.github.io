@@ -16,7 +16,7 @@ $ sudo apt install nginx
 <http://nginx.org/en/linux_packages.html#Ubuntu>  
 在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功  
 
-![默认界面](/upload/2022/02/1-5a4869ea0e0d45738ce99011b3323847.png)
+![默认界面](/static/images/20230621151612.png)
 
 ## 2.查看默认配置  
 

@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://wuxiaosu.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.99.1" />
+<meta name="generator" content="Hugo 0.114.0">
 <link rel="alternate" type="application/rss+xml" href="https://wuxiaosu.github.io/index.xml">
 <link rel="alternate" type="application/json" href="https://wuxiaosu.github.io/index.json">
 <noscript>
@@ -149,7 +149,7 @@
     </h2>
   </header>
   <section class="entry-content">
-    <p>docker 常用操作  搜索镜像  docker search python  拉取镜像  docker pull python:3.7  镜像列表  docker images  正在运行的镜像列表  docker ps  使用镜像启动一个容器  docker run -itd openjdk:8  查看所有容器  docker ps -a  创建一个镜像  docker build -t docker_repo ./docker_repo  启动并直接进入镜像  docker run -it ubuntu:14.04 </p>
+    <p>docker 常用操作 搜索镜像 docker search python 拉取镜像 docker pull python:3.7 镜像列表 docker images 正在运行的镜像列表 docker ps 使用镜像启动一个容器 docker run -itd openjdk:8 查看所有容器 docker ps -a 创建一个镜像 docker build -t docker_repo ./docker_repo 启动并直接进入镜像 docker run -it ubuntu:14.04 </p>
   </section>
   <footer class="entry-footer"><span title='2021-04-28 10:56:00 +0800 CST'>四月 28, 2021</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to docker 常用操作" href="https://wuxiaosu.github.io/posts/docker/"></a>
@@ -161,7 +161,7 @@
     </h2>
   </header>
   <section class="entry-content">
-    <p>git  Git 回退到某个 commit  git reset --hard HEAD^ 回退到上个版本 git reset --hard HEAD~3 回退到前3次提交之前，以此类推，回退到n次提交之前 git reset --hard commit_id 退到/进到 指定commit的sha码  强推到远程:  git push origin HEAD --force  合并某个提交:  git cherry-pick &lt;commit id&gt;  查看本地分支：  git branch  删除本地分支：  git branch -D tmp  查看 tag：  git tag  在某个 commit 上打 tag：  git tag test_tag c809ddbf83939a89659e51dc2a5fe183af384233  本地 tag 推送到线上：  git push origin test_tag  本地删除 tag：  git tag -d test_tag  删除线上 tag：  git push origin :refs/tags/test_tag  修改远程地址先删后加  git remote rm origin git remote add origin [url]  创建新分支  git branch develop  切换到该分支  git checkout develop  提交到该分支  git push -u origin develop  修改源  git remote set-url origin url </p>
+    <p>git Git 回退到某个 commit git reset --hard HEAD^ 回退到上个版本 git reset --hard HEAD~3 回退到前3次提交之前，以此类推，回退到n次提交之前 git reset --hard commit_id 退到/进到 指定commit的sha码 强推到远程: git push origin HEAD --force 合并某个提交: git cherry-pick &lt;commit id&gt; 查看本地分支： git branch 删除本地分支： git branch -D tmp 查看 tag： git tag 在某个 commit 上打 tag： git tag test_tag c809ddbf83939a89659e51dc2a5fe183af384233 本地 tag 推送到线上： git push origin test_tag 本地删除 tag： git tag -d test_tag 删除线上 tag： git push origin :refs/tags/test_tag 修改远程地址先删后加 git remote rm origin git remote add origin [url] 创建新分支 git branch develop 切换到该分支 git checkout develop 提交到该分支 git push -u origin develop 修改源 git remote set-url origin url </p>
   </section>
   <footer class="entry-footer"><span title='2021-04-18 10:18:00 +0800 CST'>四月 18, 2021</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to git 常用操作" href="https://wuxiaosu.github.io/posts/git/"></a>
@@ -175,9 +175,12 @@
   <section class="entry-content">
     <p>正则表达式 正则表达式是计算机科学的一个概念，正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。正则表达式通常用来检索、替换那些匹配某个模式的文本。
 元字符 所谓元字符就是指那些在正则表达式中具有特殊意义的专用字符。
-常用的元字符    代码 说明     . 匹配除换行符以外的任意字符   \w 匹配字母或数字或下划线或汉字   \s 匹配任意的空白符   \d 匹配数字   \b 匹配单词的开始或结束   \B 非单词边界匹配   ^ 匹配字符串的开始   $ 匹配字符串的结束   （） 标记一个子表达式的开始和结束    字符转义 如果你想查找元字符的话，需要使用 \ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \. ，要查找 \ 需要使用 \\ 。
+常用的元字符 代码 说明 . 匹配除换行符以外的任意字符 \w 匹配字母或数字或下划线或汉字 \s 匹配任意的空白符 \d 匹配数字 \b 匹配单词的开始或结束 \B 非单词边界匹配 ^ 匹配字符串的开始 $ 匹配字符串的结束 （） 标记一个子表达式的开始和结束 字符转义 如果你想查找元字符的话，需要使用 \ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \. ，要查找 \ 需要使用 \\ 。
 限定符 指定数量的代码。
-常用的限定符    代码/语法 说明     * 重复0次或更多次   &#43; 重复1次或更多次   ？ 重复0次或1次   {n} 重复 n 次   {n,} 重复 n 次或更多次   {n,m} 重复 n 到 m 次    范围表达式 用于指定一个字符范围。...</p>
+常用的限定符 代码/语法 说明 * 重复0次或更多次 &#43; 重复1次或更多次 ？ 重复0次或1次 {n} 重复 n 次 {n,} 重复 n 次或更多次 {n,m} 重复 n 到 m 次 范围表达式 用于指定一个字符范围。
+比如：
+[aeiou] ：任何一个元音字母。
+[0-9] : 0-9，即一位数字。...</p>
   </section>
   <footer class="entry-footer"><span title='2021-04-13 15:23:00 +0800 CST'>四月 13, 2021</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to 正则表达式" href="https://wuxiaosu.github.io/posts/%E6%AD%A3%E5%88%99/"></a>
@@ -189,7 +192,7 @@
     </h2>
   </header>
   <section class="entry-content">
-    <p>ubuntu 防火墙  查看防火墙状态  sudo ufw status  允许访问端口  sudo ufw allow 9090/tcp  禁止访问端口  sudo ufw deny 9090  删除规则  sudo ufw delete deny 9090 </p>
+    <p>ubuntu 防火墙 查看防火墙状态 sudo ufw status 允许访问端口 sudo ufw allow 9090/tcp 禁止访问端口 sudo ufw deny 9090 删除规则 sudo ufw delete deny 9090 </p>
   </section>
   <footer class="entry-footer"><span title='2021-03-24 18:34:00 +0800 CST'>三月 24, 2021</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to ubuntu 防火墙" href="https://wuxiaosu.github.io/posts/ubuntu%E9%98%B2%E7%81%AB%E5%A2%99/"></a>
@@ -201,7 +204,7 @@
     </h2>
   </header>
   <section class="entry-content">
-    <p>JetBrains 2020.3 系列通用重置 30 天试用（不会影响其他配置） 以 IntelliJIdea 为例  删除此目录下所有文件  C:\Users\Administrator\AppData\Roaming\JetBrains\IntelliJIdea2020.3\eval  删除 other.xml 文件  C:\Users\Administrator\AppData\Roaming\JetBrains\IntelliJIdea2020.3\options\other.xml  删除注册表下所有项  计算机\HKEY_CURRENT_USER\Software\JavaSoft\Prefs\jetbrains\idea 其他诸如 DataGrip、PyCharm 类似 </p>
+    <p>JetBrains 2020.3 系列通用重置 30 天试用（不会影响其他配置） 以 IntelliJIdea 为例 删除此目录下所有文件 C:\Users\Administrator\AppData\Roaming\JetBrains\IntelliJIdea2020.3\eval 删除 other.xml 文件 C:\Users\Administrator\AppData\Roaming\JetBrains\IntelliJIdea2020.3\options\other.xml 删除注册表下所有项 计算机\HKEY_CURRENT_USER\Software\JavaSoft\Prefs\jetbrains\idea 其他诸如 DataGrip、PyCharm 类似 </p>
   </section>
   <footer class="entry-footer"><span title='2021-02-25 16:30:00 +0800 CST'>二月 25, 2021</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to JetBrains 重置试用" href="https://wuxiaosu.github.io/posts/jetbrains/"></a>
@@ -215,7 +218,7 @@
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022 <a href="https://wuxiaosu.github.io/">苏的博客</a></span>
+    <span>&copy; 2023 <a href="https://wuxiaosu.github.io/">苏的博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

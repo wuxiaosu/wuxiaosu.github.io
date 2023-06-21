@@ -7,13 +7,13 @@
 <meta name="robots" content="index, follow">
 <title>sqlite常用操作 | 苏的博客</title>
 <meta name="keywords" content="sql, sqlite" />
-<meta name="description" content="sql sqlite 时间戳转日期 selectdatetime(1613714753,&#39;unixepoch&#39;,&#39;localtime&#39;);输出
-2021-02-1914:05:53当前时间戳 selectstrftime(&#39;%s&#39;,&#39;now&#39;);输出
-1613714753查询所有表 SELECT*FROMsqlite_master">
+<meta name="description" content="sql sqlite 时间戳转日期 select datetime(1613714753, &#39;unixepoch&#39;, &#39;localtime&#39;); 输出
+2021-02-19 14:05:53 当前时间戳 select strftime(&#39;%s&#39;,&#39;now&#39;); 输出
+1613714753 查询所有表 SELECT * FROM sqlite_master ">
 <meta name="author" content="su">
 <link rel="canonical" href="https://wuxiaosu.github.io/posts/sql/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://wuxiaosu.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://wuxiaosu.github.io/favicon-16x16.png">
@@ -22,7 +22,7 @@
 <link rel="mask-icon" href="https://wuxiaosu.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.99.1" />
+<meta name="generator" content="Hugo 0.114.0">
 <noscript>
     <style>
         #theme-toggle,
@@ -60,9 +60,9 @@
 
     </style>
 </noscript><meta property="og:title" content="sqlite常用操作" />
-<meta property="og:description" content="sql sqlite 时间戳转日期 selectdatetime(1613714753,&#39;unixepoch&#39;,&#39;localtime&#39;);输出
-2021-02-1914:05:53当前时间戳 selectstrftime(&#39;%s&#39;,&#39;now&#39;);输出
-1613714753查询所有表 SELECT*FROMsqlite_master" />
+<meta property="og:description" content="sql sqlite 时间戳转日期 select datetime(1613714753, &#39;unixepoch&#39;, &#39;localtime&#39;); 输出
+2021-02-19 14:05:53 当前时间戳 select strftime(&#39;%s&#39;,&#39;now&#39;); 输出
+1613714753 查询所有表 SELECT * FROM sqlite_master " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wuxiaosu.github.io/posts/sql/" /><meta property="og:image" content="https://wuxiaosu.github.io/papermod-cover.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-01-07T13:46:00&#43;08:00" />
@@ -72,9 +72,9 @@
 <meta name="twitter:image" content="https://wuxiaosu.github.io/papermod-cover.png"/>
 
 <meta name="twitter:title" content="sqlite常用操作"/>
-<meta name="twitter:description" content="sql sqlite 时间戳转日期 selectdatetime(1613714753,&#39;unixepoch&#39;,&#39;localtime&#39;);输出
-2021-02-1914:05:53当前时间戳 selectstrftime(&#39;%s&#39;,&#39;now&#39;);输出
-1613714753查询所有表 SELECT*FROMsqlite_master"/>
+<meta name="twitter:description" content="sql sqlite 时间戳转日期 select datetime(1613714753, &#39;unixepoch&#39;, &#39;localtime&#39;); 输出
+2021-02-19 14:05:53 当前时间戳 select strftime(&#39;%s&#39;,&#39;now&#39;); 输出
+1613714753 查询所有表 SELECT * FROM sqlite_master "/>
 
 
 <script type="application/ld+json">
@@ -103,12 +103,12 @@
   "@type": "BlogPosting",
   "headline": "sqlite常用操作",
   "name": "sqlite常用操作",
-  "description": "sql sqlite 时间戳转日期 selectdatetime(1613714753,\u0026#39;unixepoch\u0026#39;,\u0026#39;localtime\u0026#39;);输出\n2021-02-1914:05:53当前时间戳 selectstrftime(\u0026#39;%s\u0026#39;,\u0026#39;now\u0026#39;);输出\n1613714753查询所有表 SELECT*FROMsqlite_master",
+  "description": "sql sqlite 时间戳转日期 select datetime(1613714753, \u0026#39;unixepoch\u0026#39;, \u0026#39;localtime\u0026#39;); 输出\n2021-02-19 14:05:53 当前时间戳 select strftime(\u0026#39;%s\u0026#39;,\u0026#39;now\u0026#39;); 输出\n1613714753 查询所有表 SELECT * FROM sqlite_master ",
   "keywords": [
     "sql", "sqlite"
   ],
-  "articleBody": "sql sqlite 时间戳转日期 selectdatetime(1613714753,'unixepoch','localtime');输出\n2021-02-1914:05:53当前时间戳 selectstrftime('%s','now');输出\n1613714753查询所有表 SELECT*FROMsqlite_master",
-  "wordCount" : "8",
+  "articleBody": "sql sqlite 时间戳转日期 select datetime(1613714753, 'unixepoch', 'localtime'); 输出\n2021-02-19 14:05:53 当前时间戳 select strftime('%s','now'); 输出\n1613714753 查询所有表 SELECT * FROM sqlite_master ",
+  "wordCount" : "20",
   "inLanguage": "zh",
   "datePublished": "2022-01-07T13:46:00+08:00",
   "dateModified": "2022-01-07T13:46:00+08:00",
@@ -269,7 +269,7 @@
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022 <a href="https://wuxiaosu.github.io/">苏的博客</a></span>
+    <span>&copy; 2023 <a href="https://wuxiaosu.github.io/">苏的博客</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

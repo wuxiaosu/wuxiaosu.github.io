@@ -9,7 +9,7 @@
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn-zh</language>
+    <language>zh</language>
     <lastBuildDate>Thu, 10 Nov 2022 17:41:48 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/tags/exe/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>反编译Python打包生成的exe文件</title>

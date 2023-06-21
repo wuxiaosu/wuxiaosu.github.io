@@ -9,7 +9,7 @@
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn-zh</language>
+    <language>zh</language>
     <lastBuildDate>Wed, 28 Apr 2021 10:56:00 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>docker 常用操作</title>
@@ -17,7 +17,7 @@
       <pubDate>Wed, 28 Apr 2021 10:56:00 +0800</pubDate>
       
       <guid>https://wuxiaosu.github.io/posts/docker/</guid>
-      <description>docker 常用操作  搜索镜像  docker search python  拉取镜像  docker pull python:3.7  镜像列表  docker images  正在运行的镜像列表  docker ps  使用镜像启动一个容器  docker run -itd openjdk:8  查看所有容器  docker ps -a  创建一个镜像  docker build -t docker_repo ./docker_repo  启动并直接进入镜像  docker run -it ubuntu:14.04 </description>
+      <description>docker 常用操作 搜索镜像 docker search python 拉取镜像 docker pull python:3.7 镜像列表 docker images 正在运行的镜像列表 docker ps 使用镜像启动一个容器 docker run -itd openjdk:8 查看所有容器 docker ps -a 创建一个镜像 docker build -t docker_repo ./docker_repo 启动并直接进入镜像 docker run -it ubuntu:14.04 </description>
     </item>
     
   </channel>

@@ -9,7 +9,7 @@
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn-zh</language>
+    <language>zh</language>
     <lastBuildDate>Thu, 10 Nov 2022 17:41:48 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>反编译Python打包生成的exe文件</title>
@@ -70,7 +70,7 @@ pyinstaller -h </description>
       <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
       
       <guid>https://wuxiaosu.github.io/posts/%E5%87%A0%E4%B8%AAip%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E6%8E%A5%E5%8F%A3/</guid>
-      <description> http://ipinfo.io/json  { &amp;#34;ip&amp;#34;: &amp;#34;59.42.111.132&amp;#34;, &amp;#34;hostname&amp;#34;: &amp;#34;132.111.42.59.broad.gz.gd.dynamic.163data.com.cn&amp;#34;, &amp;#34;city&amp;#34;: &amp;#34;Lianjiang&amp;#34;, &amp;#34;region&amp;#34;: &amp;#34;Guangdong&amp;#34;, &amp;#34;country&amp;#34;: &amp;#34;CN&amp;#34;, &amp;#34;loc&amp;#34;: &amp;#34;21.6467,110.2817&amp;#34;, &amp;#34;org&amp;#34;: &amp;#34;AS4134 CHINANET-BACKBONE&amp;#34;, &amp;#34;timezone&amp;#34;: &amp;#34;Asia/Urumqi&amp;#34;, &amp;#34;readme&amp;#34;: &amp;#34;https://ipinfo.io/missingauth&amp;#34; }  http://whois.pconline.com.cn/ip.jsp  广东省广州市天河区 电信ADSL  http://pv.sohu.com/cityjson?ie=utf-8  var returnCitySN = {&amp;#34;cip&amp;#34;: &amp;#34;59.42.111.132&amp;#34;, &amp;#34;cid&amp;#34;: &amp;#34;440106&amp;#34;, &amp;#34;cname&amp;#34;: &amp;#34;广东省广州市天河区&amp;#34;}; </description>
+      <description> http://ipinfo.io/json { &amp;#34;ip&amp;#34;: &amp;#34;59.42.111.132&amp;#34;, &amp;#34;hostname&amp;#34;: &amp;#34;132.111.42.59.broad.gz.gd.dynamic.163data.com.cn&amp;#34;, &amp;#34;city&amp;#34;: &amp;#34;Lianjiang&amp;#34;, &amp;#34;region&amp;#34;: &amp;#34;Guangdong&amp;#34;, &amp;#34;country&amp;#34;: &amp;#34;CN&amp;#34;, &amp;#34;loc&amp;#34;: &amp;#34;21.6467,110.2817&amp;#34;, &amp;#34;org&amp;#34;: &amp;#34;AS4134 CHINANET-BACKBONE&amp;#34;, &amp;#34;timezone&amp;#34;: &amp;#34;Asia/Urumqi&amp;#34;, &amp;#34;readme&amp;#34;: &amp;#34;https://ipinfo.io/missingauth&amp;#34; } http://whois.pconline.com.cn/ip.jsp 广东省广州市天河区 电信ADSL http://pv.sohu.com/cityjson?ie=utf-8 var returnCitySN = {&amp;#34;cip&amp;#34;: &amp;#34;59.42.111.132&amp;#34;, &amp;#34;cid&amp;#34;: &amp;#34;440106&amp;#34;, &amp;#34;cname&amp;#34;: &amp;#34;广东省广州市天河区&amp;#34;}; </description>
     </item>
     
     <item>
@@ -79,9 +79,9 @@ pyinstaller -h </description>
       <pubDate>Fri, 07 Jan 2022 13:46:00 +0800</pubDate>
       
       <guid>https://wuxiaosu.github.io/posts/sql/</guid>
-      <description>sql sqlite 时间戳转日期 selectdatetime(1613714753,&amp;#39;unixepoch&amp;#39;,&amp;#39;localtime&amp;#39;);输出
-2021-02-1914:05:53当前时间戳 selectstrftime(&amp;#39;%s&amp;#39;,&amp;#39;now&amp;#39;);输出
-1613714753查询所有表 SELECT*FROMsqlite_master</description>
+      <description>sql sqlite 时间戳转日期 select datetime(1613714753, &amp;#39;unixepoch&amp;#39;, &amp;#39;localtime&amp;#39;); 输出
+2021-02-19 14:05:53 当前时间戳 select strftime(&amp;#39;%s&amp;#39;,&amp;#39;now&amp;#39;); 输出
+1613714753 查询所有表 SELECT * FROM sqlite_master </description>
     </item>
     
     <item>
@@ -90,7 +90,7 @@ pyinstaller -h </description>
       <pubDate>Wed, 14 Jul 2021 09:52:34 +0800</pubDate>
       
       <guid>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>adb 常用命令 1.查看最上层 Activity 名字  Linux  adb shell dumpsys activity | grep &amp;#34;mResumedActivity&amp;#34;  Windows  adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件  启动 Activity  adb shell am start -n com.google.android.network2/com.my.MainActivity  启动 Service  adb shell am startservice -n com.google.android.network2/com.my.MainActivity  发送 Broadcast  adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启  重启到 Recovery 界面  adb reboot recovery  重启到 bootloader 界面  adb reboot bootloader 4.</description>
+      <description>adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep &amp;#34;mResumedActivity&amp;#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop &amp;lt;PACKAGE&amp;gt; 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式</description>
     </item>
     
     <item>
@@ -99,12 +99,12 @@ pyinstaller -h </description>
       <pubDate>Fri, 18 Jun 2021 14:34:00 +0800</pubDate>
       
       <guid>https://wuxiaosu.github.io/posts/mysql/</guid>
-      <description>mysql 相关  开启 mysql 远程访问  确认端口是否对外开放，默认是不开放的
+      <description>mysql 相关 开启 mysql 远程访问 确认端口是否对外开放，默认是不开放的
 netstat -an | grep 3306 输出如下
 tcp 0 0 127.0.0.1:3306 0.0.0.0:* LISTEN 修改配置文件（不同版本可能位置不同）
 /etc/mysql/mysql.conf.d/mysqld.cnf 注释掉
-# bind-address = 127.0.0.1  为新增主键赋值  SET@mycnt=0;UPDATExxxxxSETRowNum=(@mycnt:=@mycnt+1) 使用 native_password 连接  ALTERUSER&amp;#39;user&amp;#39;@&amp;#39;%&amp;#39;IDENTIFIEDWITHmysql_native_passwordBY&amp;#39;password&amp;#39;;flushprivileges; 使用默认密码修改数据库密码  查看默认用户密码
-cd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. DO NOT TOUCH! [client] host = localhost user = debian-sys-maint password = G0Gis29yv0dtUhng socket = /var/run/mysqld/mysqld.sock [mysql_upgrade] host = localhost user = debian-sys-maint password = G0Gis29yv0dtUhng socket = /var/run/mysqld/mysqld.</description>
+# bind-address = 127.0.0.1 为新增主键赋值 SET @mycnt = 0; UPDATE xxxxx SET RowNum=(@mycnt := @mycnt + 1) 使用 native_password 连接 ALTER USER &amp;#39;user&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED WITH mysql_native_password BY &amp;#39;password&amp;#39;; flush privileges; 使用默认密码修改数据库密码 查看默认用户密码
+cd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. DO NOT TOUCH! [client] host = localhost user = debian-sys-maint password = G0Gis29yv0dtUhng socket = /var/run/mysqld/mysqld.</description>
     </item>
     
     <item>
@@ -113,7 +113,9 @@ cd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. 
       <pubDate>Fri, 18 Jun 2021 14:33:00 +0800</pubDate>
       
       <guid>https://wuxiaosu.github.io/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</guid>
-      <description>新服务器配置  安装 mysql  sudo apt install mysql-server  安装 nginx  sudo apt install nginx  安装 openjdk  sudo apt-get install openjdk-8-jdk  安装 php、php-fpm、php-mysql  sudo apt-get install php sudo apt-get install php-fpm sudo apt-get install php-mysql  验证mysql 运行情况  sudo systemctl status mysql  首次以 root 身份登录  sudo mysql  修改密码  ALTER USER &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED WITH mysql_native_password BY &amp;#39;root123xxx&amp;#39;; FLUSH PRIVILEGES; 创建用户</description>
+      <description>新服务器配置 安装 mysql sudo apt install mysql-server 安装 nginx sudo apt install nginx 安装 openjdk sudo apt-get install openjdk-8-jdk 安装 php、php-fpm、php-mysql sudo apt-get install php sudo apt-get install php-fpm sudo apt-get install php-mysql 验证mysql 运行情况 sudo systemctl status mysql 首次以 root 身份登录 sudo mysql 修改密码 ALTER USER &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED WITH mysql_native_password BY &amp;#39;root123xxx&amp;#39;; FLUSH PRIVILEGES; 创建用户
+GRANT ALL PRIVILEGES ON *.* TO &amp;#39;peter&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;xxx.@123&amp;#39;; 停止服务
+sudo service mysql stop 重启服务</description>
     </item>
     
     <item>
@@ -140,7 +142,7 @@ frida-ps -U 出现设备进程信息表示运行成功。</description>
       <pubDate>Wed, 28 Apr 2021 10:56:00 +0800</pubDate>
       
       <guid>https://wuxiaosu.github.io/posts/docker/</guid>
-      <description>docker 常用操作  搜索镜像  docker search python  拉取镜像  docker pull python:3.7  镜像列表  docker images  正在运行的镜像列表  docker ps  使用镜像启动一个容器  docker run -itd openjdk:8  查看所有容器  docker ps -a  创建一个镜像  docker build -t docker_repo ./docker_repo  启动并直接进入镜像  docker run -it ubuntu:14.04 </description>
+      <description>docker 常用操作 搜索镜像 docker search python 拉取镜像 docker pull python:3.7 镜像列表 docker images 正在运行的镜像列表 docker ps 使用镜像启动一个容器 docker run -itd openjdk:8 查看所有容器 docker ps -a 创建一个镜像 docker build -t docker_repo ./docker_repo 启动并直接进入镜像 docker run -it ubuntu:14.04 </description>
     </item>
     
     <item>
@@ -149,7 +151,7 @@ frida-ps -U 出现设备进程信息表示运行成功。</description>
       <pubDate>Sun, 18 Apr 2021 10:18:00 +0800</pubDate>
       
       <guid>https://wuxiaosu.github.io/posts/git/</guid>
-      <description>git  Git 回退到某个 commit  git reset --hard HEAD^ 回退到上个版本 git reset --hard HEAD~3 回退到前3次提交之前，以此类推，回退到n次提交之前 git reset --hard commit_id 退到/进到 指定commit的sha码  强推到远程:  git push origin HEAD --force  合并某个提交:  git cherry-pick &amp;lt;commit id&amp;gt;  查看本地分支：  git branch  删除本地分支：  git branch -D tmp  查看 tag：  git tag  在某个 commit 上打 tag：  git tag test_tag c809ddbf83939a89659e51dc2a5fe183af384233  本地 tag 推送到线上：  git push origin test_tag  本地删除 tag：  git tag -d test_tag  删除线上 tag：  git push origin :refs/tags/test_tag  修改远程地址先删后加  git remote rm origin git remote add origin [url]  创建新分支  git branch develop  切换到该分支  git checkout develop  提交到该分支  git push -u origin develop  修改源  git remote set-url origin url </description>
+      <description>git Git 回退到某个 commit git reset --hard HEAD^ 回退到上个版本 git reset --hard HEAD~3 回退到前3次提交之前，以此类推，回退到n次提交之前 git reset --hard commit_id 退到/进到 指定commit的sha码 强推到远程: git push origin HEAD --force 合并某个提交: git cherry-pick &amp;lt;commit id&amp;gt; 查看本地分支： git branch 删除本地分支： git branch -D tmp 查看 tag： git tag 在某个 commit 上打 tag： git tag test_tag c809ddbf83939a89659e51dc2a5fe183af384233 本地 tag 推送到线上： git push origin test_tag 本地删除 tag： git tag -d test_tag 删除线上 tag： git push origin :refs/tags/test_tag 修改远程地址先删后加 git remote rm origin git remote add origin [url] 创建新分支 git branch develop 切换到该分支 git checkout develop 提交到该分支 git push -u origin develop 修改源 git remote set-url origin url </description>
     </item>
     
     <item>
@@ -160,9 +162,12 @@ frida-ps -U 出现设备进程信息表示运行成功。</description>
       <guid>https://wuxiaosu.github.io/posts/%E6%AD%A3%E5%88%99/</guid>
       <description>正则表达式 正则表达式是计算机科学的一个概念，正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。正则表达式通常用来检索、替换那些匹配某个模式的文本。
 元字符 所谓元字符就是指那些在正则表达式中具有特殊意义的专用字符。
-常用的元字符    代码 说明     . 匹配除换行符以外的任意字符   \w 匹配字母或数字或下划线或汉字   \s 匹配任意的空白符   \d 匹配数字   \b 匹配单词的开始或结束   \B 非单词边界匹配   ^ 匹配字符串的开始   $ 匹配字符串的结束   （） 标记一个子表达式的开始和结束    字符转义 如果你想查找元字符的话，需要使用 \ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \. ，要查找 \ 需要使用 \\ 。
+常用的元字符 代码 说明 . 匹配除换行符以外的任意字符 \w 匹配字母或数字或下划线或汉字 \s 匹配任意的空白符 \d 匹配数字 \b 匹配单词的开始或结束 \B 非单词边界匹配 ^ 匹配字符串的开始 $ 匹配字符串的结束 （） 标记一个子表达式的开始和结束 字符转义 如果你想查找元字符的话，需要使用 \ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \. ，要查找 \ 需要使用 \\ 。
 限定符 指定数量的代码。
-常用的限定符    代码/语法 说明     * 重复0次或更多次   + 重复1次或更多次   ？ 重复0次或1次   {n} 重复 n 次   {n,} 重复 n 次或更多次   {n,m} 重复 n 到 m 次    范围表达式 用于指定一个字符范围。</description>
+常用的限定符 代码/语法 说明 * 重复0次或更多次 + 重复1次或更多次 ？ 重复0次或1次 {n} 重复 n 次 {n,} 重复 n 次或更多次 {n,m} 重复 n 到 m 次 范围表达式 用于指定一个字符范围。
+比如：
+[aeiou] ：任何一个元音字母。
+[0-9] : 0-9，即一位数字。</description>
     </item>
     
     <item>
@@ -171,7 +176,7 @@ frida-ps -U 出现设备进程信息表示运行成功。</description>
       <pubDate>Wed, 24 Mar 2021 18:34:00 +0800</pubDate>
       
       <guid>https://wuxiaosu.github.io/posts/ubuntu%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
-      <description>ubuntu 防火墙  查看防火墙状态  sudo ufw status  允许访问端口  sudo ufw allow 9090/tcp  禁止访问端口  sudo ufw deny 9090  删除规则  sudo ufw delete deny 9090 </description>
+      <description>ubuntu 防火墙 查看防火墙状态 sudo ufw status 允许访问端口 sudo ufw allow 9090/tcp 禁止访问端口 sudo ufw deny 9090 删除规则 sudo ufw delete deny 9090 </description>
     </item>
     
     <item>
@@ -180,7 +185,7 @@ frida-ps -U 出现设备进程信息表示运行成功。</description>
       <pubDate>Thu, 25 Feb 2021 16:30:00 +0800</pubDate>
       
       <guid>https://wuxiaosu.github.io/posts/jetbrains/</guid>
-      <description>JetBrains 2020.3 系列通用重置 30 天试用（不会影响其他配置） 以 IntelliJIdea 为例  删除此目录下所有文件  C:\Users\Administrator\AppData\Roaming\JetBrains\IntelliJIdea2020.3\eval  删除 other.xml 文件  C:\Users\Administrator\AppData\Roaming\JetBrains\IntelliJIdea2020.3\options\other.xml  删除注册表下所有项  计算机\HKEY_CURRENT_USER\Software\JavaSoft\Prefs\jetbrains\idea 其他诸如 DataGrip、PyCharm 类似 </description>
+      <description>JetBrains 2020.3 系列通用重置 30 天试用（不会影响其他配置） 以 IntelliJIdea 为例 删除此目录下所有文件 C:\Users\Administrator\AppData\Roaming\JetBrains\IntelliJIdea2020.3\eval 删除 other.xml 文件 C:\Users\Administrator\AppData\Roaming\JetBrains\IntelliJIdea2020.3\options\other.xml 删除注册表下所有项 计算机\HKEY_CURRENT_USER\Software\JavaSoft\Prefs\jetbrains\idea 其他诸如 DataGrip、PyCharm 类似 </description>
     </item>
     
     <item>
@@ -190,9 +195,9 @@ frida-ps -U 出现设备进程信息表示运行成功。</description>
       
       <guid>https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</guid>
       <description>0.省流助手 密码就是 md5(imei + uin) 取前七位，最新使用 8.0.28 验证还是可以的
-1.获取相关参数  查找主数据文件路径（当然是需要 root 权限了）  ls -l /data/user/0/com.tencent.mm/MicroMsg/*/EnMicroMsg.db 如果出现多个文件的话，说明登录过多个微信号，看日期最新的就是当前登录的号了
- 查看 _auth_uin 值  cat /data/data/com.tencent.mm/shared_prefs/auth_info_key_prefs.xml 正常的话应该是下面这样
-&amp;lt;?xml version=&amp;#39;1.0&amp;#39; encoding=&amp;#39;utf-8&amp;#39; standalone=&amp;#39;yes&amp;#39; ?&amp;gt; &amp;lt;map&amp;gt; &amp;lt;boolean name=&amp;#34;auth_info_prefs_use_new_ecdh&amp;#34; value=&amp;#34;true&amp;#34; /&amp;gt; &amp;lt;int name=&amp;#34;_auth_uin&amp;#34; value=&amp;#34;1054025641&amp;#34; /&amp;gt; &amp;lt;boolean name=&amp;#34;key_auth_info_prefs_created&amp;#34; value=&amp;#34;true&amp;#34; /&amp;gt; &amp;lt;int name=&amp;#34;key_auth_update_version&amp;#34; value=&amp;#34;671094359&amp;#34; /&amp;gt; &amp;lt;string name=&amp;#34;server_id&amp;#34;&amp;gt;4f031802000000000d385cc7c40600&amp;lt;/string&amp;gt; &amp;lt;string name=&amp;#34;_auth_key&amp;#34;&amp;gt;0a2408201220b9be5667ec69984f48ba4923c4e045eef3837d61871b7da350accb7b8a56405212b90108b30112b30108994e12a70186e1f98b9239ec3db321b36332fcc097ab11f7c173f6eb1b1411fd2afad5ce00e2b1e1e1b9588b0377bd47cb2db230d17fa9178a05791bb2725ff01c4df06a578a23b192a4e19f4c794e67dda2813522faa97dba324e0ef6b14c8b3e07dc0c11a5ca551f398832212aa9591a66b3be97c24f46b5dfd2299e4392f038da3f8f7e4bc602c3d2927232b30303664c5f00f624142231bc084ae8e04efe643481a23edc12091d8ceaf318bfa6ddb40a&amp;lt;/string&amp;gt;  查看设备 imei 值  getprop | grep imei [persist.radio.imei1]: [868619036811436] [persist.radio.imei2]: [868619036811444] [ro.ril.miui.imei0]: [868619036811436] [ro.ril.miui.imei1]: [868619036811444] 2.计算数据库密码  计算 imei + uin 的 md5  echo -n &amp;#34;8686190368114361054025641&amp;#34;|md5sum  密码取前七位（小写）  如果有多个 imei 那就都试一下</description>
+1.获取相关参数 查找主数据文件路径（当然是需要 root 权限了） ls -l /data/user/0/com.tencent.mm/MicroMsg/*/EnMicroMsg.db 如果出现多个文件的话，说明登录过多个微信号，看日期最新的就是当前登录的号了
+查看 _auth_uin 值 cat /data/data/com.tencent.mm/shared_prefs/auth_info_key_prefs.xml 正常的话应该是下面这样
+&amp;lt;?xml version=&amp;#39;1.0&amp;#39; encoding=&amp;#39;utf-8&amp;#39; standalone=&amp;#39;yes&amp;#39; ?&amp;gt; &amp;lt;map&amp;gt; &amp;lt;boolean name=&amp;#34;auth_info_prefs_use_new_ecdh&amp;#34; value=&amp;#34;true&amp;#34; /&amp;gt; &amp;lt;int name=&amp;#34;_auth_uin&amp;#34; value=&amp;#34;1054025641&amp;#34; /&amp;gt; &amp;lt;boolean name=&amp;#34;key_auth_info_prefs_created&amp;#34; value=&amp;#34;true&amp;#34; /&amp;gt; &amp;lt;int name=&amp;#34;key_auth_update_version&amp;#34; value=&amp;#34;671094359&amp;#34; /&amp;gt; &amp;lt;string name=&amp;#34;server_id&amp;#34;&amp;gt;4f031802000000000d385cc7c40600&amp;lt;/string&amp;gt; &amp;lt;string name=&amp;#34;_auth_key&amp;#34;&amp;gt;0a2408201220b9be5667ec69984f48ba4923c4e045eef3837d61871b7da350accb7b8a56405212b90108b30112b30108994e12a70186e1f98b9239ec3db321b36332fcc097ab11f7c173f6eb1b1411fd2afad5ce00e2b1e1e1b9588b0377bd47cb2db230d17fa9178a05791bb2725ff01c4df06a578a23b192a4e19f4c794e67dda2813522faa97dba324e0ef6b14c8b3e07dc0c11a5ca551f398832212aa9591a66b3be97c24f46b5dfd2299e4392f038da3f8f7e4bc602c3d2927232b30303664c5f00f624142231bc084ae8e04efe643481a23edc12091d8ceaf318bfa6ddb40a&amp;lt;/string&amp;gt; 查看设备 imei 值 getprop | grep imei [persist.radio.imei1]: [868619036811436] [persist.radio.imei2]: [868619036811444] [ro.ril.miui.imei0]: [868619036811436] [ro.ril.miui.imei1]: [868619036811444] 2.计算数据库密码 计算 imei + uin 的 md5 echo -n &amp;#34;8686190368114361054025641&amp;#34;|md5sum 密码取前七位（小写） 如果有多个 imei 那就都试一下</description>
     </item>
     
     <item>
@@ -234,9 +239,9 @@ $ pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple 3.永久修改 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://wuxiaosu.github.io/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/</guid>
-      <description>Android 8.0 以上开启全局可调式   1.安装好 Magisk
-  2.终端执行
-  adb shell su magisk resetprop ro.debuggable 1  3.重启 system server  stop;start  4.重启手机会失效  </description>
+      <description>Android 8.0 以上开启全局可调式 1.安装好 Magisk
+2.终端执行
+adb shell su magisk resetprop ro.debuggable 1 3.重启 system server stop;start 4.重启手机会失效 </description>
     </item>
     
     <item>
@@ -246,7 +251,7 @@ $ pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple 3.永久修改 
       
       <guid>https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</guid>
       <description>1.安装好 Magisk 此处略过
-2.安装 MagiskHidePropsConf  下载地址 https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases 安装完成后重启  3.按流程操作  重启进入终端 按流程一步一步操作就行了  adb shell props MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== Select an option below. ===================================== 1 - Edit device fingerprint 2 - Force BASIC key attestation 3 - Device simulation (disabled) 4 - Edit MagiskHide props (active) 5 - Add/edit custom props 6 - Delete prop values 7 - Script settings 8 - Collect logs u - Perform module update check r - Reset all options/settings b - Reboot device e - Exit See the module readme or the support thread @ XDA for details.</description>
+2.安装 MagiskHidePropsConf 下载地址 https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases 安装完成后重启 3.按流程操作 重启进入终端 按流程一步一步操作就行了 adb shell props MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== Select an option below. ===================================== 1 - Edit device fingerprint 2 - Force BASIC key attestation 3 - Device simulation (disabled) 4 - Edit MagiskHide props (active) 5 - Add/edit custom props 6 - Delete prop values 7 - Script settings 8 - Collect logs u - Perform module update check r - Reset all options/settings b - Reboot device e - Exit See the module readme or the support thread @ XDA for details.</description>
     </item>
     
   </channel>

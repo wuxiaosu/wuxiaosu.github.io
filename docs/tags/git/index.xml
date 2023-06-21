@@ -9,7 +9,7 @@
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn-zh</language>
+    <language>zh</language>
     <lastBuildDate>Sun, 18 Apr 2021 10:18:00 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>git 常用操作</title>
@@ -17,7 +17,7 @@
       <pubDate>Sun, 18 Apr 2021 10:18:00 +0800</pubDate>
       
       <guid>https://wuxiaosu.github.io/posts/git/</guid>
-      <description>git  Git 回退到某个 commit  git reset --hard HEAD^ 回退到上个版本 git reset --hard HEAD~3 回退到前3次提交之前，以此类推，回退到n次提交之前 git reset --hard commit_id 退到/进到 指定commit的sha码  强推到远程:  git push origin HEAD --force  合并某个提交:  git cherry-pick &amp;lt;commit id&amp;gt;  查看本地分支：  git branch  删除本地分支：  git branch -D tmp  查看 tag：  git tag  在某个 commit 上打 tag：  git tag test_tag c809ddbf83939a89659e51dc2a5fe183af384233  本地 tag 推送到线上：  git push origin test_tag  本地删除 tag：  git tag -d test_tag  删除线上 tag：  git push origin :refs/tags/test_tag  修改远程地址先删后加  git remote rm origin git remote add origin [url]  创建新分支  git branch develop  切换到该分支  git checkout develop  提交到该分支  git push -u origin develop  修改源  git remote set-url origin url </description>
+      <description>git Git 回退到某个 commit git reset --hard HEAD^ 回退到上个版本 git reset --hard HEAD~3 回退到前3次提交之前，以此类推，回退到n次提交之前 git reset --hard commit_id 退到/进到 指定commit的sha码 强推到远程: git push origin HEAD --force 合并某个提交: git cherry-pick &amp;lt;commit id&amp;gt; 查看本地分支： git branch 删除本地分支： git branch -D tmp 查看 tag： git tag 在某个 commit 上打 tag： git tag test_tag c809ddbf83939a89659e51dc2a5fe183af384233 本地 tag 推送到线上： git push origin test_tag 本地删除 tag： git tag -d test_tag 删除线上 tag： git push origin :refs/tags/test_tag 修改远程地址先删后加 git remote rm origin git remote add origin [url] 创建新分支 git branch develop 切换到该分支 git checkout develop 提交到该分支 git push -u origin develop 修改源 git remote set-url origin url </description>
     </item>
     
   </channel>
