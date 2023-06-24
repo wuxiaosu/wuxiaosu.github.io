@@ -113,9 +113,9 @@ cd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. 
       <pubDate>Fri, 18 Jun 2021 14:33:00 +0800</pubDate>
       
       <guid>https://wuxiaosu.github.io/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</guid>
-      <description>新服务器配置 安装 mysql sudo apt install mysql-server 安装 nginx sudo apt install nginx 安装 openjdk sudo apt-get install openjdk-8-jdk 安装 php、php-fpm、php-mysql sudo apt-get install php sudo apt-get install php-fpm sudo apt-get install php-mysql 验证mysql 运行情况 sudo systemctl status mysql 首次以 root 身份登录 sudo mysql 修改密码 ALTER USER &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED WITH mysql_native_password BY &amp;#39;root123xxx&amp;#39;; FLUSH PRIVILEGES; 创建用户
-GRANT ALL PRIVILEGES ON *.* TO &amp;#39;peter&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;xxx.@123&amp;#39;; 停止服务
-sudo service mysql stop 重启服务</description>
+      <description>新服务器配置 安装 mysql sudo apt install mysql-server 安装 nginx sudo apt install nginx 安装 openjdk sudo apt-get install openjdk-8-jdk 安装 php、php-fpm、php-mysql sudo apt-get install php sudo apt-get install php-fpm sudo apt-get install php-mysql 验证mysql 运行情况 sudo systemctl status mysql 首次以 root 身份登录 sudo mysql 修改密码 ALTER USER &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED WITH mysql_native_password BY &amp;#39;password&amp;#39;; FLUSH PRIVILEGES; 创建数据库并设定字符集
+CREATE DATABASE database_name CHARACTER SET utf8 COLLATE utf8_general_ci; 另外再创建一个用户并授予所有权限
+CREATE USER &amp;#39;username&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;password&amp;#39;; GRANT ALL PRIVILEGES ON *.</description>
     </item>
     
     <item>
