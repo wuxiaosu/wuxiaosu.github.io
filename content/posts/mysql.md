@@ -4,7 +4,6 @@ date: 2021-06-18T14:34:00+08:00
 draft: false
 tags: ["mysql"]
 ---
-# mysql 相关
 
 + 开启 mysql 远程访问
 
@@ -48,6 +47,12 @@ ALTER USER 'user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
 
 ```sql
 flush privileges;
+```
+
++ 修改用户密码
+
+```sql
+ALTER USER 'username'@'localhost' IDENTIFIED BY 'new_password';
 ```
 
 + 使用默认密码修改数据库密码
