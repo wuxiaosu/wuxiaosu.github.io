@@ -98,7 +98,7 @@ update mysql.user set authentication_string=password('123456') where user='root'
 允许远程登录
 
 ```bash
-grant all on *.* to 'wp_qx'@'%' identified by 'qx,.3690';
+grant all on *.* to 'username'@'%' identified by 'password';
 FLUSH PRIVILEGES;
 ```
 
