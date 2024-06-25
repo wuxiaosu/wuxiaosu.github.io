@@ -6,13 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>adb常用命令 | 苏的博客</title>
-<meta name="keywords" content="adb, android" />
+<meta name="keywords" content="adb, android">
 <meta name="description" content="adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep &#34;mResumedActivity&#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop &lt;PACKAGE&gt; 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式">
 <meta name="author" content="su">
-<link rel="canonical" href="https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
-    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="canonical" href="https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://wuxiaosu.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://wuxiaosu.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://wuxiaosu.github.io/favicon-32x32.png">
@@ -20,7 +18,7 @@
 <link rel="mask-icon" href="https://wuxiaosu.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.114.0">
+<link rel="alternate" hreflang="zh" href="https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
 <noscript>
     <style>
         #theme-toggle,
@@ -38,7 +36,7 @@
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -57,16 +55,20 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="adb常用命令" />
+</noscript>
+  
+
+<meta property="og:title" content="adb常用命令" />
 <meta property="og:description" content="adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep &#34;mResumedActivity&#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop &lt;PACKAGE&gt; 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" /><meta property="og:image" content="https://wuxiaosu.github.io/papermod-cover.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-07-14T09:52:34&#43;08:00" />
-<meta property="article:modified_time" content="2021-07-14T09:52:34&#43;08:00" />
+<meta property="og:url" content="https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" />
+<meta property="og:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
+<meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-14T09:52:34+08:00" />
+<meta property="article:modified_time" content="2021-07-14T09:52:34+08:00" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://wuxiaosu.github.io/papermod-cover.png"/>
-
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
 <meta name="twitter:title" content="adb常用命令"/>
 <meta name="twitter:description" content="adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep &#34;mResumedActivity&#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop &lt;PACKAGE&gt; 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式"/>
 
@@ -104,7 +106,7 @@
   "articleBody": "adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep \"mResumedActivity\" Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式\nadb shell am clear-debug-app 6.查看应用安装路径 列出所有安装的包 adb shell pm list packages -f 查看安装包路径 adb shell pm path {package_name} 查看安装包路径 adb shell dumpsys package {package_name} | findstr codePath\radb shell dumpsys package {package_name} | grep codePath 卸载系统应用 adb shell pm uninstall --user 0 {package_name} ",
   "wordCount" : "118",
   "inLanguage": "zh",
-  "datePublished": "2021-07-14T09:52:34+08:00",
+  "image": "https://wuxiaosu.github.io/papermod-cover.png","datePublished": "2021-07-14T09:52:34+08:00",
   "dateModified": "2021-07-14T09:52:34+08:00",
   "author":{
     "@type": "Person",
@@ -142,14 +144,14 @@
     <nav class="nav">
         <div class="logo">
             <a href="https://wuxiaosu.github.io/" accesskey="h" title="苏的博客 (Alt + H)">苏的博客</a>
-            <span class="logo-switches">
+            <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -163,7 +165,7 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-            </span>
+            </div>
         </div>
         <ul id="menu">
             <li>
@@ -189,7 +191,7 @@
 <article class="post-single">
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://wuxiaosu.github.io/">主页</a>&nbsp;»&nbsp;<a href="https://wuxiaosu.github.io/posts/">Posts</a></div>
-    <h1 class="post-title">
+    <h1 class="post-title entry-hint-parent">
       adb常用命令
     </h1>
     <div class="post-meta"><span title='2021-07-14 09:52:34 +0800 CST'>七月 14, 2021</span>&nbsp;·&nbsp;su
@@ -206,7 +208,7 @@
                     <a href="#adb-%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4" aria-label="adb 常用命令">adb 常用命令</a><ul>
                         
                 <li>
-                    <a href="#1%e6%9f%a5%e7%9c%8b%e6%9c%80%e4%b8%8a%e5%b1%82-activity-%e5%90%8d%e5%ad%97" aria-label="1.查看最上层 Activity 名字">1.查看最上层 <strong>Activity</strong> 名字</a></li>
+                    <a href="#1%e6%9f%a5%e7%9c%8b%e6%9c%80%e4%b8%8a%e5%b1%82-activity-%e5%90%8d%e5%ad%97" aria-label="1.查看最上层 Activity 名字">1.查看最上层 Activity 名字</a></li>
                 <li>
                     <a href="#2%e5%90%af%e5%8a%a8%e7%bb%84%e4%bb%b6" aria-label="2.启动组件">2.启动组件</a></li>
                 <li>
@@ -291,8 +293,8 @@ adb shell dumpsys package {package_name} | grep codePath
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://wuxiaosu.github.io/tags/adb/">adb</a></li>
-      <li><a href="https://wuxiaosu.github.io/tags/android/">android</a></li>
+      <li><a href="https://wuxiaosu.github.io/tags/adb/">Adb</a></li>
+      <li><a href="https://wuxiaosu.github.io/tags/android/">Android</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="https://wuxiaosu.github.io/posts/sql/">
@@ -312,11 +314,12 @@ adb shell dumpsys package {package_name} | grep codePath
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://wuxiaosu.github.io/">苏的博客</a></span>
+        <span>&copy; 2024 <a href="https://wuxiaosu.github.io/">苏的博客</a></span> · 
+
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
@@ -385,12 +388,12 @@ adb shell dumpsys package {package_name} | grep codePath
 
         const copybutton = document.createElement('button');
         copybutton.classList.add('copy-code');
-        copybutton.innerText = '复制';
+        copybutton.innerHTML = '复制';
 
         function copyingDone() {
-            copybutton.innerText = '已复制！';
+            copybutton.innerHTML = '已复制！';
             setTimeout(() => {
-                copybutton.innerText = '复制';
+                copybutton.innerHTML = '复制';
             }, 2000);
         }
 

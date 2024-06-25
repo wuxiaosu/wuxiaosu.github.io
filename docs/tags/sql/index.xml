@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>sql on 苏的博客</title>
+    <title>Sql on 苏的博客</title>
     <link>https://wuxiaosu.github.io/tags/sql/</link>
-    <description>Recent content in sql on 苏的博客</description>
+    <description>Recent content in Sql on 苏的博客</description>
     <image>
+      <title>苏的博客</title>
       <url>https://wuxiaosu.github.io/papermod-cover.png</url>
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.127.0</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 07 Jan 2022 13:46:00 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Jan 2022 13:46:00 +0800</lastBuildDate>
+    <atom:link href="https://wuxiaosu.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>sqlite常用操作</title>
       <link>https://wuxiaosu.github.io/posts/sql/</link>
       <pubDate>Fri, 07 Jan 2022 13:46:00 +0800</pubDate>
-      
       <guid>https://wuxiaosu.github.io/posts/sql/</guid>
       <description>sql sqlite 时间戳转日期 select datetime(1613714753, &amp;#39;unixepoch&amp;#39;, &amp;#39;localtime&amp;#39;); 输出
 2021-02-19 14:05:53 当前时间戳 select strftime(&amp;#39;%s&amp;#39;,&amp;#39;now&amp;#39;); 输出
 1613714753 查询所有表 SELECT * FROM sqlite_master </description>
     </item>
-    
   </channel>
 </rss>

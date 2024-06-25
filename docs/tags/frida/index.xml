@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>frida on 苏的博客</title>
+    <title>Frida on 苏的博客</title>
     <link>https://wuxiaosu.github.io/tags/frida/</link>
-    <description>Recent content in frida on 苏的博客</description>
+    <description>Recent content in Frida on 苏的博客</description>
     <image>
+      <title>苏的博客</title>
       <url>https://wuxiaosu.github.io/papermod-cover.png</url>
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.127.0</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 18 May 2021 10:22:48 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/tags/frida/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 May 2021 10:22:48 +0800</lastBuildDate>
+    <atom:link href="https://wuxiaosu.github.io/tags/frida/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Frida安装教程</title>
       <link>https://wuxiaosu.github.io/posts/frida%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
       <pubDate>Tue, 18 May 2021 10:22:48 +0800</pubDate>
-      
       <guid>https://wuxiaosu.github.io/posts/frida%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
       <description>Frida是个轻量级的hook框架。
 安装客户端 pip install frida pip install frida-tools 查看 frida 版本 frida --version 出现版本号表示安装成功
@@ -28,6 +29,5 @@ adb forward tcp:27042 tcp:27042 adb forward tcp:27043 tcp:27043 使用 root 权�
 chmod 755 frida-server-12.8.14-android-arm64 ./frida-server-12.8.14-android-arm64 打开终端，查看 frida-server64 是否运行成功
 frida-ps -U 出现设备进程信息表示运行成功。</description>
     </item>
-    
   </channel>
 </rss>

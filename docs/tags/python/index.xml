@@ -1,37 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>python on 苏的博客</title>
+    <title>Python on 苏的博客</title>
     <link>https://wuxiaosu.github.io/tags/python/</link>
-    <description>Recent content in python on 苏的博客</description>
+    <description>Recent content in Python on 苏的博客</description>
     <image>
+      <title>苏的博客</title>
       <url>https://wuxiaosu.github.io/papermod-cover.png</url>
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.127.0</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 10 Nov 2022 17:41:48 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Nov 2022 17:41:48 +0800</lastBuildDate>
+    <atom:link href="https://wuxiaosu.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>反编译Python打包生成的exe文件</title>
       <link>https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</link>
       <pubDate>Thu, 10 Nov 2022 17:41:48 +0800</pubDate>
-      
       <guid>https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</guid>
       <description>1.解压 exe 文件 1.1 下载 pyinstxtractor https://github.com/extremecoders-re/pyinstxtractor
 1.2 执行解压操作 python pyinstxtractor.py &amp;lt;filename&amp;gt; 执行成功会出现一个 filename_extracted 目录,目录里面有相对应的 pyc 文件
 2.反编译 pyc 文件 2.1 安装 uncompyle6 pip install uncompyle6 2.1 反编译 pyc 文件 uncompyle6 xx.pyc 执行成功即可看到可运行的 python 源码</description>
     </item>
-    
     <item>
       <title>Python文件打包</title>
       <link>https://wuxiaosu.github.io/posts/python%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</link>
       <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
-      
       <guid>https://wuxiaosu.github.io/posts/python%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</guid>
       <description>0.省流助手 pyinstaller -F myfile.py 1.安装 Pyinstaller 1.1 先安装 pywin32 pip install pywin32 1.2 再安装 Pyinstaller pip install PyInstaller 2.使用 Pyinstaller pyinstaller -F myfile.py 2.1 输入参数含义 -F, --onefile 生成单个可执行文件 如果一切正常，会在 .py 文件同目录下的 dist 目录生成 .exe 文件
 查看更多参数
 pyinstaller -h </description>
     </item>
-    
   </channel>
 </rss>

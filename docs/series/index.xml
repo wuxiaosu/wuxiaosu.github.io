@@ -5,10 +5,12 @@
     <link>https://wuxiaosu.github.io/series/</link>
     <description>Recent content in Series on 苏的博客</description>
     <image>
+      <title>苏的博客</title>
       <url>https://wuxiaosu.github.io/papermod-cover.png</url>
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language><atom:link href="https://wuxiaosu.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.127.0</generator>
+    <language>zh</language>
+    <atom:link href="https://wuxiaosu.github.io/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

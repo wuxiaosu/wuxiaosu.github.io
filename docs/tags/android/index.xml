@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>android on 苏的博客</title>
+    <title>Android on 苏的博客</title>
     <link>https://wuxiaosu.github.io/tags/android/</link>
-    <description>Recent content in android on 苏的博客</description>
+    <description>Recent content in Android on 苏的博客</description>
     <image>
+      <title>苏的博客</title>
       <url>https://wuxiaosu.github.io/papermod-cover.png</url>
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.127.0</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 24 May 2022 22:06:48 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 May 2022 22:06:48 +0800</lastBuildDate>
+    <atom:link href="https://wuxiaosu.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Android反编译odex</title>
       <link>https://wuxiaosu.github.io/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</link>
       <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
-      
       <guid>https://wuxiaosu.github.io/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</guid>
       <description>0.下载 baksmali.jar 、smali.jar 下载地址 https://bitbucket.org/JesusFreke/smali/downloads/
 Github 地址 https://github.com/JesusFreke/smali
@@ -28,48 +29,39 @@ java -jar baksmali-2.5.2.jar deodex a.odex -b ./system/framework/arm64/boot.oat 
 -o : 指定输出文件名
 3. 更多 https://www.</description>
     </item>
-    
     <item>
       <title>adb常用命令</title>
       <link>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Wed, 14 Jul 2021 09:52:34 +0800</pubDate>
-      
       <guid>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description>adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep &amp;#34;mResumedActivity&amp;#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop &amp;lt;PACKAGE&amp;gt; 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式</description>
     </item>
-    
     <item>
       <title>Android微信数据库密码计算</title>
       <link>https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</link>
       <pubDate>Mon, 04 Jan 2021 15:09:00 +0800</pubDate>
-      
       <guid>https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</guid>
       <description>0.省流助手 密码就是 md5(imei + uin) 取前七位，最新使用 8.0.28 验证还是可以的
 1.获取相关参数 查找主数据文件路径（当然是需要 root 权限了） ls -l /data/user/0/com.tencent.mm/MicroMsg/*/EnMicroMsg.db 如果出现多个文件的话，说明登录过多个微信号，看日期最新的就是当前登录的号了
 查看 _auth_uin 值 cat /data/data/com.tencent.mm/shared_prefs/auth_info_key_prefs.xml 正常的话应该是下面这样
 &amp;lt;?xml version=&amp;#39;1.0&amp;#39; encoding=&amp;#39;utf-8&amp;#39; standalone=&amp;#39;yes&amp;#39; ?&amp;gt; &amp;lt;map&amp;gt; &amp;lt;boolean name=&amp;#34;auth_info_prefs_use_new_ecdh&amp;#34; value=&amp;#34;true&amp;#34; /&amp;gt; &amp;lt;int name=&amp;#34;_auth_uin&amp;#34; value=&amp;#34;1054025641&amp;#34; /&amp;gt; &amp;lt;boolean name=&amp;#34;key_auth_info_prefs_created&amp;#34; value=&amp;#34;true&amp;#34; /&amp;gt; &amp;lt;int name=&amp;#34;key_auth_update_version&amp;#34; value=&amp;#34;671094359&amp;#34; /&amp;gt; &amp;lt;string name=&amp;#34;server_id&amp;#34;&amp;gt;4f031802000000000d385cc7c40600&amp;lt;/string&amp;gt; &amp;lt;string name=&amp;#34;_auth_key&amp;#34;&amp;gt;0a2408201220b9be5667ec69984f48ba4923c4e045eef3837d61871b7da350accb7b8a56405212b90108b30112b30108994e12a70186e1f98b9239ec3db321b36332fcc097ab11f7c173f6eb1b1411fd2afad5ce00e2b1e1e1b9588b0377bd47cb2db230d17fa9178a05791bb2725ff01c4df06a578a23b192a4e19f4c794e67dda2813522faa97dba324e0ef6b14c8b3e07dc0c11a5ca551f398832212aa9591a66b3be97c24f46b5dfd2299e4392f038da3f8f7e4bc602c3d2927232b30303664c5f00f624142231bc084ae8e04efe643481a23edc12091d8ceaf318bfa6ddb40a&amp;lt;/string&amp;gt; 查看设备 imei 值 getprop | grep imei [persist.radio.imei1]: [868619036811436] [persist.radio.imei2]: [868619036811444] [ro.ril.miui.imei0]: [868619036811436] [ro.ril.miui.imei1]: [868619036811444] 2.计算数据库密码 计算 imei + uin 的 md5 echo -n &amp;#34;8686190368114361054025641&amp;#34;|md5sum 密码取前七位（小写） 如果有多个 imei 那就都试一下</description>
     </item>
-    
     <item>
       <title>Android 8.0 以上开启全局可调式</title>
       <link>https://wuxiaosu.github.io/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://wuxiaosu.github.io/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/</guid>
       <description>Android 8.0 以上开启全局可调式 1.安装好 Magisk
 2.终端执行
 adb shell su magisk resetprop ro.debuggable 1 3.重启 system server stop;start 4.重启手机会失效 </description>
     </item>
-    
     <item>
       <title>使用MagiskHidePropsConf开启全局可调试</title>
       <link>https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</guid>
       <description>1.安装好 Magisk 此处略过
 2.安装 MagiskHidePropsConf 下载地址 https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases 安装完成后重启 3.按流程操作 重启进入终端 按流程一步一步操作就行了 adb shell props MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== Select an option below. ===================================== 1 - Edit device fingerprint 2 - Force BASIC key attestation 3 - Device simulation (disabled) 4 - Edit MagiskHide props (active) 5 - Add/edit custom props 6 - Delete prop values 7 - Script settings 8 - Collect logs u - Perform module update check r - Reset all options/settings b - Reboot device e - Exit See the module readme or the support thread @ XDA for details.</description>
     </item>
-    
   </channel>
 </rss>

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Frida安装教程 | 苏的博客</title>
-<meta name="keywords" content="frida" />
+<meta name="keywords" content="frida">
 <meta name="description" content="Frida是个轻量级的hook框架。
 安装客户端 pip install frida pip install frida-tools 查看 frida 版本 frida --version 出现版本号表示安装成功
 在 Android 手机中安装服务端 在手机中查看设备信息
@@ -18,10 +18,8 @@ adb forward tcp:27042 tcp:27042 adb forward tcp:27043 tcp:27043 使用 root 权�
 chmod 755 frida-server-12.8.14-android-arm64 ./frida-server-12.8.14-android-arm64 打开终端，查看 frida-server64 是否运行成功
 frida-ps -U 出现设备进程信息表示运行成功。">
 <meta name="author" content="su">
-<link rel="canonical" href="https://wuxiaosu.github.io/posts/frida%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
-    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="canonical" href="https://wuxiaosu.github.io/posts/frida%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://wuxiaosu.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://wuxiaosu.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://wuxiaosu.github.io/favicon-32x32.png">
@@ -29,7 +27,7 @@ frida-ps -U 出现设备进程信息表示运行成功。">
 <link rel="mask-icon" href="https://wuxiaosu.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.114.0">
+<link rel="alternate" hreflang="zh" href="https://wuxiaosu.github.io/posts/frida%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">
 <noscript>
     <style>
         #theme-toggle,
@@ -47,7 +45,7 @@ frida-ps -U 出现设备进程信息表示运行成功。">
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -66,7 +64,10 @@ frida-ps -U 出现设备进程信息表示运行成功。">
         }
 
     </style>
-</noscript><meta property="og:title" content="Frida安装教程" />
+</noscript>
+  
+
+<meta property="og:title" content="Frida安装教程" />
 <meta property="og:description" content="Frida是个轻量级的hook框架。
 安装客户端 pip install frida pip install frida-tools 查看 frida 版本 frida --version 出现版本号表示安装成功
 在 Android 手机中安装服务端 在手机中查看设备信息
@@ -78,13 +79,14 @@ adb forward tcp:27042 tcp:27042 adb forward tcp:27043 tcp:27043 使用 root 权�
 chmod 755 frida-server-12.8.14-android-arm64 ./frida-server-12.8.14-android-arm64 打开终端，查看 frida-server64 是否运行成功
 frida-ps -U 出现设备进程信息表示运行成功。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wuxiaosu.github.io/posts/frida%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" /><meta property="og:image" content="https://wuxiaosu.github.io/papermod-cover.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-05-18T10:22:48&#43;08:00" />
-<meta property="article:modified_time" content="2021-05-18T10:22:48&#43;08:00" />
+<meta property="og:url" content="https://wuxiaosu.github.io/posts/frida%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" />
+<meta property="og:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
+<meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-05-18T10:22:48+08:00" />
+<meta property="article:modified_time" content="2021-05-18T10:22:48+08:00" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://wuxiaosu.github.io/papermod-cover.png"/>
-
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
 <meta name="twitter:title" content="Frida安装教程"/>
 <meta name="twitter:description" content="Frida是个轻量级的hook框架。
 安装客户端 pip install frida pip install frida-tools 查看 frida 版本 frida --version 出现版本号表示安装成功
@@ -131,7 +133,7 @@ frida-ps -U 出现设备进程信息表示运行成功。"/>
   "articleBody": "Frida是个轻量级的hook框架。\n安装客户端 pip install frida pip install frida-tools 查看 frida 版本 frida --version 出现版本号表示安装成功\n在 Android 手机中安装服务端 在手机中查看设备信息\ngetprop ro.product.cpu.abi 输出结果\narm64-v8a 根据 cpu 版本去官网下载对应的 frida-server。\nfrida-server-12.8.14-android-arm64.xz 将下载并解压后的文件放到设备上\nadb push frida-server-12.8.14-android-arm64 /data/local/tmp 端口转发\nadb forward tcp:27042 tcp:27042 adb forward tcp:27043 tcp:27043 使用 root 权限运行 frida\nchmod 755 frida-server-12.8.14-android-arm64 ./frida-server-12.8.14-android-arm64 打开终端，查看 frida-server64 是否运行成功\nfrida-ps -U 出现设备进程信息表示运行成功。\n",
   "wordCount" : "55",
   "inLanguage": "zh",
-  "datePublished": "2021-05-18T10:22:48+08:00",
+  "image": "https://wuxiaosu.github.io/papermod-cover.png","datePublished": "2021-05-18T10:22:48+08:00",
   "dateModified": "2021-05-18T10:22:48+08:00",
   "author":{
     "@type": "Person",
@@ -169,14 +171,14 @@ frida-ps -U 出现设备进程信息表示运行成功。"/>
     <nav class="nav">
         <div class="logo">
             <a href="https://wuxiaosu.github.io/" accesskey="h" title="苏的博客 (Alt + H)">苏的博客</a>
-            <span class="logo-switches">
+            <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -190,7 +192,7 @@ frida-ps -U 出现设备进程信息表示运行成功。"/>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-            </span>
+            </div>
         </div>
         <ul id="menu">
             <li>
@@ -216,7 +218,7 @@ frida-ps -U 出现设备进程信息表示运行成功。"/>
 <article class="post-single">
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://wuxiaosu.github.io/">主页</a>&nbsp;»&nbsp;<a href="https://wuxiaosu.github.io/posts/">Posts</a></div>
-    <h1 class="post-title">
+    <h1 class="post-title entry-hint-parent">
       Frida安装教程
     </h1>
     <div class="post-meta"><span title='2021-05-18 10:22:48 +0800 CST'>五月 18, 2021</span>&nbsp;·&nbsp;su
@@ -274,7 +276,7 @@ frida-ps -U 出现设备进程信息表示运行成功。"/>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://wuxiaosu.github.io/tags/frida/">frida</a></li>
+      <li><a href="https://wuxiaosu.github.io/tags/frida/">Frida</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="https://wuxiaosu.github.io/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/">
@@ -294,11 +296,12 @@ frida-ps -U 出现设备进程信息表示运行成功。"/>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://wuxiaosu.github.io/">苏的博客</a></span>
+        <span>&copy; 2024 <a href="https://wuxiaosu.github.io/">苏的博客</a></span> · 
+
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
@@ -367,12 +370,12 @@ frida-ps -U 出现设备进程信息表示运行成功。"/>
 
         const copybutton = document.createElement('button');
         copybutton.classList.add('copy-code');
-        copybutton.innerText = '复制';
+        copybutton.innerHTML = '复制';
 
         function copyingDone() {
-            copybutton.innerText = '已复制！';
+            copybutton.innerHTML = '已复制！';
             setTimeout(() => {
-                copybutton.innerText = '复制';
+                copybutton.innerHTML = '复制';
             }, 2000);
         }
 

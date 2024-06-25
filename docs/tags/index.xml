@@ -5,209 +5,167 @@
     <link>https://wuxiaosu.github.io/tags/</link>
     <description>Recent content in Tags on 苏的博客</description>
     <image>
+      <title>苏的博客</title>
       <url>https://wuxiaosu.github.io/papermod-cover.png</url>
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.127.0</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 10 Nov 2022 17:41:48 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Nov 2022 17:41:48 +0800</lastBuildDate>
+    <atom:link href="https://wuxiaosu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>exe</title>
+      <title>Exe</title>
       <link>https://wuxiaosu.github.io/tags/exe/</link>
-      <pubDate>Thu, 10 Nov 2022 17:41:48 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/exe/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>python</title>
+      <title>Python</title>
       <link>https://wuxiaosu.github.io/tags/python/</link>
-      <pubDate>Thu, 10 Nov 2022 17:41:48 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/python/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>反编译</title>
       <link>https://wuxiaosu.github.io/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/</link>
-      <pubDate>Thu, 10 Nov 2022 17:41:48 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>nginx</title>
+      <title>Nginx</title>
       <link>https://wuxiaosu.github.io/tags/nginx/</link>
-      <pubDate>Tue, 24 May 2022 22:55:15 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/nginx/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Ubuntu</title>
       <link>https://wuxiaosu.github.io/tags/ubuntu/</link>
-      <pubDate>Tue, 24 May 2022 22:55:15 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/ubuntu/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>android</title>
+      <title>Android</title>
       <link>https://wuxiaosu.github.io/tags/android/</link>
-      <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/android/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>ip</title>
+      <title>Ip</title>
       <link>https://wuxiaosu.github.io/tags/ip/</link>
-      <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/ip/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>sql</title>
+      <title>Sql</title>
       <link>https://wuxiaosu.github.io/tags/sql/</link>
-      <pubDate>Fri, 07 Jan 2022 13:46:00 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/sql/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>sqlite</title>
+      <title>Sqlite</title>
       <link>https://wuxiaosu.github.io/tags/sqlite/</link>
-      <pubDate>Fri, 07 Jan 2022 13:46:00 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/sqlite/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>adb</title>
+      <title>Adb</title>
       <link>https://wuxiaosu.github.io/tags/adb/</link>
-      <pubDate>Wed, 14 Jul 2021 09:52:34 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/adb/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>mysql</title>
+      <title>Mysql</title>
       <link>https://wuxiaosu.github.io/tags/mysql/</link>
-      <pubDate>Fri, 18 Jun 2021 14:34:00 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/mysql/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>服务器</title>
       <link>https://wuxiaosu.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
-      <pubDate>Fri, 18 Jun 2021 14:33:00 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>frida</title>
+      <title>Frida</title>
       <link>https://wuxiaosu.github.io/tags/frida/</link>
-      <pubDate>Tue, 18 May 2021 10:22:48 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/frida/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>docker</title>
+      <title>Docker</title>
       <link>https://wuxiaosu.github.io/tags/docker/</link>
-      <pubDate>Wed, 28 Apr 2021 10:56:00 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/docker/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>git</title>
+      <title>Git</title>
       <link>https://wuxiaosu.github.io/tags/git/</link>
-      <pubDate>Sun, 18 Apr 2021 10:18:00 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/git/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>正则</title>
       <link>https://wuxiaosu.github.io/tags/%E6%AD%A3%E5%88%99/</link>
-      <pubDate>Tue, 13 Apr 2021 15:23:00 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/%E6%AD%A3%E5%88%99/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>jetbrains</title>
+      <title>Jetbrains</title>
       <link>https://wuxiaosu.github.io/tags/jetbrains/</link>
-      <pubDate>Thu, 25 Feb 2021 16:30:00 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/jetbrains/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>数据库</title>
       <link>https://wuxiaosu.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
-      <pubDate>Mon, 04 Jan 2021 15:09:00 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>微信</title>
       <link>https://wuxiaosu.github.io/tags/%E5%BE%AE%E4%BF%A1/</link>
-      <pubDate>Mon, 04 Jan 2021 15:09:00 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/%E5%BE%AE%E4%BF%A1/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>pip</title>
+      <title>Pip</title>
       <link>https://wuxiaosu.github.io/tags/pip/</link>
-      <pubDate>Fri, 03 Apr 2020 09:54:00 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/pip/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>wsl</title>
+      <title>Wsl</title>
       <link>https://wuxiaosu.github.io/tags/wsl/</link>
-      <pubDate>Fri, 03 Apr 2020 09:54:00 +0800</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/tags/wsl/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>MagiskHidePropsConf</title>
       <link>https://wuxiaosu.github.io/tags/magiskhidepropsconf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://wuxiaosu.github.io/tags/magiskhidepropsconf/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

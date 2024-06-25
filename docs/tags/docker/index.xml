@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>docker on 苏的博客</title>
+    <title>Docker on 苏的博客</title>
     <link>https://wuxiaosu.github.io/tags/docker/</link>
-    <description>Recent content in docker on 苏的博客</description>
+    <description>Recent content in Docker on 苏的博客</description>
     <image>
+      <title>苏的博客</title>
       <url>https://wuxiaosu.github.io/papermod-cover.png</url>
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.127.0</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 28 Apr 2021 10:56:00 +0800</lastBuildDate><atom:link href="https://wuxiaosu.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Apr 2021 10:56:00 +0800</lastBuildDate>
+    <atom:link href="https://wuxiaosu.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>docker 常用操作</title>
       <link>https://wuxiaosu.github.io/posts/docker/</link>
       <pubDate>Wed, 28 Apr 2021 10:56:00 +0800</pubDate>
-      
       <guid>https://wuxiaosu.github.io/posts/docker/</guid>
       <description>docker 常用操作 搜索镜像 docker search python 拉取镜像 docker pull python:3.7 镜像列表 docker images 正在运行的镜像列表 docker ps 使用镜像启动一个容器 docker run -itd openjdk:8 查看所有容器 docker ps -a 创建一个镜像 docker build -t docker_repo ./docker_repo 启动并直接进入镜像 docker run -it ubuntu:14.04 </description>
     </item>
-    
   </channel>
 </rss>

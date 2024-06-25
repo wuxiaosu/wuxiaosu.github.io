@@ -6,17 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Ubuntu安装nginx | 苏的博客</title>
-<meta name="keywords" content="Ubuntu, nginx" />
+<meta name="keywords" content="Ubuntu, nginx">
 <meta name="description" content="1.命令行安装 直接在终端运行命令进行安装
 sudo apt install nginx 如果需要自定义安装，可以参考官方文档
 http://nginx.org/en/linux_packages.html#Ubuntu
 在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功
 2.查看默认配置 cat /etc/nginx/nginx.conf user www-data; worker_processes auto; pid /run/nginx.pid; include /etc/nginx/modules-enabled/*.conf; events { worker_connections 768; # multi_accept on; } http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.types; default_type application/octet-stream; ## # SSL Settings ## ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE ssl_prefer_server_ciphers on; ## # Logging Settings ## access_log /var/log/nginx/access.">
 <meta name="author" content="su">
-<link rel="canonical" href="https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
-    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="canonical" href="https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://wuxiaosu.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://wuxiaosu.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://wuxiaosu.github.io/favicon-32x32.png">
@@ -24,7 +22,7 @@ http://nginx.org/en/linux_packages.html#Ubuntu
 <link rel="mask-icon" href="https://wuxiaosu.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.114.0">
+<link rel="alternate" hreflang="zh" href="https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/">
 <noscript>
     <style>
         #theme-toggle,
@@ -42,7 +40,7 @@ http://nginx.org/en/linux_packages.html#Ubuntu
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -61,20 +59,24 @@ http://nginx.org/en/linux_packages.html#Ubuntu
         }
 
     </style>
-</noscript><meta property="og:title" content="Ubuntu安装nginx" />
+</noscript>
+  
+
+<meta property="og:title" content="Ubuntu安装nginx" />
 <meta property="og:description" content="1.命令行安装 直接在终端运行命令进行安装
 sudo apt install nginx 如果需要自定义安装，可以参考官方文档
 http://nginx.org/en/linux_packages.html#Ubuntu
 在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功
 2.查看默认配置 cat /etc/nginx/nginx.conf user www-data; worker_processes auto; pid /run/nginx.pid; include /etc/nginx/modules-enabled/*.conf; events { worker_connections 768; # multi_accept on; } http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.types; default_type application/octet-stream; ## # SSL Settings ## ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE ssl_prefer_server_ciphers on; ## # Logging Settings ## access_log /var/log/nginx/access." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/" /><meta property="og:image" content="https://wuxiaosu.github.io/papermod-cover.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-05-24T22:55:15&#43;08:00" />
-<meta property="article:modified_time" content="2022-05-24T22:55:15&#43;08:00" />
+<meta property="og:url" content="https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/" />
+<meta property="og:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
+<meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-05-24T22:55:15+08:00" />
+<meta property="article:modified_time" content="2022-05-24T22:55:15+08:00" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://wuxiaosu.github.io/papermod-cover.png"/>
-
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
 <meta name="twitter:title" content="Ubuntu安装nginx"/>
 <meta name="twitter:description" content="1.命令行安装 直接在终端运行命令进行安装
 sudo apt install nginx 如果需要自定义安装，可以参考官方文档
@@ -116,7 +118,7 @@ http://nginx.org/en/linux_packages.html#Ubuntu
   "articleBody": "1.命令行安装 直接在终端运行命令进行安装\nsudo apt install nginx 如果需要自定义安装，可以参考官方文档\nhttp://nginx.org/en/linux_packages.html#Ubuntu\n在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功\n2.查看默认配置 cat /etc/nginx/nginx.conf user www-data; worker_processes auto; pid /run/nginx.pid; include /etc/nginx/modules-enabled/*.conf; events { worker_connections 768; # multi_accept on; } http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.types; default_type application/octet-stream; ## # SSL Settings ## ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE ssl_prefer_server_ciphers on; ## # Logging Settings ## access_log /var/log/nginx/access.log; error_log /var/log/nginx/error.log; ## # Gzip Settings ## gzip on; # gzip_vary on; # gzip_proxied any; # gzip_comp_level 6; # gzip_buffers 16 8k; # gzip_http_version 1.1; # gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript; ## # Virtual Host Configs ## include /etc/nginx/conf.d/*.conf; include /etc/nginx/sites-enabled/*; } #mail { # # See sample authentication script at: # # http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript # # # auth_http localhost/auth.php; # # pop3_capabilities \"TOP\" \"USER\"; # # imap_capabilities \"IMAP4rev1\" \"UIDPLUS\"; # # server { # listen localhost:110; # protocol pop3; # proxy on; # } # # server { # listen localhost:143; # protocol imap; # proxy on; # } #} 默认页面的服务器对应这一行配置\ninclude /etc/nginx/sites-enabled/*; 再看一下默认配置长什么样\n$ cat /etc/nginx/sites-enabled/default ## # You should look at the following URL's in order to grasp a solid understanding # of Nginx configuration files in order to fully unleash the power of Nginx. # https://www.nginx.com/resources/wiki/start/ # https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/ # https://wiki.debian.org/Nginx/DirectoryStructure # # In most cases, administrators will remove this file from sites-enabled/ and # leave it as reference inside of sites-available where it will continue to be # updated by the nginx packaging team. # # This file will automatically load configuration files provided by other # applications, such as Drupal or Wordpress. These applications will be made # available underneath a path with that package name, such as /drupal8. # # Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples. ## # Default server configuration # server { listen 80 default_server; listen [::]:80 default_server; # SSL configuration # # listen 443 ssl default_server; # listen [::]:443 ssl default_server; # # Note: You should disable gzip for SSL traffic. # See: https://bugs.debian.org/773332 # # Read up on ssl_ciphers to ensure a secure configuration. # See: https://bugs.debian.org/765782 # # Self signed certs generated by the ssl-cert package # Don't use them in a production server! # # include snippets/snakeoil.conf; root /var/www/html; # Add index.php to the list if you are using PHP index index.html index.htm index.nginx-debian.html; server_name _; location / { # First attempt to serve request as file, then # as directory, then fall back to displaying a 404. try_files $uri $uri/ =404; } # pass PHP scripts to FastCGI server # #location ~ \\.php$ { # include snippets/fastcgi-php.conf; # # # With php-fpm (or other unix sockets): # fastcgi_pass unix:/var/run/php/php7.4-fpm.sock; # # With php-cgi (or other tcp sockets): # fastcgi_pass 127.0.0.1:9000; #} # deny access to .htaccess files, if Apache's document root # concurs with nginx's one # #location ~ /\\.ht { # deny all; #} } # Virtual Host configuration for example.com # # You can move that to a different file under sites-available/ and symlink that # to sites-enabled/ to enable it. # #server { # listen 80; # listen [::]:80; # # server_name example.com; # # root /var/www/example.com; # index index.html; # # location / { # try_files $uri $uri/ =404; # } #} 可以看到只配置了一个静态页面，就是前面看到的默认界面 注释掉默认配置\n# include /etc/nginx/sites-enabled/*; 3.添加自定义配置 在配置文件目录 /etc/nginx/conf.d/ 下添加自己的配置并保存\n4.检查配置是否正确 sudo nginx -t 出现以下内容表示没问题了\nnginx: the configuration file /etc/nginx/nginx.conf syntax is ok nginx: configuration file /etc/nginx/nginx.conf test is successful 配置没问题的话就可以重启服务器了\nsudo service nginx restart 然后就可以愉快的使用啦\n",
   "wordCount" : "592",
   "inLanguage": "zh",
-  "datePublished": "2022-05-24T22:55:15+08:00",
+  "image": "https://wuxiaosu.github.io/papermod-cover.png","datePublished": "2022-05-24T22:55:15+08:00",
   "dateModified": "2022-05-24T22:55:15+08:00",
   "author":{
     "@type": "Person",
@@ -154,14 +156,14 @@ http://nginx.org/en/linux_packages.html#Ubuntu
     <nav class="nav">
         <div class="logo">
             <a href="https://wuxiaosu.github.io/" accesskey="h" title="苏的博客 (Alt + H)">苏的博客</a>
-            <span class="logo-switches">
+            <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -175,7 +177,7 @@ http://nginx.org/en/linux_packages.html#Ubuntu
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-            </span>
+            </div>
         </div>
         <ul id="menu">
             <li>
@@ -201,7 +203,7 @@ http://nginx.org/en/linux_packages.html#Ubuntu
 <article class="post-single">
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://wuxiaosu.github.io/">主页</a>&nbsp;»&nbsp;<a href="https://wuxiaosu.github.io/posts/">Posts</a></div>
-    <h1 class="post-title">
+    <h1 class="post-title entry-hint-parent">
       Ubuntu安装nginx
     </h1>
     <div class="post-meta"><span title='2022-05-24 22:55:15 +0800 CST'>五月 24, 2022</span>&nbsp;·&nbsp;su
@@ -439,7 +441,7 @@ http://nginx.org/en/linux_packages.html#Ubuntu
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="https://wuxiaosu.github.io/tags/ubuntu/">Ubuntu</a></li>
-      <li><a href="https://wuxiaosu.github.io/tags/nginx/">nginx</a></li>
+      <li><a href="https://wuxiaosu.github.io/tags/nginx/">Nginx</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/">
@@ -459,11 +461,12 @@ http://nginx.org/en/linux_packages.html#Ubuntu
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://wuxiaosu.github.io/">苏的博客</a></span>
+        <span>&copy; 2024 <a href="https://wuxiaosu.github.io/">苏的博客</a></span> · 
+
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
@@ -532,12 +535,12 @@ http://nginx.org/en/linux_packages.html#Ubuntu
 
         const copybutton = document.createElement('button');
         copybutton.classList.add('copy-code');
-        copybutton.innerText = '复制';
+        copybutton.innerHTML = '复制';
 
         function copyingDone() {
-            copybutton.innerText = '已复制！';
+            copybutton.innerHTML = '已复制！';
             setTimeout(() => {
-                copybutton.innerText = '复制';
+                copybutton.innerHTML = '复制';
             }, 2000);
         }
 
