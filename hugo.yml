@@ -81,9 +81,9 @@ params:
               url: tags
 
     homeInfoParams:
-        Title: "好好学习，天天向上"
+        Title: "好记性不如烂笔头"
         Content: >
-            生活不止眼前的苟且，还有明天的苟且和后天的苟且。 
+            生活不止眼前的苟且，还有明天和后天的苟且。 
     socialIcons:
         - name: github
           url: "https://github.com/wuxiaosu"
