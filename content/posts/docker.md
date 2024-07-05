@@ -95,3 +95,33 @@ docker compose up
 ```bash
 docker compose restart
 ```
+
+### 清除
+
+- 清除没用到的容器
+
+```bash
+docker container prune
+```
+
+- 清除没用到的镜像
+
+```bash
+docker image prune
+```
+
+## DockerHub国内镜像源列表  
+
+```bash
+https://dockerhub.icu/
+https://docker.1panel.live/
+https://hub.rat.dev/
+```
+
+随便拉取一个镜像，测试是否可用，以 alpine:latest 为例
+
+```bash
+dockerhub.icu/library/alpine:latest
+```  
+
+参考来源 [国内DockerHub镜像加速器还有哪些可用？(2024年6月26日)](https://www.wangdu.site/course/2109.html)
