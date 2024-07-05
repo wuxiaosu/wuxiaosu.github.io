@@ -14,10 +14,10 @@
     <lastBuildDate>Wed, 28 Apr 2021 10:56:00 +0800</lastBuildDate>
     <atom:link href="https://wuxiaosu.github.io/tags/docker-compose/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>docker 常用操作</title>
-      <link>https://wuxiaosu.github.io/posts/docker/</link>
+      <title>docker常用操作</title>
+      <link>https://wuxiaosu.github.io/posts/docker%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Wed, 28 Apr 2021 10:56:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/posts/docker/</guid>
+      <guid>https://wuxiaosu.github.io/posts/docker%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
       <description>docker 常用操作 搜索镜像 docker search python 拉取镜像 docker pull python:3.7 查看所有镜像 docker images 删除镜像 docker rmi 正在运行的镜像列表 docker ps 使用镜像启动一个容器 docker run -itd openjdk:8 启动并直接进入镜像 docker run -it ubuntu:14.04 查看所有容器 docker ps -a 删除容器 docker rm 使用 Dockerfile 构建镜像 docker build -t docker_repo ./docker_repo 查看容器状态 docker stats 查看日志 docker compose logs 后台启动 docker compose up -d 启动 docker compose up 重启 docker compose restart 清除 清除没用到的容器 docker container prune 清除没用到的镜像 docker image prune DockerHub国内镜像源列表 https://dockerhub.</description>
     </item>
   </channel>
