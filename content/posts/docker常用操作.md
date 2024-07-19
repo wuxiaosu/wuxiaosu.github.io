@@ -96,6 +96,30 @@ docker compose up
 docker compose restart
 ```
 
+- 创建网络
+
+```bash
+docker network create mynet
+```
+
+- 查看网络
+
+```bash
+docker network ls
+```
+
+- 删除网络
+
+```bash
+docker network rm mynet
+```
+
+- 查看容器ip
+
+```bash
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mysql-container
+```
+
 ### 清除
 
 - 清除没用到的容器
