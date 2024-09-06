@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Nginx on 苏的博客</title>
-    <link>http://localhost:1313/tags/nginx/</link>
+    <link>https://wuxiaosu.github.io/tags/nginx/</link>
     <description>Recent content in Nginx on 苏的博客</description>
     <image>
       <title>苏的博客</title>
-      <url>http://localhost:1313/papermod-cover.png</url>
-      <link>http://localhost:1313/papermod-cover.png</link>
+      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
+      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Tue, 24 May 2022 22:55:15 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wuxiaosu.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ubuntu安装nginx</title>
-      <link>http://localhost:1313/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</link>
+      <link>https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</link>
       <pubDate>Tue, 24 May 2022 22:55:15 +0800</pubDate>
-      <guid>http://localhost:1313/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</guid>
+      <guid>https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</guid>
       <description>&lt;h2 id=&#34;1命令行安装&#34;&gt;1.命令行安装&lt;/h2&gt;
 &lt;p&gt;直接在终端运行命令进行安装&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install nginx
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果需要自定义安装，可以参考官方文档&lt;br&gt;
 &lt;a href=&#34;http://nginx.org/en/linux_packages.html#Ubuntu&#34;&gt;http://nginx.org/en/linux_packages.html#Ubuntu&lt;/a&gt;&lt;br&gt;
 在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/20230621151612.png&#34; alt=&#34;默认界面&#34;  /&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://wuxiaosu.github.io/images/20230621151612.png&#34; alt=&#34;默认界面&#34;  /&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;2查看默认配置&#34;&gt;2.查看默认配置&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cat /etc/nginx/nginx.conf

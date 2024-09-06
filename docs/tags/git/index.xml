@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Git on 苏的博客</title>
-    <link>http://localhost:1313/tags/git/</link>
+    <link>https://wuxiaosu.github.io/tags/git/</link>
     <description>Recent content in Git on 苏的博客</description>
     <image>
       <title>苏的博客</title>
-      <url>http://localhost:1313/papermod-cover.png</url>
-      <link>http://localhost:1313/papermod-cover.png</link>
+      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
+      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Sun, 18 Apr 2021 10:18:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wuxiaosu.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>git 常用操作</title>
-      <link>http://localhost:1313/posts/git/</link>
+      <link>https://wuxiaosu.github.io/posts/git/</link>
       <pubDate>Sun, 18 Apr 2021 10:18:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/git/</guid>
+      <guid>https://wuxiaosu.github.io/posts/git/</guid>
       <description>&lt;h1 id=&#34;git&#34;&gt;git&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Git 回退到某个 commit&lt;/li&gt;
