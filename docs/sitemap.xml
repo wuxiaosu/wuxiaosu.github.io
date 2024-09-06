@@ -2,150 +2,150 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wuxiaosu.github.io/tags/exe/</loc>
+    <loc>http://localhost:1313/tags/exe/</loc>
     <lastmod>2022-11-10T17:41:48+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2022-11-10T17:41:48+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/python/</loc>
+    <loc>http://localhost:1313/tags/python/</loc>
     <lastmod>2022-11-10T17:41:48+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2022-11-10T17:41:48+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/</loc>
+    <loc>http://localhost:1313/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/</loc>
     <lastmod>2022-11-10T17:41:48+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</loc>
+    <loc>http://localhost:1313/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</loc>
     <lastmod>2022-11-10T17:41:48+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2022-11-10T17:41:48+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/nginx/</loc>
+    <loc>http://localhost:1313/tags/nginx/</loc>
     <lastmod>2022-05-24T22:55:15+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/ubuntu/</loc>
+    <loc>http://localhost:1313/tags/ubuntu/</loc>
     <lastmod>2022-05-24T22:55:15+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</loc>
+    <loc>http://localhost:1313/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</loc>
     <lastmod>2022-05-24T22:55:15+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/android/</loc>
+    <loc>http://localhost:1313/tags/android/</loc>
     <lastmod>2022-05-24T22:06:48+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</loc>
+    <loc>http://localhost:1313/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</loc>
     <lastmod>2022-05-24T22:06:48+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/ip/</loc>
+    <loc>http://localhost:1313/tags/ip/</loc>
     <lastmod>2022-05-24T22:06:48+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/python%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</loc>
+    <loc>http://localhost:1313/posts/python%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</loc>
     <lastmod>2022-05-24T22:06:48+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/%E5%87%A0%E4%B8%AAip%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E6%8E%A5%E5%8F%A3/</loc>
+    <loc>http://localhost:1313/posts/%E5%87%A0%E4%B8%AAip%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E6%8E%A5%E5%8F%A3/</loc>
     <lastmod>2022-05-24T22:06:48+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/sql/</loc>
+    <loc>http://localhost:1313/tags/sql/</loc>
     <lastmod>2022-01-07T13:46:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/sqlite/</loc>
+    <loc>http://localhost:1313/tags/sqlite/</loc>
     <lastmod>2022-01-07T13:46:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/sql/</loc>
+    <loc>http://localhost:1313/posts/sql/</loc>
     <lastmod>2022-01-07T13:46:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/adb/</loc>
+    <loc>http://localhost:1313/tags/adb/</loc>
     <lastmod>2021-07-14T09:52:34+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <loc>http://localhost:1313/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2021-07-14T09:52:34+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/mysql/</loc>
+    <loc>http://localhost:1313/tags/mysql/</loc>
     <lastmod>2021-06-18T14:34:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/mysql/</loc>
+    <loc>http://localhost:1313/posts/mysql/</loc>
     <lastmod>2021-06-18T14:34:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <loc>http://localhost:1313/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     <lastmod>2021-06-18T14:33:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</loc>
+    <loc>http://localhost:1313/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2021-06-18T14:33:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/frida/</loc>
+    <loc>http://localhost:1313/tags/frida/</loc>
     <lastmod>2021-05-18T10:22:48+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/frida%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
+    <loc>http://localhost:1313/posts/frida%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2021-05-18T10:22:48+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/docker/</loc>
+    <loc>http://localhost:1313/tags/docker/</loc>
     <lastmod>2021-04-28T10:56:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/docker-compose/</loc>
+    <loc>http://localhost:1313/tags/docker-compose/</loc>
     <lastmod>2021-04-28T10:56:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/docker%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</loc>
+    <loc>http://localhost:1313/posts/docker%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</loc>
     <lastmod>2021-04-28T10:56:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/git/</loc>
+    <loc>http://localhost:1313/tags/git/</loc>
     <lastmod>2021-04-18T10:18:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/git/</loc>
+    <loc>http://localhost:1313/posts/git/</loc>
     <lastmod>2021-04-18T10:18:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/%E6%AD%A3%E5%88%99/</loc>
+    <loc>http://localhost:1313/tags/%E6%AD%A3%E5%88%99/</loc>
     <lastmod>2021-04-13T15:23:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/%E6%AD%A3%E5%88%99/</loc>
+    <loc>http://localhost:1313/posts/%E6%AD%A3%E5%88%99/</loc>
     <lastmod>2021-04-13T15:23:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/ubuntu%E9%98%B2%E7%81%AB%E5%A2%99/</loc>
+    <loc>http://localhost:1313/posts/ubuntu%E9%98%B2%E7%81%AB%E5%A2%99/</loc>
     <lastmod>2021-03-24T18:34:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/jetbrains/</loc>
+    <loc>http://localhost:1313/tags/jetbrains/</loc>
     <lastmod>2021-02-25T16:30:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/jetbrains/</loc>
+    <loc>http://localhost:1313/posts/jetbrains/</loc>
     <lastmod>2021-02-25T16:30:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</loc>
+    <loc>http://localhost:1313/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</loc>
     <lastmod>2021-01-04T15:09:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <loc>http://localhost:1313/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
     <lastmod>2021-01-04T15:09:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/%E5%BE%AE%E4%BF%A1/</loc>
+    <loc>http://localhost:1313/tags/%E5%BE%AE%E4%BF%A1/</loc>
     <lastmod>2021-01-04T15:09:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/pip/</loc>
+    <loc>http://localhost:1313/tags/pip/</loc>
     <lastmod>2020-04-03T09:54:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/pip%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</loc>
+    <loc>http://localhost:1313/posts/pip%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</loc>
     <lastmod>2020-04-03T09:54:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/wsl/</loc>
+    <loc>http://localhost:1313/tags/wsl/</loc>
     <lastmod>2020-04-03T09:54:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/wsl%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</loc>
+    <loc>http://localhost:1313/posts/wsl%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</loc>
     <lastmod>2020-04-03T09:54:00+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/about/</loc>
+    <loc>http://localhost:1313/posts/about/</loc>
     <lastmod>2016-03-08T22:44:34+08:00</lastmod>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/</loc>
+    <loc>http://localhost:1313/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/</loc>
   </url><url>
-    <loc>https://wuxiaosu.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://wuxiaosu.github.io/tags/magiskhidepropsconf/</loc>
+    <loc>http://localhost:1313/tags/magiskhidepropsconf/</loc>
   </url><url>
-    <loc>https://wuxiaosu.github.io/series/</loc>
+    <loc>http://localhost:1313/series/</loc>
   </url><url>
-    <loc>https://wuxiaosu.github.io/archives/</loc>
+    <loc>http://localhost:1313/archives/</loc>
   </url><url>
-    <loc>https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</loc>
+    <loc>http://localhost:1313/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</loc>
   </url><url>
-    <loc>https://wuxiaosu.github.io/search/</loc>
+    <loc>http://localhost:1313/search/</loc>
   </url>
 </urlset>

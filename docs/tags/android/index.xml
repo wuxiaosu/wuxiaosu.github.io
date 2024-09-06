@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Android on 苏的博客</title>
-    <link>https://wuxiaosu.github.io/tags/android/</link>
+    <link>http://localhost:1313/tags/android/</link>
     <description>Recent content in Android on 苏的博客</description>
     <image>
       <title>苏的博客</title>
-      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
-      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Tue, 24 May 2022 22:06:48 +0800</lastBuildDate>
-    <atom:link href="https://wuxiaosu.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Android反编译odex</title>
-      <link>https://wuxiaosu.github.io/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</link>
+      <link>http://localhost:1313/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</link>
       <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</guid>
+      <guid>http://localhost:1313/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</guid>
       <description>&lt;h2 id=&#34;0下载-baksmalijar-smalijar&#34;&gt;0.下载 baksmali.jar 、smali.jar&lt;/h2&gt;
 &lt;p&gt;下载地址
 &lt;a href=&#34;https://bitbucket.org/JesusFreke/smali/downloads/&#34;&gt;https://bitbucket.org/JesusFreke/smali/downloads/&lt;/a&gt;&lt;br&gt;
@@ -38,9 +38,9 @@ Github 地址
     </item>
     <item>
       <title>adb常用命令</title>
-      <link>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>http://localhost:1313/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Wed, 14 Jul 2021 09:52:34 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <guid>http://localhost:1313/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description>&lt;h1 id=&#34;adb-常用命令&#34;&gt;adb 常用命令&lt;/h1&gt;
 &lt;h2 id=&#34;1查看最上层-activity-名字&#34;&gt;1.查看最上层 &lt;strong&gt;Activity&lt;/strong&gt; 名字&lt;/h2&gt;
 &lt;ul&gt;
@@ -64,9 +64,9 @@ Github 地址
     </item>
     <item>
       <title>Android微信数据库密码计算</title>
-      <link>https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</link>
+      <link>http://localhost:1313/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</link>
       <pubDate>Mon, 04 Jan 2021 15:09:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</guid>
+      <guid>http://localhost:1313/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</guid>
       <description>&lt;h2 id=&#34;0省流助手&#34;&gt;0.省流助手&lt;/h2&gt;
 &lt;p&gt;密码就是 md5(imei + uin) 取前七位，最新使用 8.0.28 验证还是可以的&lt;/p&gt;
 &lt;h2 id=&#34;1获取相关参数&#34;&gt;1.获取相关参数&lt;/h2&gt;
@@ -92,9 +92,9 @@ Github 地址
     </item>
     <item>
       <title>Android 8.0 以上开启全局可调式</title>
-      <link>https://wuxiaosu.github.io/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/</link>
+      <link>http://localhost:1313/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://wuxiaosu.github.io/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/</guid>
+      <guid>http://localhost:1313/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/</guid>
       <description>&lt;h1 id=&#34;android-80-以上开启全局可调式&#34;&gt;Android 8.0 以上开启全局可调式&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -117,9 +117,9 @@ Github 地址
     </item>
     <item>
       <title>使用MagiskHidePropsConf开启全局可调试</title>
-      <link>https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</link>
+      <link>http://localhost:1313/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</guid>
+      <guid>http://localhost:1313/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</guid>
       <description>&lt;h2 id=&#34;1安装好-magisk&#34;&gt;1.安装好 Magisk&lt;/h2&gt;
 &lt;p&gt;此处略过&lt;/p&gt;
 &lt;h2 id=&#34;2安装-magiskhidepropsconf&#34;&gt;2.安装 MagiskHidePropsConf&lt;/h2&gt;

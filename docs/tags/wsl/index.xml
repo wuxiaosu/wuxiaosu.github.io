@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Wsl on 苏的博客</title>
-    <link>https://wuxiaosu.github.io/tags/wsl/</link>
+    <link>http://localhost:1313/tags/wsl/</link>
     <description>Recent content in Wsl on 苏的博客</description>
     <image>
       <title>苏的博客</title>
-      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
-      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Fri, 03 Apr 2020 09:54:00 +0800</lastBuildDate>
-    <atom:link href="https://wuxiaosu.github.io/tags/wsl/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/wsl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WSL更换国内源</title>
-      <link>https://wuxiaosu.github.io/posts/wsl%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</link>
+      <link>http://localhost:1313/posts/wsl%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</link>
       <pubDate>Fri, 03 Apr 2020 09:54:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/posts/wsl%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</guid>
+      <guid>http://localhost:1313/posts/wsl%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</guid>
       <description>&lt;h1 id=&#34;wsl-ubuntu1804lts-更换国内源&#34;&gt;WSL Ubuntu18.04LTS 更换国内源&lt;/h1&gt;
 &lt;p&gt;WSL Ubuntu18.04LTS 更换国内源&lt;/p&gt;
 &lt;h2 id=&#34;1查看-linux-版本&#34;&gt;1.查看 Linux 版本&lt;/h2&gt;

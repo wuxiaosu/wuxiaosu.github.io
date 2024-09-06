@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Jetbrains on 苏的博客</title>
-    <link>https://wuxiaosu.github.io/tags/jetbrains/</link>
+    <link>http://localhost:1313/tags/jetbrains/</link>
     <description>Recent content in Jetbrains on 苏的博客</description>
     <image>
       <title>苏的博客</title>
-      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
-      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Thu, 25 Feb 2021 16:30:00 +0800</lastBuildDate>
-    <atom:link href="https://wuxiaosu.github.io/tags/jetbrains/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/jetbrains/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JetBrains 重置试用</title>
-      <link>https://wuxiaosu.github.io/posts/jetbrains/</link>
+      <link>http://localhost:1313/posts/jetbrains/</link>
       <pubDate>Thu, 25 Feb 2021 16:30:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/posts/jetbrains/</guid>
+      <guid>http://localhost:1313/posts/jetbrains/</guid>
       <description>&lt;h1 id=&#34;jetbrains-20203-系列通用重置-30-天试用不会影响其他配置&#34;&gt;JetBrains 2020.3 系列通用重置 30 天试用（不会影响其他配置）&lt;/h1&gt;
 &lt;h2 id=&#34;以-intellijidea-为例&#34;&gt;以 IntelliJIdea 为例&lt;/h2&gt;
 &lt;ul&gt;
