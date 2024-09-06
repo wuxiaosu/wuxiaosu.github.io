@@ -2,176 +2,176 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on 苏的博客</title>
-    <link>https://wuxiaosu.github.io/tags/</link>
+    <link>https://wuxiaosu.com/tags/</link>
     <description>Recent content in Tags on 苏的博客</description>
     <image>
       <title>苏的博客</title>
-      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
-      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
+      <url>https://wuxiaosu.com/papermod-cover.png</url>
+      <link>https://wuxiaosu.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Thu, 10 Nov 2022 17:41:48 +0800</lastBuildDate>
-    <atom:link href="https://wuxiaosu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wuxiaosu.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exe</title>
-      <link>https://wuxiaosu.github.io/tags/exe/</link>
+      <link>https://wuxiaosu.com/tags/exe/</link>
       <pubDate>Thu, 10 Nov 2022 17:41:48 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/exe/</guid>
+      <guid>https://wuxiaosu.com/tags/exe/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>https://wuxiaosu.github.io/tags/python/</link>
+      <link>https://wuxiaosu.com/tags/python/</link>
       <pubDate>Thu, 10 Nov 2022 17:41:48 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/python/</guid>
+      <guid>https://wuxiaosu.com/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>反编译</title>
-      <link>https://wuxiaosu.github.io/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/</link>
+      <link>https://wuxiaosu.com/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/</link>
       <pubDate>Thu, 10 Nov 2022 17:41:48 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/</guid>
+      <guid>https://wuxiaosu.com/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/</guid>
       <description></description>
     </item>
     <item>
       <title>Nginx</title>
-      <link>https://wuxiaosu.github.io/tags/nginx/</link>
+      <link>https://wuxiaosu.com/tags/nginx/</link>
       <pubDate>Tue, 24 May 2022 22:55:15 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/nginx/</guid>
+      <guid>https://wuxiaosu.com/tags/nginx/</guid>
       <description></description>
     </item>
     <item>
       <title>Ubuntu</title>
-      <link>https://wuxiaosu.github.io/tags/ubuntu/</link>
+      <link>https://wuxiaosu.com/tags/ubuntu/</link>
       <pubDate>Tue, 24 May 2022 22:55:15 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/ubuntu/</guid>
+      <guid>https://wuxiaosu.com/tags/ubuntu/</guid>
       <description></description>
     </item>
     <item>
       <title>Android</title>
-      <link>https://wuxiaosu.github.io/tags/android/</link>
+      <link>https://wuxiaosu.com/tags/android/</link>
       <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/android/</guid>
+      <guid>https://wuxiaosu.com/tags/android/</guid>
       <description></description>
     </item>
     <item>
       <title>Ip</title>
-      <link>https://wuxiaosu.github.io/tags/ip/</link>
+      <link>https://wuxiaosu.com/tags/ip/</link>
       <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/ip/</guid>
+      <guid>https://wuxiaosu.com/tags/ip/</guid>
       <description></description>
     </item>
     <item>
       <title>Sql</title>
-      <link>https://wuxiaosu.github.io/tags/sql/</link>
+      <link>https://wuxiaosu.com/tags/sql/</link>
       <pubDate>Fri, 07 Jan 2022 13:46:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/sql/</guid>
+      <guid>https://wuxiaosu.com/tags/sql/</guid>
       <description></description>
     </item>
     <item>
       <title>Sqlite</title>
-      <link>https://wuxiaosu.github.io/tags/sqlite/</link>
+      <link>https://wuxiaosu.com/tags/sqlite/</link>
       <pubDate>Fri, 07 Jan 2022 13:46:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/sqlite/</guid>
+      <guid>https://wuxiaosu.com/tags/sqlite/</guid>
       <description></description>
     </item>
     <item>
       <title>Adb</title>
-      <link>https://wuxiaosu.github.io/tags/adb/</link>
+      <link>https://wuxiaosu.com/tags/adb/</link>
       <pubDate>Wed, 14 Jul 2021 09:52:34 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/adb/</guid>
+      <guid>https://wuxiaosu.com/tags/adb/</guid>
       <description></description>
     </item>
     <item>
       <title>Mysql</title>
-      <link>https://wuxiaosu.github.io/tags/mysql/</link>
+      <link>https://wuxiaosu.com/tags/mysql/</link>
       <pubDate>Fri, 18 Jun 2021 14:34:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/mysql/</guid>
+      <guid>https://wuxiaosu.com/tags/mysql/</guid>
       <description></description>
     </item>
     <item>
       <title>服务器</title>
-      <link>https://wuxiaosu.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>https://wuxiaosu.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Fri, 18 Jun 2021 14:33:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>https://wuxiaosu.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description></description>
     </item>
     <item>
       <title>Frida</title>
-      <link>https://wuxiaosu.github.io/tags/frida/</link>
+      <link>https://wuxiaosu.com/tags/frida/</link>
       <pubDate>Tue, 18 May 2021 10:22:48 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/frida/</guid>
+      <guid>https://wuxiaosu.com/tags/frida/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
-      <link>https://wuxiaosu.github.io/tags/docker/</link>
+      <link>https://wuxiaosu.com/tags/docker/</link>
       <pubDate>Wed, 28 Apr 2021 10:56:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/docker/</guid>
+      <guid>https://wuxiaosu.com/tags/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker Compose</title>
-      <link>https://wuxiaosu.github.io/tags/docker-compose/</link>
+      <link>https://wuxiaosu.com/tags/docker-compose/</link>
       <pubDate>Wed, 28 Apr 2021 10:56:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/docker-compose/</guid>
+      <guid>https://wuxiaosu.com/tags/docker-compose/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>https://wuxiaosu.github.io/tags/git/</link>
+      <link>https://wuxiaosu.com/tags/git/</link>
       <pubDate>Sun, 18 Apr 2021 10:18:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/git/</guid>
+      <guid>https://wuxiaosu.com/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>正则</title>
-      <link>https://wuxiaosu.github.io/tags/%E6%AD%A3%E5%88%99/</link>
+      <link>https://wuxiaosu.com/tags/%E6%AD%A3%E5%88%99/</link>
       <pubDate>Tue, 13 Apr 2021 15:23:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/%E6%AD%A3%E5%88%99/</guid>
+      <guid>https://wuxiaosu.com/tags/%E6%AD%A3%E5%88%99/</guid>
       <description></description>
     </item>
     <item>
       <title>Jetbrains</title>
-      <link>https://wuxiaosu.github.io/tags/jetbrains/</link>
+      <link>https://wuxiaosu.com/tags/jetbrains/</link>
       <pubDate>Thu, 25 Feb 2021 16:30:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/jetbrains/</guid>
+      <guid>https://wuxiaosu.com/tags/jetbrains/</guid>
       <description></description>
     </item>
     <item>
       <title>数据库</title>
-      <link>https://wuxiaosu.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+      <link>https://wuxiaosu.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
       <pubDate>Mon, 04 Jan 2021 15:09:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+      <guid>https://wuxiaosu.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
       <description></description>
     </item>
     <item>
       <title>微信</title>
-      <link>https://wuxiaosu.github.io/tags/%E5%BE%AE%E4%BF%A1/</link>
+      <link>https://wuxiaosu.com/tags/%E5%BE%AE%E4%BF%A1/</link>
       <pubDate>Mon, 04 Jan 2021 15:09:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/%E5%BE%AE%E4%BF%A1/</guid>
+      <guid>https://wuxiaosu.com/tags/%E5%BE%AE%E4%BF%A1/</guid>
       <description></description>
     </item>
     <item>
       <title>Pip</title>
-      <link>https://wuxiaosu.github.io/tags/pip/</link>
+      <link>https://wuxiaosu.com/tags/pip/</link>
       <pubDate>Fri, 03 Apr 2020 09:54:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/pip/</guid>
+      <guid>https://wuxiaosu.com/tags/pip/</guid>
       <description></description>
     </item>
     <item>
       <title>Wsl</title>
-      <link>https://wuxiaosu.github.io/tags/wsl/</link>
+      <link>https://wuxiaosu.com/tags/wsl/</link>
       <pubDate>Fri, 03 Apr 2020 09:54:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/wsl/</guid>
+      <guid>https://wuxiaosu.com/tags/wsl/</guid>
       <description></description>
     </item>
     <item>
       <title>MagiskHidePropsConf</title>
-      <link>https://wuxiaosu.github.io/tags/magiskhidepropsconf/</link>
+      <link>https://wuxiaosu.com/tags/magiskhidepropsconf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/magiskhidepropsconf/</guid>
+      <guid>https://wuxiaosu.com/tags/magiskhidepropsconf/</guid>
       <description></description>
     </item>
   </channel>

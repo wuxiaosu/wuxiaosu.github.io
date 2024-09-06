@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Exe on 苏的博客</title>
-    <link>https://wuxiaosu.github.io/tags/exe/</link>
+    <link>https://wuxiaosu.com/tags/exe/</link>
     <description>Recent content in Exe on 苏的博客</description>
     <image>
       <title>苏的博客</title>
-      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
-      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
+      <url>https://wuxiaosu.com/papermod-cover.png</url>
+      <link>https://wuxiaosu.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Thu, 10 Nov 2022 17:41:48 +0800</lastBuildDate>
-    <atom:link href="https://wuxiaosu.github.io/tags/exe/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wuxiaosu.com/tags/exe/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>反编译Python打包生成的exe文件</title>
-      <link>https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</link>
+      <link>https://wuxiaosu.com/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</link>
       <pubDate>Thu, 10 Nov 2022 17:41:48 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</guid>
+      <guid>https://wuxiaosu.com/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</guid>
       <description>&lt;h2 id=&#34;1解压-exe-文件&#34;&gt;1.解压 exe 文件&lt;/h2&gt;
 &lt;h3 id=&#34;11-下载-pyinstxtractor&#34;&gt;1.1 下载 pyinstxtractor&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/extremecoders-re/pyinstxtractor&#34;&gt;https://github.com/extremecoders-re/pyinstxtractor&lt;/a&gt;&lt;/p&gt;

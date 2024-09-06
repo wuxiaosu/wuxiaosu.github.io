@@ -1,4 +1,4 @@
-baseURL: https://wuxiaosu.github.io/
+baseURL: https://wuxiaosu.com/
 languageCode: cn-zh
 title: 苏的博客
 paginate: 5
@@ -49,7 +49,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "苏的博客-wuxiaosu.github.io"
+    description: "苏的博客-wuxiaosu.com"
     author: su
     # author: ["Me", "You"] # multiple authors
 

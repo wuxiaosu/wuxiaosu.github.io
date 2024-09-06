@@ -20,16 +20,16 @@ pip install uncompyle6
 uncompyle6 xx.pyc 
 执行成功即可看到可运行的 python 源码">
 <meta name="author" content="su">
-<link rel="canonical" href="https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/">
+<link rel="canonical" href="https://wuxiaosu.com/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://wuxiaosu.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://wuxiaosu.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://wuxiaosu.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://wuxiaosu.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://wuxiaosu.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="https://wuxiaosu.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://wuxiaosu.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://wuxiaosu.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://wuxiaosu.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://wuxiaosu.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/">
+<link rel="alternate" hreflang="zh" href="https://wuxiaosu.com/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/">
 <noscript>
     <style>
         #theme-toggle,
@@ -80,14 +80,14 @@ pip install uncompyle6
 uncompyle6 xx.pyc 
 执行成功即可看到可运行的 python 源码" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/" />
-<meta property="og:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
+<meta property="og:url" content="https://wuxiaosu.com/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/" />
+<meta property="og:image" content="https://wuxiaosu.com/papermod-cover.png" />
 <meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-11-10T17:41:48+08:00" />
 <meta property="article:modified_time" content="2022-11-10T17:41:48+08:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
+<meta name="twitter:image" content="https://wuxiaosu.com/papermod-cover.png" />
 <meta name="twitter:title" content="反编译Python打包生成的exe文件"/>
 <meta name="twitter:description" content="1.解压 exe 文件
 1.1 下载 pyinstxtractor
@@ -112,13 +112,13 @@ uncompyle6 xx.pyc
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "https://wuxiaosu.github.io/posts/"
+      "item": "https://wuxiaosu.com/posts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "反编译Python打包生成的exe文件",
-      "item": "https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/"
+      "item": "https://wuxiaosu.com/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/"
     }
   ]
 }
@@ -136,7 +136,7 @@ uncompyle6 xx.pyc
   "articleBody": "1.解压 exe 文件 1.1 下载 pyinstxtractor https://github.com/extremecoders-re/pyinstxtractor\n1.2 执行解压操作 python pyinstxtractor.py 执行成功会出现一个 filename_extracted 目录,目录里面有相对应的 pyc 文件\n2.反编译 pyc 文件 2.1 安装 uncompyle6 pip install uncompyle6 2.1 反编译 pyc 文件 uncompyle6 xx.pyc 执行成功即可看到可运行的 python 源码\n",
   "wordCount" : "35",
   "inLanguage": "zh",
-  "image": "https://wuxiaosu.github.io/papermod-cover.png","datePublished": "2022-11-10T17:41:48+08:00",
+  "image": "https://wuxiaosu.com/papermod-cover.png","datePublished": "2022-11-10T17:41:48+08:00",
   "dateModified": "2022-11-10T17:41:48+08:00",
   "author":{
     "@type": "Person",
@@ -144,14 +144,14 @@ uncompyle6 xx.pyc
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/"
+    "@id": "https://wuxiaosu.com/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "苏的博客",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://wuxiaosu.github.io/favicon.ico"
+      "url": "https://wuxiaosu.com/favicon.ico"
     }
   }
 }
@@ -173,7 +173,7 @@ uncompyle6 xx.pyc
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://wuxiaosu.github.io/" accesskey="h" title="苏的博客 (Alt + H)">苏的博客</a>
+            <a href="https://wuxiaosu.com/" accesskey="h" title="苏的博客 (Alt + H)">苏的博客</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -199,17 +199,17 @@ uncompyle6 xx.pyc
         </div>
         <ul id="menu">
             <li>
-                <a href="https://wuxiaosu.github.io/archives" title="归档">
+                <a href="https://wuxiaosu.com/archives" title="归档">
                     <span>归档</span>
                 </a>
             </li>
             <li>
-                <a href="https://wuxiaosu.github.io/tags/" title="Tags">
+                <a href="https://wuxiaosu.com/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="https://wuxiaosu.github.io/search/" title="搜索">
+                <a href="https://wuxiaosu.com/search/" title="搜索">
                     <span>搜索</span>
                 </a>
             </li>
@@ -220,7 +220,7 @@ uncompyle6 xx.pyc
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://wuxiaosu.github.io/">主页</a>&nbsp;»&nbsp;<a href="https://wuxiaosu.github.io/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://wuxiaosu.com/">主页</a>&nbsp;»&nbsp;<a href="https://wuxiaosu.com/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       反编译Python打包生成的exe文件
     </h1>
@@ -275,12 +275,12 @@ uncompyle6 xx.pyc
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://wuxiaosu.github.io/tags/python/">Python</a></li>
-      <li><a href="https://wuxiaosu.github.io/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/">反编译</a></li>
-      <li><a href="https://wuxiaosu.github.io/tags/exe/">Exe</a></li>
+      <li><a href="https://wuxiaosu.com/tags/python/">Python</a></li>
+      <li><a href="https://wuxiaosu.com/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/">反编译</a></li>
+      <li><a href="https://wuxiaosu.com/tags/exe/">Exe</a></li>
     </ul>
 <nav class="paginav">
-  <a class="next" href="https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/">
+  <a class="next" href="https://wuxiaosu.com/posts/ubuntu%E5%AE%89%E8%A3%85nginx/">
     <span class="title">下一页 »</span>
     <br>
     <span>Ubuntu安装nginx</span>
@@ -292,7 +292,7 @@ uncompyle6 xx.pyc
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://wuxiaosu.github.io/">苏的博客</a></span> · 
+        <span>&copy; 2024 <a href="https://wuxiaosu.com/">苏的博客</a></span> · 
 
     <span>
         Powered by

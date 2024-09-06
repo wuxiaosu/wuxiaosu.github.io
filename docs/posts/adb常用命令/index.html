@@ -28,16 +28,16 @@ adb shell am start -n com.google.android.network2/com.my.MainActivity
 adb shell am startservice -n com.google.android.network2/com.my.MainActivity
 ">
 <meta name="author" content="su">
-<link rel="canonical" href="https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+<link rel="canonical" href="https://wuxiaosu.com/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://wuxiaosu.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://wuxiaosu.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://wuxiaosu.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://wuxiaosu.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://wuxiaosu.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="https://wuxiaosu.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://wuxiaosu.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://wuxiaosu.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://wuxiaosu.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://wuxiaosu.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+<link rel="alternate" hreflang="zh" href="https://wuxiaosu.com/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
 <noscript>
     <style>
         #theme-toggle,
@@ -96,14 +96,14 @@ adb shell am start -n com.google.android.network2/com.my.MainActivity
 adb shell am startservice -n com.google.android.network2/com.my.MainActivity
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" />
-<meta property="og:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
+<meta property="og:url" content="https://wuxiaosu.com/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" />
+<meta property="og:image" content="https://wuxiaosu.com/papermod-cover.png" />
 <meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-07-14T09:52:34+08:00" />
 <meta property="article:modified_time" content="2021-07-14T09:52:34+08:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
+<meta name="twitter:image" content="https://wuxiaosu.com/papermod-cover.png" />
 <meta name="twitter:title" content="adb常用命令"/>
 <meta name="twitter:description" content="adb 常用命令
 1.查看最上层 Activity 名字
@@ -136,13 +136,13 @@ adb shell am startservice -n com.google.android.network2/com.my.MainActivity
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "https://wuxiaosu.github.io/posts/"
+      "item": "https://wuxiaosu.com/posts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "adb常用命令",
-      "item": "https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+      "item": "https://wuxiaosu.com/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
     }
   ]
 }
@@ -160,7 +160,7 @@ adb shell am startservice -n com.google.android.network2/com.my.MainActivity
   "articleBody": "adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep \"mResumedActivity\" Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式\nadb shell am clear-debug-app 6.查看应用安装路径 列出所有安装的包 adb shell pm list packages -f 查看安装包路径 adb shell pm path {package_name} 查看安装包路径 adb shell dumpsys package {package_name} | findstr codePath\radb shell dumpsys package {package_name} | grep codePath 卸载系统应用 adb shell pm uninstall --user 0 {package_name} ",
   "wordCount" : "118",
   "inLanguage": "zh",
-  "image": "https://wuxiaosu.github.io/papermod-cover.png","datePublished": "2021-07-14T09:52:34+08:00",
+  "image": "https://wuxiaosu.com/papermod-cover.png","datePublished": "2021-07-14T09:52:34+08:00",
   "dateModified": "2021-07-14T09:52:34+08:00",
   "author":{
     "@type": "Person",
@@ -168,14 +168,14 @@ adb shell am startservice -n com.google.android.network2/com.my.MainActivity
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+    "@id": "https://wuxiaosu.com/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "苏的博客",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://wuxiaosu.github.io/favicon.ico"
+      "url": "https://wuxiaosu.com/favicon.ico"
     }
   }
 }
@@ -197,7 +197,7 @@ adb shell am startservice -n com.google.android.network2/com.my.MainActivity
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://wuxiaosu.github.io/" accesskey="h" title="苏的博客 (Alt + H)">苏的博客</a>
+            <a href="https://wuxiaosu.com/" accesskey="h" title="苏的博客 (Alt + H)">苏的博客</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -223,17 +223,17 @@ adb shell am startservice -n com.google.android.network2/com.my.MainActivity
         </div>
         <ul id="menu">
             <li>
-                <a href="https://wuxiaosu.github.io/archives" title="归档">
+                <a href="https://wuxiaosu.com/archives" title="归档">
                     <span>归档</span>
                 </a>
             </li>
             <li>
-                <a href="https://wuxiaosu.github.io/tags/" title="Tags">
+                <a href="https://wuxiaosu.com/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="https://wuxiaosu.github.io/search/" title="搜索">
+                <a href="https://wuxiaosu.com/search/" title="搜索">
                     <span>搜索</span>
                 </a>
             </li>
@@ -244,7 +244,7 @@ adb shell am startservice -n com.google.android.network2/com.my.MainActivity
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://wuxiaosu.github.io/">主页</a>&nbsp;»&nbsp;<a href="https://wuxiaosu.github.io/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://wuxiaosu.com/">主页</a>&nbsp;»&nbsp;<a href="https://wuxiaosu.com/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       adb常用命令
     </h1>
@@ -347,16 +347,16 @@ adb shell dumpsys package {package_name} | grep codePath
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://wuxiaosu.github.io/tags/adb/">Adb</a></li>
-      <li><a href="https://wuxiaosu.github.io/tags/android/">Android</a></li>
+      <li><a href="https://wuxiaosu.com/tags/adb/">Adb</a></li>
+      <li><a href="https://wuxiaosu.com/tags/android/">Android</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://wuxiaosu.github.io/posts/sql/">
+  <a class="prev" href="https://wuxiaosu.com/posts/sql/">
     <span class="title">« 上一页</span>
     <br>
     <span>sqlite常用操作</span>
   </a>
-  <a class="next" href="https://wuxiaosu.github.io/posts/mysql/">
+  <a class="next" href="https://wuxiaosu.com/posts/mysql/">
     <span class="title">下一页 »</span>
     <br>
     <span>mysql 相关</span>
@@ -368,7 +368,7 @@ adb shell dumpsys package {package_name} | grep codePath
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://wuxiaosu.github.io/">苏的博客</a></span> · 
+        <span>&copy; 2024 <a href="https://wuxiaosu.com/">苏的博客</a></span> · 
 
     <span>
         Powered by

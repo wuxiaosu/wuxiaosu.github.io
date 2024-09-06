@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ubuntu on 苏的博客</title>
-    <link>https://wuxiaosu.github.io/tags/ubuntu/</link>
+    <link>https://wuxiaosu.com/tags/ubuntu/</link>
     <description>Recent content in Ubuntu on 苏的博客</description>
     <image>
       <title>苏的博客</title>
-      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
-      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
+      <url>https://wuxiaosu.com/papermod-cover.png</url>
+      <link>https://wuxiaosu.com/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Tue, 24 May 2022 22:55:15 +0800</lastBuildDate>
-    <atom:link href="https://wuxiaosu.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wuxiaosu.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ubuntu安装nginx</title>
-      <link>https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</link>
+      <link>https://wuxiaosu.com/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</link>
       <pubDate>Tue, 24 May 2022 22:55:15 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</guid>
+      <guid>https://wuxiaosu.com/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</guid>
       <description>&lt;h2 id=&#34;1命令行安装&#34;&gt;1.命令行安装&lt;/h2&gt;
 &lt;p&gt;直接在终端运行命令进行安装&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install nginx
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果需要自定义安装，可以参考官方文档&lt;br&gt;
 &lt;a href=&#34;http://nginx.org/en/linux_packages.html#Ubuntu&#34;&gt;http://nginx.org/en/linux_packages.html#Ubuntu&lt;/a&gt;&lt;br&gt;
 在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://wuxiaosu.github.io/images/20230621151612.png&#34; alt=&#34;默认界面&#34;  /&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://wuxiaosu.com/images/20230621151612.png&#34; alt=&#34;默认界面&#34;  /&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;2查看默认配置&#34;&gt;2.查看默认配置&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cat /etc/nginx/nginx.conf
@@ -117,9 +117,9 @@
     </item>
     <item>
       <title>新服务器配置</title>
-      <link>https://wuxiaosu.github.io/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</link>
+      <link>https://wuxiaosu.com/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Fri, 18 Jun 2021 14:33:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://wuxiaosu.com/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</guid>
       <description>&lt;h1 id=&#34;新服务器配置&#34;&gt;新服务器配置&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;安装 mysql&lt;/li&gt;
@@ -143,9 +143,9 @@
     </item>
     <item>
       <title>ubuntu 防火墙</title>
-      <link>https://wuxiaosu.github.io/posts/ubuntu%E9%98%B2%E7%81%AB%E5%A2%99/</link>
+      <link>https://wuxiaosu.com/posts/ubuntu%E9%98%B2%E7%81%AB%E5%A2%99/</link>
       <pubDate>Wed, 24 Mar 2021 18:34:00 +0800</pubDate>
-      <guid>https://wuxiaosu.github.io/posts/ubuntu%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
+      <guid>https://wuxiaosu.com/posts/ubuntu%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
       <description>&lt;h1 id=&#34;ubuntu-防火墙&#34;&gt;ubuntu 防火墙&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;查看防火墙状态&lt;/li&gt;
