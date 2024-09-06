@@ -162,3 +162,7 @@ services:
         disableInlineCSS: true
     twitter:
         disableInlineCSS: true
+        
+security:
+  gotemplates:
+    allowActionJSTmpl: true
