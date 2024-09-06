@@ -9,7 +9,7 @@
       <url>https://wuxiaosu.github.io/papermod-cover.png</url>
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.127.0</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Tue, 24 May 2022 22:06:48 +0800</lastBuildDate>
     <atom:link href="https://wuxiaosu.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
@@ -18,50 +18,147 @@
       <link>https://wuxiaosu.github.io/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</link>
       <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</guid>
-      <description>0.下载 baksmali.jar 、smali.jar 下载地址 https://bitbucket.org/JesusFreke/smali/downloads/
-Github 地址 https://github.com/JesusFreke/smali
-1. odex -&amp;gt; smali files 把手机系统 /system/framework 下的内容拷贝到工作目录，和需要转换的 .odex、.vdex 文件也拷贝至目录，目录结构如下
--system -a.odex -a.vdex -baksmali-2.5.2.jar -smali-2.5.2.jar 然后执行以下命令
-java -jar baksmali-2.5.2.jar deodex a.odex -b ./system/framework/arm64/boot.oat -o out -deodex : 指定 odex 文件
--b : 指定 bootclasspath 文件
--o : 指定 smali 输出目录
-2. smali files -&amp;gt; dex java -jar smali-2.5.2.jar assemble out -o a.dex -assemble : 指定 smali files 文件夹
--o : 指定输出文件名
-3. 更多 https://www.</description>
+      <description>&lt;h2 id=&#34;0下载-baksmalijar-smalijar&#34;&gt;0.下载 baksmali.jar 、smali.jar&lt;/h2&gt;
+&lt;p&gt;下载地址
+&lt;a href=&#34;https://bitbucket.org/JesusFreke/smali/downloads/&#34;&gt;https://bitbucket.org/JesusFreke/smali/downloads/&lt;/a&gt;&lt;br&gt;
+Github 地址
+&lt;a href=&#34;https://github.com/JesusFreke/smali&#34;&gt;https://github.com/JesusFreke/smali&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1-odex---smali-files&#34;&gt;1. &lt;strong&gt;odex&lt;/strong&gt; -&amp;gt; &lt;strong&gt;smali files&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;把手机系统 &lt;strong&gt;/system/framework&lt;/strong&gt; 下的内容拷贝到工作目录，和需要转换的 &lt;strong&gt;.odex、.vdex&lt;/strong&gt; 文件也拷贝至目录，目录结构如下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-system
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-a.odex
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-a.vdex
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-baksmali-2.5.2.jar
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-smali-2.5.2.jar
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后执行以下命令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar baksmali-2.5.2.jar deodex a.odex -b ./system/framework/arm64/boot.oat -o out
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;-deodex&lt;/strong&gt; : 指定 &lt;strong&gt;odex&lt;/strong&gt; 文件&lt;br&gt;
+&lt;strong&gt;-b&lt;/strong&gt; : 指定 &lt;strong&gt;bootclasspath&lt;/strong&gt; 文件&lt;br&gt;
+&lt;strong&gt;-o&lt;/strong&gt; : 指定 &lt;strong&gt;smali&lt;/strong&gt; 输出目录&lt;/p&gt;</description>
     </item>
     <item>
       <title>adb常用命令</title>
       <link>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Wed, 14 Jul 2021 09:52:34 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep &amp;#34;mResumedActivity&amp;#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop &amp;lt;PACKAGE&amp;gt; 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式</description>
+      <description>&lt;h1 id=&#34;adb-常用命令&#34;&gt;adb 常用命令&lt;/h1&gt;
+&lt;h2 id=&#34;1查看最上层-activity-名字&#34;&gt;1.查看最上层 &lt;strong&gt;Activity&lt;/strong&gt; 名字&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell dumpsys activity &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep &lt;span class=&#34;s2&#34;&gt;&amp;#34;mResumedActivity&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Windows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell dumpsys activity activities &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; findstr mResumedActivity
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;2启动组件&#34;&gt;2.启动组件&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;启动 &lt;strong&gt;Activity&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell am start -n com.google.android.network2/com.my.MainActivity
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;启动 &lt;strong&gt;Service&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell am startservice -n com.google.android.network2/com.my.MainActivity
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>Android微信数据库密码计算</title>
       <link>https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</link>
       <pubDate>Mon, 04 Jan 2021 15:09:00 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</guid>
-      <description>0.省流助手 密码就是 md5(imei + uin) 取前七位，最新使用 8.0.28 验证还是可以的
-1.获取相关参数 查找主数据文件路径（当然是需要 root 权限了） ls -l /data/user/0/com.tencent.mm/MicroMsg/*/EnMicroMsg.db 如果出现多个文件的话，说明登录过多个微信号，看日期最新的就是当前登录的号了
-查看 _auth_uin 值 cat /data/data/com.tencent.mm/shared_prefs/auth_info_key_prefs.xml 正常的话应该是下面这样
-&amp;lt;?xml version=&amp;#39;1.0&amp;#39; encoding=&amp;#39;utf-8&amp;#39; standalone=&amp;#39;yes&amp;#39; ?&amp;gt; &amp;lt;map&amp;gt; &amp;lt;boolean name=&amp;#34;auth_info_prefs_use_new_ecdh&amp;#34; value=&amp;#34;true&amp;#34; /&amp;gt; &amp;lt;int name=&amp;#34;_auth_uin&amp;#34; value=&amp;#34;1054025641&amp;#34; /&amp;gt; &amp;lt;boolean name=&amp;#34;key_auth_info_prefs_created&amp;#34; value=&amp;#34;true&amp;#34; /&amp;gt; &amp;lt;int name=&amp;#34;key_auth_update_version&amp;#34; value=&amp;#34;671094359&amp;#34; /&amp;gt; &amp;lt;string name=&amp;#34;server_id&amp;#34;&amp;gt;4f031802000000000d385cc7c40600&amp;lt;/string&amp;gt; &amp;lt;string name=&amp;#34;_auth_key&amp;#34;&amp;gt;0a2408201220b9be5667ec69984f48ba4923c4e045eef3837d61871b7da350accb7b8a56405212b90108b30112b30108994e12a70186e1f98b9239ec3db321b36332fcc097ab11f7c173f6eb1b1411fd2afad5ce00e2b1e1e1b9588b0377bd47cb2db230d17fa9178a05791bb2725ff01c4df06a578a23b192a4e19f4c794e67dda2813522faa97dba324e0ef6b14c8b3e07dc0c11a5ca551f398832212aa9591a66b3be97c24f46b5dfd2299e4392f038da3f8f7e4bc602c3d2927232b30303664c5f00f624142231bc084ae8e04efe643481a23edc12091d8ceaf318bfa6ddb40a&amp;lt;/string&amp;gt; 查看设备 imei 值 getprop | grep imei [persist.radio.imei1]: [868619036811436] [persist.radio.imei2]: [868619036811444] [ro.ril.miui.imei0]: [868619036811436] [ro.ril.miui.imei1]: [868619036811444] 2.计算数据库密码 计算 imei + uin 的 md5 echo -n &amp;#34;8686190368114361054025641&amp;#34;|md5sum 密码取前七位（小写） 如果有多个 imei 那就都试一下</description>
+      <description>&lt;h2 id=&#34;0省流助手&#34;&gt;0.省流助手&lt;/h2&gt;
+&lt;p&gt;密码就是 md5(imei + uin) 取前七位，最新使用 8.0.28 验证还是可以的&lt;/p&gt;
+&lt;h2 id=&#34;1获取相关参数&#34;&gt;1.获取相关参数&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;查找主数据文件路径（当然是需要 root 权限了）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ls -l /data/user/0/com.tencent.mm/MicroMsg/*/EnMicroMsg.db
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果出现多个文件的话，说明登录过多个微信号，看日期最新的就是当前登录的号了&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;查看 _auth_uin 值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cat /data/data/com.tencent.mm/shared_prefs/auth_info_key_prefs.xml
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;正常的话应该是下面这样&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;?xml &lt;span class=&#34;nv&#34;&gt;version&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;1.0&amp;#39;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;encoding&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;utf-8&amp;#39;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;standalone&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;yes&amp;#39;&lt;/span&gt; ?&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;map&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;boolean &lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;auth_info_prefs_use_new_ecdh&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt; /&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;int &lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;_auth_uin&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;1054025641&amp;#34;&lt;/span&gt; /&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;boolean &lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;key_auth_info_prefs_created&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt; /&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;int &lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;key_auth_update_version&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;671094359&amp;#34;&lt;/span&gt; /&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;string &lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;server_id&amp;#34;&lt;/span&gt;&amp;gt;4f031802000000000d385cc7c40600&amp;lt;/string&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;string &lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;_auth_key&amp;#34;&lt;/span&gt;&amp;gt;0a2408201220b9be5667ec69984f48ba4923c4e045eef3837d61871b7da350accb7b8a56405212b90108b30112b30108994e12a70186e1f98b9239ec3db321b36332fcc097ab11f7c173f6eb1b1411fd2afad5ce00e2b1e1e1b9588b0377bd47cb2db230d17fa9178a05791bb2725ff01c4df06a578a23b192a4e19f4c794e67dda2813522faa97dba324e0ef6b14c8b3e07dc0c11a5ca551f398832212aa9591a66b3be97c24f46b5dfd2299e4392f038da3f8f7e4bc602c3d2927232b30303664c5f00f624142231bc084ae8e04efe643481a23edc12091d8ceaf318bfa6ddb40a&amp;lt;/string&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>Android 8.0 以上开启全局可调式</title>
       <link>https://wuxiaosu.github.io/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/</guid>
-      <description>Android 8.0 以上开启全局可调式 1.安装好 Magisk
-2.终端执行
-adb shell su magisk resetprop ro.debuggable 1 3.重启 system server stop;start 4.重启手机会失效 </description>
+      <description>&lt;h1 id=&#34;android-80-以上开启全局可调式&#34;&gt;Android 8.0 以上开启全局可调式&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1.安装好 Magisk&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2.终端执行&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;su
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;magisk resetprop ro.debuggable &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;3.重启 system server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;stop&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;start
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;4.重启手机会失效&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>使用MagiskHidePropsConf开启全局可调试</title>
       <link>https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</guid>
-      <description>1.安装好 Magisk 此处略过
-2.安装 MagiskHidePropsConf 下载地址 https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases 安装完成后重启 3.按流程操作 重启进入终端 按流程一步一步操作就行了 adb shell props MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== Select an option below. ===================================== 1 - Edit device fingerprint 2 - Force BASIC key attestation 3 - Device simulation (disabled) 4 - Edit MagiskHide props (active) 5 - Add/edit custom props 6 - Delete prop values 7 - Script settings 8 - Collect logs u - Perform module update check r - Reset all options/settings b - Reboot device e - Exit See the module readme or the support thread @ XDA for details.</description>
+      <description>&lt;h2 id=&#34;1安装好-magisk&#34;&gt;1.安装好 Magisk&lt;/h2&gt;
+&lt;p&gt;此处略过&lt;/p&gt;
+&lt;h2 id=&#34;2安装-magiskhidepropsconf&#34;&gt;2.安装 MagiskHidePropsConf&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;下载地址 &lt;a href=&#34;https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases&#34;&gt;https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;安装完成后重启&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3按流程操作&#34;&gt;3.按流程操作&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;重启进入终端&lt;/li&gt;
+&lt;li&gt;按流程一步一步操作就行了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;props
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;MagiskHide Props Config v6.1.2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;by Didgeridoohan @ XDA &lt;span class=&#34;nv&#34;&gt;Developers&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;=====================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; Select an option below.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;=====================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; - Edit device fingerprint
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; - Force BASIC key attestation
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; - Device simulation &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;disabled&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;4&lt;/span&gt; - Edit MagiskHide props &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;active&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;5&lt;/span&gt; - Add/edit custom props
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;6&lt;/span&gt; - Delete prop values
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;7&lt;/span&gt; - Script settings
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;8&lt;/span&gt; - Collect logs
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;u - Perform module update check
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;r - Reset all options/settings
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;b - Reboot device
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;e - Exit
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;See the module readme or the
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;support thread @ XDA &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; details.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Enter your desired option: &lt;span class=&#34;m&#34;&gt;5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
   </channel>
 </rss>

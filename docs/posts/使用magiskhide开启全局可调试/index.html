@@ -7,11 +7,48 @@
 <meta name="robots" content="index, follow">
 <title>使用MagiskHidePropsConf开启全局可调试 | 苏的博客</title>
 <meta name="keywords" content="MagiskHidePropsConf, android">
-<meta name="description" content="1.安装好 Magisk 此处略过
-2.安装 MagiskHidePropsConf 下载地址 https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases 安装完成后重启 3.按流程操作 重启进入终端 按流程一步一步操作就行了 adb shell props MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== Select an option below. ===================================== 1 - Edit device fingerprint 2 - Force BASIC key attestation 3 - Device simulation (disabled) 4 - Edit MagiskHide props (active) 5 - Add/edit custom props 6 - Delete prop values 7 - Script settings 8 - Collect logs u - Perform module update check r - Reset all options/settings b - Reboot device e - Exit See the module readme or the support thread @ XDA for details.">
+<meta name="description" content="1.安装好 Magisk
+此处略过
+2.安装 MagiskHidePropsConf
+
+下载地址 https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases
+安装完成后重启
+
+3.按流程操作
+
+重启进入终端
+按流程一步一步操作就行了
+
+adb shell
+props
+MagiskHide Props Config v6.1.2
+by Didgeridoohan @ XDA Developers
+
+=====================================
+ Select an option below.
+=====================================
+
+1 - Edit device fingerprint
+2 - Force BASIC key attestation
+3 - Device simulation (disabled)
+4 - Edit MagiskHide props (active)
+5 - Add/edit custom props
+6 - Delete prop values
+7 - Script settings
+8 - Collect logs
+u - Perform module update check
+r - Reset all options/settings
+b - Reboot device
+e - Exit
+
+See the module readme or the
+support thread @ XDA for details.
+
+Enter your desired option: 5
+">
 <meta name="author" content="su">
 <link rel="canonical" href="https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://wuxiaosu.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://wuxiaosu.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://wuxiaosu.github.io/favicon-32x32.png">
@@ -56,12 +93,46 @@
         }
 
     </style>
-</noscript>
-  
+</noscript><meta property="og:title" content="使用MagiskHidePropsConf开启全局可调试" />
+<meta property="og:description" content="1.安装好 Magisk
+此处略过
+2.安装 MagiskHidePropsConf
 
-<meta property="og:title" content="使用MagiskHidePropsConf开启全局可调试" />
-<meta property="og:description" content="1.安装好 Magisk 此处略过
-2.安装 MagiskHidePropsConf 下载地址 https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases 安装完成后重启 3.按流程操作 重启进入终端 按流程一步一步操作就行了 adb shell props MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== Select an option below. ===================================== 1 - Edit device fingerprint 2 - Force BASIC key attestation 3 - Device simulation (disabled) 4 - Edit MagiskHide props (active) 5 - Add/edit custom props 6 - Delete prop values 7 - Script settings 8 - Collect logs u - Perform module update check r - Reset all options/settings b - Reboot device e - Exit See the module readme or the support thread @ XDA for details." />
+下载地址 https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases
+安装完成后重启
+
+3.按流程操作
+
+重启进入终端
+按流程一步一步操作就行了
+
+adb shell
+props
+MagiskHide Props Config v6.1.2
+by Didgeridoohan @ XDA Developers
+
+=====================================
+ Select an option below.
+=====================================
+
+1 - Edit device fingerprint
+2 - Force BASIC key attestation
+3 - Device simulation (disabled)
+4 - Edit MagiskHide props (active)
+5 - Add/edit custom props
+6 - Delete prop values
+7 - Script settings
+8 - Collect logs
+u - Perform module update check
+r - Reset all options/settings
+b - Reboot device
+e - Exit
+
+See the module readme or the
+support thread @ XDA for details.
+
+Enter your desired option: 5
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/" />
 <meta property="og:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
@@ -72,8 +143,45 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
 <meta name="twitter:title" content="使用MagiskHidePropsConf开启全局可调试"/>
-<meta name="twitter:description" content="1.安装好 Magisk 此处略过
-2.安装 MagiskHidePropsConf 下载地址 https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases 安装完成后重启 3.按流程操作 重启进入终端 按流程一步一步操作就行了 adb shell props MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== Select an option below. ===================================== 1 - Edit device fingerprint 2 - Force BASIC key attestation 3 - Device simulation (disabled) 4 - Edit MagiskHide props (active) 5 - Add/edit custom props 6 - Delete prop values 7 - Script settings 8 - Collect logs u - Perform module update check r - Reset all options/settings b - Reboot device e - Exit See the module readme or the support thread @ XDA for details."/>
+<meta name="twitter:description" content="1.安装好 Magisk
+此处略过
+2.安装 MagiskHidePropsConf
+
+下载地址 https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases
+安装完成后重启
+
+3.按流程操作
+
+重启进入终端
+按流程一步一步操作就行了
+
+adb shell
+props
+MagiskHide Props Config v6.1.2
+by Didgeridoohan @ XDA Developers
+
+=====================================
+ Select an option below.
+=====================================
+
+1 - Edit device fingerprint
+2 - Force BASIC key attestation
+3 - Device simulation (disabled)
+4 - Edit MagiskHide props (active)
+5 - Add/edit custom props
+6 - Delete prop values
+7 - Script settings
+8 - Collect logs
+u - Perform module update check
+r - Reset all options/settings
+b - Reboot device
+e - Exit
+
+See the module readme or the
+support thread @ XDA for details.
+
+Enter your desired option: 5
+"/>
 
 
 <script type="application/ld+json">
@@ -102,7 +210,7 @@
   "@type": "BlogPosting",
   "headline": "使用MagiskHidePropsConf开启全局可调试",
   "name": "使用MagiskHidePropsConf开启全局可调试",
-  "description": "1.安装好 Magisk 此处略过\n2.安装 MagiskHidePropsConf 下载地址 https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases 安装完成后重启 3.按流程操作 重启进入终端 按流程一步一步操作就行了 adb shell props MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== Select an option below. ===================================== 1 - Edit device fingerprint 2 - Force BASIC key attestation 3 - Device simulation (disabled) 4 - Edit MagiskHide props (active) 5 - Add/edit custom props 6 - Delete prop values 7 - Script settings 8 - Collect logs u - Perform module update check r - Reset all options/settings b - Reboot device e - Exit See the module readme or the support thread @ XDA for details.",
+  "description": "1.安装好 Magisk 此处略过\n2.安装 MagiskHidePropsConf 下载地址 https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases 安装完成后重启 3.按流程操作 重启进入终端 按流程一步一步操作就行了 adb shell props MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== Select an option below. ===================================== 1 - Edit device fingerprint 2 - Force BASIC key attestation 3 - Device simulation (disabled) 4 - Edit MagiskHide props (active) 5 - Add/edit custom props 6 - Delete prop values 7 - Script settings 8 - Collect logs u - Perform module update check r - Reset all options/settings b - Reboot device e - Exit See the module readme or the support thread @ XDA for details. Enter your desired option: 5 ",
   "keywords": [
     "MagiskHidePropsConf", "android"
   ],
@@ -407,6 +515,8 @@
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+		 · 备案号:
+		<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022000848号-1</a>
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">

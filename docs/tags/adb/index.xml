@@ -9,7 +9,7 @@
       <url>https://wuxiaosu.github.io/papermod-cover.png</url>
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.127.0</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Wed, 14 Jul 2021 09:52:34 +0800</lastBuildDate>
     <atom:link href="https://wuxiaosu.github.io/tags/adb/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +18,26 @@
       <link>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Wed, 14 Jul 2021 09:52:34 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep &amp;#34;mResumedActivity&amp;#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop &amp;lt;PACKAGE&amp;gt; 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式</description>
+      <description>&lt;h1 id=&#34;adb-常用命令&#34;&gt;adb 常用命令&lt;/h1&gt;
+&lt;h2 id=&#34;1查看最上层-activity-名字&#34;&gt;1.查看最上层 &lt;strong&gt;Activity&lt;/strong&gt; 名字&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell dumpsys activity &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep &lt;span class=&#34;s2&#34;&gt;&amp;#34;mResumedActivity&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Windows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell dumpsys activity activities &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; findstr mResumedActivity
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;2启动组件&#34;&gt;2.启动组件&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;启动 &lt;strong&gt;Activity&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell am start -n com.google.android.network2/com.my.MainActivity
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;启动 &lt;strong&gt;Service&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell am startservice -n com.google.android.network2/com.my.MainActivity
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
   </channel>
 </rss>

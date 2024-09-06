@@ -9,7 +9,7 @@
       <url>https://wuxiaosu.github.io/papermod-cover.png</url>
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.127.0</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Fri, 18 Jun 2021 14:34:00 +0800</lastBuildDate>
     <atom:link href="https://wuxiaosu.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
@@ -18,12 +18,18 @@
       <link>https://wuxiaosu.github.io/posts/mysql/</link>
       <pubDate>Fri, 18 Jun 2021 14:34:00 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/mysql/</guid>
-      <description>开启 mysql 远程访问 确认端口是否对外开放，默认是不开放的
-netstat -an | grep 3306 输出如下
-tcp 0 0 127.0.0.1:3306 0.0.0.0:* LISTEN 修改配置文件（不同版本可能位置不同）
-/etc/mysql/mysql.conf.d/mysqld.cnf 注释掉
-# bind-address = 127.0.0.1 为新增主键赋值 SET @mycnt = 0; UPDATE xxxxx SET RowNum=(@mycnt := @mycnt + 1) 使用 native_password 连接 ALTER USER &amp;#39;user&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED WITH mysql_native_password BY &amp;#39;password&amp;#39;; flush privileges; 修改用户密码 ALTER USER &amp;#39;username&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;new_password&amp;#39;; 使用默认密码修改数据库密码 查看默认用户密码
-cd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. DO NOT TOUCH!</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;开启 mysql 远程访问&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;确认端口是否对外开放，默认是不开放的&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -an &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep &lt;span class=&#34;m&#34;&gt;3306&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输出如下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tcp &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;   &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;   127.0.0.1:3306  0.0.0.0:*   LISTEN 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;修改配置文件（不同版本可能位置不同）&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/etc/mysql/mysql.conf.d/mysqld.cnf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;注释掉&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# bind-address = 127.0.0.1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
   </channel>
 </rss>

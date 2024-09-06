@@ -9,7 +9,7 @@
       <url>https://wuxiaosu.github.io/papermod-cover.png</url>
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.127.0</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <atom:link href="https://wuxiaosu.github.io/tags/magiskhidepropsconf/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -17,8 +17,45 @@
       <link>https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</guid>
-      <description>1.安装好 Magisk 此处略过
-2.安装 MagiskHidePropsConf 下载地址 https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases 安装完成后重启 3.按流程操作 重启进入终端 按流程一步一步操作就行了 adb shell props MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== Select an option below. ===================================== 1 - Edit device fingerprint 2 - Force BASIC key attestation 3 - Device simulation (disabled) 4 - Edit MagiskHide props (active) 5 - Add/edit custom props 6 - Delete prop values 7 - Script settings 8 - Collect logs u - Perform module update check r - Reset all options/settings b - Reboot device e - Exit See the module readme or the support thread @ XDA for details.</description>
+      <description>&lt;h2 id=&#34;1安装好-magisk&#34;&gt;1.安装好 Magisk&lt;/h2&gt;
+&lt;p&gt;此处略过&lt;/p&gt;
+&lt;h2 id=&#34;2安装-magiskhidepropsconf&#34;&gt;2.安装 MagiskHidePropsConf&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;下载地址 &lt;a href=&#34;https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases&#34;&gt;https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;安装完成后重启&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3按流程操作&#34;&gt;3.按流程操作&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;重启进入终端&lt;/li&gt;
+&lt;li&gt;按流程一步一步操作就行了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;props
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;MagiskHide Props Config v6.1.2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;by Didgeridoohan @ XDA &lt;span class=&#34;nv&#34;&gt;Developers&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;=====================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; Select an option below.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;=====================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; - Edit device fingerprint
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; - Force BASIC key attestation
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; - Device simulation &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;disabled&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;4&lt;/span&gt; - Edit MagiskHide props &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;active&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;5&lt;/span&gt; - Add/edit custom props
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;6&lt;/span&gt; - Delete prop values
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;7&lt;/span&gt; - Script settings
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;8&lt;/span&gt; - Collect logs
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;u - Perform module update check
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;r - Reset all options/settings
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;b - Reboot device
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;e - Exit
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;See the module readme or the
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;support thread @ XDA &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; details.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Enter your desired option: &lt;span class=&#34;m&#34;&gt;5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
   </channel>
 </rss>

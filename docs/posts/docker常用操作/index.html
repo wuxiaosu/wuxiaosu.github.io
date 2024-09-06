@@ -7,10 +7,31 @@
 <meta name="robots" content="index, follow">
 <title>docker常用操作 | 苏的博客</title>
 <meta name="keywords" content="docker, docker compose">
-<meta name="description" content="docker 常用操作 搜索镜像 docker search python 拉取镜像 docker pull python:3.7 查看所有镜像 docker images 删除镜像 docker rmi 正在运行的镜像列表 docker ps 使用镜像启动一个容器 docker run -itd openjdk:8 启动并直接进入镜像 docker run -it ubuntu:14.04 查看所有容器 docker ps -a 删除容器 docker rm 使用 Dockerfile 构建镜像 docker build -t docker_repo ./docker_repo 查看容器状态 docker stats 查看日志 docker compose logs 后台启动 docker compose up -d 启动 docker compose up 重启 docker compose restart 创建网络 docker network create mynet 查看网络 docker network ls 删除网络 docker network rm mynet 查看容器ip docker inspect -f &#39;{{range .">
+<meta name="description" content="docker 常用操作
+
+搜索镜像
+
+docker search python
+
+拉取镜像
+
+docker pull python:3.7
+
+查看所有镜像
+
+docker images
+
+删除镜像
+
+docker rmi
+
+正在运行的镜像列表
+
+docker ps
+">
 <meta name="author" content="su">
 <link rel="canonical" href="https://wuxiaosu.github.io/posts/docker%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://wuxiaosu.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://wuxiaosu.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://wuxiaosu.github.io/favicon-32x32.png">
@@ -55,11 +76,29 @@
         }
 
     </style>
-</noscript>
-  
+</noscript><meta property="og:title" content="docker常用操作" />
+<meta property="og:description" content="docker 常用操作
 
-<meta property="og:title" content="docker常用操作" />
-<meta property="og:description" content="docker 常用操作 搜索镜像 docker search python 拉取镜像 docker pull python:3.7 查看所有镜像 docker images 删除镜像 docker rmi 正在运行的镜像列表 docker ps 使用镜像启动一个容器 docker run -itd openjdk:8 启动并直接进入镜像 docker run -it ubuntu:14.04 查看所有容器 docker ps -a 删除容器 docker rm 使用 Dockerfile 构建镜像 docker build -t docker_repo ./docker_repo 查看容器状态 docker stats 查看日志 docker compose logs 后台启动 docker compose up -d 启动 docker compose up 重启 docker compose restart 创建网络 docker network create mynet 查看网络 docker network ls 删除网络 docker network rm mynet 查看容器ip docker inspect -f &#39;{{range ." />
+搜索镜像
+
+docker search python
+
+拉取镜像
+
+docker pull python:3.7
+
+查看所有镜像
+
+docker images
+
+删除镜像
+
+docker rmi
+
+正在运行的镜像列表
+
+docker ps
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wuxiaosu.github.io/posts/docker%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/" />
 <meta property="og:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
@@ -70,7 +109,28 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
 <meta name="twitter:title" content="docker常用操作"/>
-<meta name="twitter:description" content="docker 常用操作 搜索镜像 docker search python 拉取镜像 docker pull python:3.7 查看所有镜像 docker images 删除镜像 docker rmi 正在运行的镜像列表 docker ps 使用镜像启动一个容器 docker run -itd openjdk:8 启动并直接进入镜像 docker run -it ubuntu:14.04 查看所有容器 docker ps -a 删除容器 docker rm 使用 Dockerfile 构建镜像 docker build -t docker_repo ./docker_repo 查看容器状态 docker stats 查看日志 docker compose logs 后台启动 docker compose up -d 启动 docker compose up 重启 docker compose restart 创建网络 docker network create mynet 查看网络 docker network ls 删除网络 docker network rm mynet 查看容器ip docker inspect -f &#39;{{range ."/>
+<meta name="twitter:description" content="docker 常用操作
+
+搜索镜像
+
+docker search python
+
+拉取镜像
+
+docker pull python:3.7
+
+查看所有镜像
+
+docker images
+
+删除镜像
+
+docker rmi
+
+正在运行的镜像列表
+
+docker ps
+"/>
 
 
 <script type="application/ld+json">
@@ -99,7 +159,7 @@
   "@type": "BlogPosting",
   "headline": "docker常用操作",
   "name": "docker常用操作",
-  "description": "docker 常用操作 搜索镜像 docker search python 拉取镜像 docker pull python:3.7 查看所有镜像 docker images 删除镜像 docker rmi 正在运行的镜像列表 docker ps 使用镜像启动一个容器 docker run -itd openjdk:8 启动并直接进入镜像 docker run -it ubuntu:14.04 查看所有容器 docker ps -a 删除容器 docker rm 使用 Dockerfile 构建镜像 docker build -t docker_repo ./docker_repo 查看容器状态 docker stats 查看日志 docker compose logs 后台启动 docker compose up -d 启动 docker compose up 重启 docker compose restart 创建网络 docker network create mynet 查看网络 docker network ls 删除网络 docker network rm mynet 查看容器ip docker inspect -f \u0026#39;{{range .",
+  "description": "docker 常用操作 搜索镜像 docker search python 拉取镜像 docker pull python:3.7 查看所有镜像 docker images 删除镜像 docker rmi 正在运行的镜像列表 docker ps ",
   "keywords": [
     "docker", "docker compose"
   ],
@@ -344,6 +404,8 @@
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+		 · 备案号:
+		<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022000848号-1</a>
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">

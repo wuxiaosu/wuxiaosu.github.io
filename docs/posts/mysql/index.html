@@ -7,15 +7,21 @@
 <meta name="robots" content="index, follow">
 <title>mysql 相关 | 苏的博客</title>
 <meta name="keywords" content="mysql">
-<meta name="description" content="开启 mysql 远程访问 确认端口是否对外开放，默认是不开放的
-netstat -an | grep 3306 输出如下
-tcp 0 0 127.0.0.1:3306 0.0.0.0:* LISTEN 修改配置文件（不同版本可能位置不同）
-/etc/mysql/mysql.conf.d/mysqld.cnf 注释掉
-# bind-address = 127.0.0.1 为新增主键赋值 SET @mycnt = 0; UPDATE xxxxx SET RowNum=(@mycnt := @mycnt &#43; 1) 使用 native_password 连接 ALTER USER &#39;user&#39;@&#39;%&#39; IDENTIFIED WITH mysql_native_password BY &#39;password&#39;; flush privileges; 修改用户密码 ALTER USER &#39;username&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;new_password&#39;; 使用默认密码修改数据库密码 查看默认用户密码
-cd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. DO NOT TOUCH!">
+<meta name="description" content="
+开启 mysql 远程访问
+
+确认端口是否对外开放，默认是不开放的
+netstat -an | grep 3306
+输出如下
+tcp 0   0   127.0.0.1:3306  0.0.0.0:*   LISTEN 
+修改配置文件（不同版本可能位置不同）
+/etc/mysql/mysql.conf.d/mysqld.cnf
+注释掉
+# bind-address = 127.0.0.1
+">
 <meta name="author" content="su">
 <link rel="canonical" href="https://wuxiaosu.github.io/posts/mysql/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://wuxiaosu.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://wuxiaosu.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://wuxiaosu.github.io/favicon-32x32.png">
@@ -60,16 +66,19 @@ cd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. 
         }
 
     </style>
-</noscript>
-  
+</noscript><meta property="og:title" content="mysql 相关" />
+<meta property="og:description" content="
+开启 mysql 远程访问
 
-<meta property="og:title" content="mysql 相关" />
-<meta property="og:description" content="开启 mysql 远程访问 确认端口是否对外开放，默认是不开放的
-netstat -an | grep 3306 输出如下
-tcp 0 0 127.0.0.1:3306 0.0.0.0:* LISTEN 修改配置文件（不同版本可能位置不同）
-/etc/mysql/mysql.conf.d/mysqld.cnf 注释掉
-# bind-address = 127.0.0.1 为新增主键赋值 SET @mycnt = 0; UPDATE xxxxx SET RowNum=(@mycnt := @mycnt &#43; 1) 使用 native_password 连接 ALTER USER &#39;user&#39;@&#39;%&#39; IDENTIFIED WITH mysql_native_password BY &#39;password&#39;; flush privileges; 修改用户密码 ALTER USER &#39;username&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;new_password&#39;; 使用默认密码修改数据库密码 查看默认用户密码
-cd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. DO NOT TOUCH!" />
+确认端口是否对外开放，默认是不开放的
+netstat -an | grep 3306
+输出如下
+tcp 0   0   127.0.0.1:3306  0.0.0.0:*   LISTEN 
+修改配置文件（不同版本可能位置不同）
+/etc/mysql/mysql.conf.d/mysqld.cnf
+注释掉
+# bind-address = 127.0.0.1
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wuxiaosu.github.io/posts/mysql/" />
 <meta property="og:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
@@ -80,12 +89,18 @@ cd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
 <meta name="twitter:title" content="mysql 相关"/>
-<meta name="twitter:description" content="开启 mysql 远程访问 确认端口是否对外开放，默认是不开放的
-netstat -an | grep 3306 输出如下
-tcp 0 0 127.0.0.1:3306 0.0.0.0:* LISTEN 修改配置文件（不同版本可能位置不同）
-/etc/mysql/mysql.conf.d/mysqld.cnf 注释掉
-# bind-address = 127.0.0.1 为新增主键赋值 SET @mycnt = 0; UPDATE xxxxx SET RowNum=(@mycnt := @mycnt &#43; 1) 使用 native_password 连接 ALTER USER &#39;user&#39;@&#39;%&#39; IDENTIFIED WITH mysql_native_password BY &#39;password&#39;; flush privileges; 修改用户密码 ALTER USER &#39;username&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;new_password&#39;; 使用默认密码修改数据库密码 查看默认用户密码
-cd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. DO NOT TOUCH!"/>
+<meta name="twitter:description" content="
+开启 mysql 远程访问
+
+确认端口是否对外开放，默认是不开放的
+netstat -an | grep 3306
+输出如下
+tcp 0   0   127.0.0.1:3306  0.0.0.0:*   LISTEN 
+修改配置文件（不同版本可能位置不同）
+/etc/mysql/mysql.conf.d/mysqld.cnf
+注释掉
+# bind-address = 127.0.0.1
+"/>
 
 
 <script type="application/ld+json">
@@ -114,7 +129,7 @@ cd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. 
   "@type": "BlogPosting",
   "headline": "mysql 相关",
   "name": "mysql 相关",
-  "description": "开启 mysql 远程访问 确认端口是否对外开放，默认是不开放的\nnetstat -an | grep 3306 输出如下\ntcp 0 0 127.0.0.1:3306 0.0.0.0:* LISTEN 修改配置文件（不同版本可能位置不同）\n/etc/mysql/mysql.conf.d/mysqld.cnf 注释掉\n# bind-address = 127.0.0.1 为新增主键赋值 SET @mycnt = 0; UPDATE xxxxx SET RowNum=(@mycnt := @mycnt + 1) 使用 native_password 连接 ALTER USER \u0026#39;user\u0026#39;@\u0026#39;%\u0026#39; IDENTIFIED WITH mysql_native_password BY \u0026#39;password\u0026#39;; flush privileges; 修改用户密码 ALTER USER \u0026#39;username\u0026#39;@\u0026#39;localhost\u0026#39; IDENTIFIED BY \u0026#39;new_password\u0026#39;; 使用默认密码修改数据库密码 查看默认用户密码\ncd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. DO NOT TOUCH!",
+  "description": " 开启 mysql 远程访问 确认端口是否对外开放，默认是不开放的\nnetstat -an | grep 3306 输出如下\ntcp 0 0 127.0.0.1:3306 0.0.0.0:* LISTEN 修改配置文件（不同版本可能位置不同）\n/etc/mysql/mysql.conf.d/mysqld.cnf 注释掉\n# bind-address = 127.0.0.1 ",
   "keywords": [
     "mysql"
   ],
@@ -305,6 +320,8 @@ cd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. 
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+		 · 备案号:
+		<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022000848号-1</a>
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">

@@ -9,7 +9,7 @@
       <url>https://wuxiaosu.github.io/papermod-cover.png</url>
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.127.0</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Tue, 18 May 2021 10:22:48 +0800</lastBuildDate>
     <atom:link href="https://wuxiaosu.github.io/tags/frida/index.xml" rel="self" type="application/rss+xml" />
@@ -18,16 +18,21 @@
       <link>https://wuxiaosu.github.io/posts/frida%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
       <pubDate>Tue, 18 May 2021 10:22:48 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/frida%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
-      <description>Frida是个轻量级的hook框架。
-安装客户端 pip install frida pip install frida-tools 查看 frida 版本 frida --version 出现版本号表示安装成功
-在 Android 手机中安装服务端 在手机中查看设备信息
-getprop ro.product.cpu.abi 输出结果
-arm64-v8a 根据 cpu 版本去官网下载对应的 frida-server。
-frida-server-12.8.14-android-arm64.xz 将下载并解压后的文件放到设备上
-adb push frida-server-12.8.14-android-arm64 /data/local/tmp 端口转发
-adb forward tcp:27042 tcp:27042 adb forward tcp:27043 tcp:27043 使用 root 权限运行 frida
-chmod 755 frida-server-12.8.14-android-arm64 ./frida-server-12.8.14-android-arm64 打开终端，查看 frida-server64 是否运行成功
-frida-ps -U 出现设备进程信息表示运行成功。</description>
+      <description>&lt;p&gt;Frida是个轻量级的hook框架。&lt;/p&gt;
+&lt;h2 id=&#34;安装客户端&#34;&gt;安装客户端&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install frida
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install frida-tools
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;查看-frida-版本&#34;&gt;查看 frida 版本&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;frida --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;出现版本号表示安装成功&lt;/p&gt;
+&lt;h2 id=&#34;在-android-手机中安装服务端&#34;&gt;在 Android 手机中安装服务端&lt;/h2&gt;
+&lt;p&gt;在手机中查看设备信息&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;getprop ro.product.cpu.abi
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输出结果&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;arm64-v8a
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;根据 cpu 版本去官网下载对应的 &lt;a href=&#34;https://github.com/frida/frida/releases&#34;&gt;frida-server&lt;/a&gt;。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;frida-server-12.8.14-android-arm64.xz
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
   </channel>
 </rss>

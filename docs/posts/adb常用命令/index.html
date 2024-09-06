@@ -7,10 +7,29 @@
 <meta name="robots" content="index, follow">
 <title>adb常用命令 | 苏的博客</title>
 <meta name="keywords" content="adb, android">
-<meta name="description" content="adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep &#34;mResumedActivity&#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop &lt;PACKAGE&gt; 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式">
+<meta name="description" content="adb 常用命令
+1.查看最上层 Activity 名字
+
+Linux
+
+adb shell dumpsys activity | grep &#34;mResumedActivity&#34;
+
+Windows
+
+adb shell dumpsys activity activities | findstr mResumedActivity
+2.启动组件
+
+启动 Activity
+
+adb shell am start -n com.google.android.network2/com.my.MainActivity
+
+启动 Service
+
+adb shell am startservice -n com.google.android.network2/com.my.MainActivity
+">
 <meta name="author" content="su">
 <link rel="canonical" href="https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://wuxiaosu.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://wuxiaosu.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://wuxiaosu.github.io/favicon-32x32.png">
@@ -55,11 +74,27 @@
         }
 
     </style>
-</noscript>
-  
+</noscript><meta property="og:title" content="adb常用命令" />
+<meta property="og:description" content="adb 常用命令
+1.查看最上层 Activity 名字
 
-<meta property="og:title" content="adb常用命令" />
-<meta property="og:description" content="adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep &#34;mResumedActivity&#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop &lt;PACKAGE&gt; 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式" />
+Linux
+
+adb shell dumpsys activity | grep &#34;mResumedActivity&#34;
+
+Windows
+
+adb shell dumpsys activity activities | findstr mResumedActivity
+2.启动组件
+
+启动 Activity
+
+adb shell am start -n com.google.android.network2/com.my.MainActivity
+
+启动 Service
+
+adb shell am startservice -n com.google.android.network2/com.my.MainActivity
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" />
 <meta property="og:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
@@ -70,7 +105,26 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://wuxiaosu.github.io/papermod-cover.png" />
 <meta name="twitter:title" content="adb常用命令"/>
-<meta name="twitter:description" content="adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep &#34;mResumedActivity&#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop &lt;PACKAGE&gt; 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式"/>
+<meta name="twitter:description" content="adb 常用命令
+1.查看最上层 Activity 名字
+
+Linux
+
+adb shell dumpsys activity | grep &#34;mResumedActivity&#34;
+
+Windows
+
+adb shell dumpsys activity activities | findstr mResumedActivity
+2.启动组件
+
+启动 Activity
+
+adb shell am start -n com.google.android.network2/com.my.MainActivity
+
+启动 Service
+
+adb shell am startservice -n com.google.android.network2/com.my.MainActivity
+"/>
 
 
 <script type="application/ld+json">
@@ -99,7 +153,7 @@
   "@type": "BlogPosting",
   "headline": "adb常用命令",
   "name": "adb常用命令",
-  "description": "adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep \u0026#34;mResumedActivity\u0026#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop \u0026lt;PACKAGE\u0026gt; 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式",
+  "description": "adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep \u0026#34;mResumedActivity\u0026#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity ",
   "keywords": [
     "adb", "android"
   ],
@@ -320,6 +374,8 @@ adb shell dumpsys package {package_name} | grep codePath
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+		 · 备案号:
+		<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022000848号-1</a>
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">

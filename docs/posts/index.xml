@@ -9,7 +9,7 @@
       <url>https://wuxiaosu.github.io/papermod-cover.png</url>
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.127.0</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Thu, 10 Nov 2022 17:41:48 +0800</lastBuildDate>
     <atom:link href="https://wuxiaosu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -18,201 +18,586 @@
       <link>https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</link>
       <pubDate>Thu, 10 Nov 2022 17:41:48 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</guid>
-      <description>1.解压 exe 文件 1.1 下载 pyinstxtractor https://github.com/extremecoders-re/pyinstxtractor
-1.2 执行解压操作 python pyinstxtractor.py &amp;lt;filename&amp;gt; 执行成功会出现一个 filename_extracted 目录,目录里面有相对应的 pyc 文件
-2.反编译 pyc 文件 2.1 安装 uncompyle6 pip install uncompyle6 2.1 反编译 pyc 文件 uncompyle6 xx.pyc 执行成功即可看到可运行的 python 源码</description>
+      <description>&lt;h2 id=&#34;1解压-exe-文件&#34;&gt;1.解压 exe 文件&lt;/h2&gt;
+&lt;h3 id=&#34;11-下载-pyinstxtractor&#34;&gt;1.1 下载 pyinstxtractor&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/extremecoders-re/pyinstxtractor&#34;&gt;https://github.com/extremecoders-re/pyinstxtractor&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;12-执行解压操作&#34;&gt;1.2 执行解压操作&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;python pyinstxtractor.py &amp;lt;filename&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;执行成功会出现一个 filename_extracted 目录,目录里面有相对应的 pyc 文件&lt;/p&gt;
+&lt;h2 id=&#34;2反编译-pyc-文件&#34;&gt;2.反编译 pyc 文件&lt;/h2&gt;
+&lt;h3 id=&#34;21-安装-uncompyle6&#34;&gt;2.1 安装 uncompyle6&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install uncompyle6
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;21-反编译-pyc-文件&#34;&gt;2.1 反编译 pyc 文件&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;uncompyle6 xx.pyc 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;执行成功即可看到可运行的 python 源码&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ubuntu安装nginx</title>
       <link>https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</link>
       <pubDate>Tue, 24 May 2022 22:55:15 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</guid>
-      <description>1.命令行安装 直接在终端运行命令进行安装
-sudo apt install nginx 如果需要自定义安装，可以参考官方文档
-http://nginx.org/en/linux_packages.html#Ubuntu
-在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功
-2.查看默认配置 cat /etc/nginx/nginx.conf user www-data; worker_processes auto; pid /run/nginx.pid; include /etc/nginx/modules-enabled/*.conf; events { worker_connections 768; # multi_accept on; } http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.types; default_type application/octet-stream; ## # SSL Settings ## ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE ssl_prefer_server_ciphers on; ## # Logging Settings ## access_log /var/log/nginx/access.</description>
+      <description>&lt;h2 id=&#34;1命令行安装&#34;&gt;1.命令行安装&lt;/h2&gt;
+&lt;p&gt;直接在终端运行命令进行安装&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果需要自定义安装，可以参考官方文档&lt;br&gt;
+&lt;a href=&#34;http://nginx.org/en/linux_packages.html#Ubuntu&#34;&gt;http://nginx.org/en/linux_packages.html#Ubuntu&lt;/a&gt;&lt;br&gt;
+在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://wuxiaosu.github.io/images/20230621151612.png&#34; alt=&#34;默认界面&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;2查看默认配置&#34;&gt;2.查看默认配置&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cat /etc/nginx/nginx.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;user www-data&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;worker_processes auto&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pid /run/nginx.pid&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;include /etc/nginx/modules-enabled/*.conf&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;events &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    worker_connections 768&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# multi_accept on;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;http &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;##&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Basic Settings&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;##&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    sendfile on&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    tcp_nopush on&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    tcp_nodelay on&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    keepalive_timeout 65&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    types_hash_max_size 2048&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# server_tokens off;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# server_names_hash_bucket_size 64;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# server_name_in_redirect off;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    include /etc/nginx/mime.types&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    default_type application/octet-stream&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;##&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# SSL Settings&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;##&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# Dropping SSLv3, ref: POODLE&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ssl_prefer_server_ciphers on&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;##&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Logging Settings&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;##&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    access_log /var/log/nginx/access.log&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    error_log /var/log/nginx/error.log&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;##&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Gzip Settings&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;##&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    gzip on&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# gzip_vary on;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# gzip_proxied any;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# gzip_comp_level 6;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# gzip_buffers 16 8k;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# gzip_http_version 1.1;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;##&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;# Virtual Host Configs&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;##&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    include /etc/nginx/conf.d/*.conf&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    include /etc/nginx/sites-enabled/*&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#mail {&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#    # See sample authentication script at:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#    # http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#    # auth_http localhost/auth.php;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#    # pop3_capabilities &amp;#34;TOP&amp;#34; &amp;#34;USER&amp;#34;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#    # imap_capabilities &amp;#34;IMAP4rev1&amp;#34; &amp;#34;UIDPLUS&amp;#34;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#    server {&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#        listen     localhost:110;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#        protocol   pop3;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#        proxy      on;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#    }&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#    server {&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#        listen     localhost:143;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#        protocol   imap;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#        proxy      on;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#    }&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>Android反编译odex</title>
       <link>https://wuxiaosu.github.io/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</link>
       <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</guid>
-      <description>0.下载 baksmali.jar 、smali.jar 下载地址 https://bitbucket.org/JesusFreke/smali/downloads/
-Github 地址 https://github.com/JesusFreke/smali
-1. odex -&amp;gt; smali files 把手机系统 /system/framework 下的内容拷贝到工作目录，和需要转换的 .odex、.vdex 文件也拷贝至目录，目录结构如下
--system -a.odex -a.vdex -baksmali-2.5.2.jar -smali-2.5.2.jar 然后执行以下命令
-java -jar baksmali-2.5.2.jar deodex a.odex -b ./system/framework/arm64/boot.oat -o out -deodex : 指定 odex 文件
--b : 指定 bootclasspath 文件
--o : 指定 smali 输出目录
-2. smali files -&amp;gt; dex java -jar smali-2.5.2.jar assemble out -o a.dex -assemble : 指定 smali files 文件夹
--o : 指定输出文件名
-3. 更多 https://www.</description>
+      <description>&lt;h2 id=&#34;0下载-baksmalijar-smalijar&#34;&gt;0.下载 baksmali.jar 、smali.jar&lt;/h2&gt;
+&lt;p&gt;下载地址
+&lt;a href=&#34;https://bitbucket.org/JesusFreke/smali/downloads/&#34;&gt;https://bitbucket.org/JesusFreke/smali/downloads/&lt;/a&gt;&lt;br&gt;
+Github 地址
+&lt;a href=&#34;https://github.com/JesusFreke/smali&#34;&gt;https://github.com/JesusFreke/smali&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1-odex---smali-files&#34;&gt;1. &lt;strong&gt;odex&lt;/strong&gt; -&amp;gt; &lt;strong&gt;smali files&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;把手机系统 &lt;strong&gt;/system/framework&lt;/strong&gt; 下的内容拷贝到工作目录，和需要转换的 &lt;strong&gt;.odex、.vdex&lt;/strong&gt; 文件也拷贝至目录，目录结构如下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-system
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-a.odex
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-a.vdex
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-baksmali-2.5.2.jar
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-smali-2.5.2.jar
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后执行以下命令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar baksmali-2.5.2.jar deodex a.odex -b ./system/framework/arm64/boot.oat -o out
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;-deodex&lt;/strong&gt; : 指定 &lt;strong&gt;odex&lt;/strong&gt; 文件&lt;br&gt;
+&lt;strong&gt;-b&lt;/strong&gt; : 指定 &lt;strong&gt;bootclasspath&lt;/strong&gt; 文件&lt;br&gt;
+&lt;strong&gt;-o&lt;/strong&gt; : 指定 &lt;strong&gt;smali&lt;/strong&gt; 输出目录&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python文件打包</title>
       <link>https://wuxiaosu.github.io/posts/python%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</link>
       <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/python%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</guid>
-      <description>0.省流助手 pyinstaller -F myfile.py 1.安装 Pyinstaller 1.1 先安装 pywin32 pip install pywin32 1.2 再安装 Pyinstaller pip install PyInstaller 2.使用 Pyinstaller pyinstaller -F myfile.py 2.1 输入参数含义 -F, --onefile 生成单个可执行文件 如果一切正常，会在 .py 文件同目录下的 dist 目录生成 .exe 文件
-查看更多参数
-pyinstaller -h </description>
+      <description>&lt;h2 id=&#34;0省流助手&#34;&gt;0.省流助手&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pyinstaller -F myfile.py
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;1安装-pyinstaller&#34;&gt;1.安装 Pyinstaller&lt;/h2&gt;
+&lt;h3 id=&#34;11-先安装-pywin32&#34;&gt;1.1 先安装 pywin32&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install pywin32
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;12-再安装-pyinstaller&#34;&gt;1.2 再安装 Pyinstaller&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install PyInstaller
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;2使用-pyinstaller&#34;&gt;2.使用 Pyinstaller&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pyinstaller -F myfile.py
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;21-输入参数含义&#34;&gt;2.1 输入参数含义&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-F, --onefile 生成单个可执行文件
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>几个ip信息获取接口</title>
       <link>https://wuxiaosu.github.io/posts/%E5%87%A0%E4%B8%AAip%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E6%8E%A5%E5%8F%A3/</link>
       <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/%E5%87%A0%E4%B8%AAip%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E6%8E%A5%E5%8F%A3/</guid>
-      <description> http://ipinfo.io/json { &amp;#34;ip&amp;#34;: &amp;#34;59.42.111.132&amp;#34;, &amp;#34;hostname&amp;#34;: &amp;#34;132.111.42.59.broad.gz.gd.dynamic.163data.com.cn&amp;#34;, &amp;#34;city&amp;#34;: &amp;#34;Lianjiang&amp;#34;, &amp;#34;region&amp;#34;: &amp;#34;Guangdong&amp;#34;, &amp;#34;country&amp;#34;: &amp;#34;CN&amp;#34;, &amp;#34;loc&amp;#34;: &amp;#34;21.6467,110.2817&amp;#34;, &amp;#34;org&amp;#34;: &amp;#34;AS4134 CHINANET-BACKBONE&amp;#34;, &amp;#34;timezone&amp;#34;: &amp;#34;Asia/Urumqi&amp;#34;, &amp;#34;readme&amp;#34;: &amp;#34;https://ipinfo.io/missingauth&amp;#34; } http://whois.pconline.com.cn/ip.jsp 广东省广州市天河区 电信ADSL http://pv.sohu.com/cityjson?ie=utf-8 var returnCitySN = {&amp;#34;cip&amp;#34;: &amp;#34;59.42.111.132&amp;#34;, &amp;#34;cid&amp;#34;: &amp;#34;440106&amp;#34;, &amp;#34;cname&amp;#34;: &amp;#34;广东省广州市天河区&amp;#34;}; </description>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://ipinfo.io/json&#34;&gt;http://ipinfo.io/json&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;ip&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;59.42.111.132&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;hostname&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;132.111.42.59.broad.gz.gd.dynamic.163data.com.cn&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;city&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Lianjiang&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;region&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Guangdong&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;country&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;CN&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;loc&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;21.6467,110.2817&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;org&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;AS4134 CHINANET-BACKBONE&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;timezone&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Asia/Urumqi&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;readme&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://ipinfo.io/missingauth&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>sqlite常用操作</title>
       <link>https://wuxiaosu.github.io/posts/sql/</link>
       <pubDate>Fri, 07 Jan 2022 13:46:00 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/sql/</guid>
-      <description>sql sqlite 时间戳转日期 select datetime(1613714753, &amp;#39;unixepoch&amp;#39;, &amp;#39;localtime&amp;#39;); 输出
-2021-02-19 14:05:53 当前时间戳 select strftime(&amp;#39;%s&amp;#39;,&amp;#39;now&amp;#39;); 输出
-1613714753 查询所有表 SELECT * FROM sqlite_master </description>
+      <description>&lt;h1 id=&#34;sql&#34;&gt;sql&lt;/h1&gt;
+&lt;h2 id=&#34;sqlite&#34;&gt;sqlite&lt;/h2&gt;
+&lt;h3 id=&#34;时间戳转日期&#34;&gt;时间戳转日期&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;select&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;datetime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1613714753&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;unixepoch&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;localtime&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输出&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mi&#34;&gt;2021&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;02&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;05&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;53&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;当前时间戳&#34;&gt;当前时间戳&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;select&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;strftime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;%s&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;now&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>adb常用命令</title>
       <link>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Wed, 14 Jul 2021 09:52:34 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep &amp;#34;mResumedActivity&amp;#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop &amp;lt;PACKAGE&amp;gt; 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式</description>
+      <description>&lt;h1 id=&#34;adb-常用命令&#34;&gt;adb 常用命令&lt;/h1&gt;
+&lt;h2 id=&#34;1查看最上层-activity-名字&#34;&gt;1.查看最上层 &lt;strong&gt;Activity&lt;/strong&gt; 名字&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell dumpsys activity &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep &lt;span class=&#34;s2&#34;&gt;&amp;#34;mResumedActivity&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Windows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell dumpsys activity activities &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; findstr mResumedActivity
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;2启动组件&#34;&gt;2.启动组件&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;启动 &lt;strong&gt;Activity&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell am start -n com.google.android.network2/com.my.MainActivity
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;启动 &lt;strong&gt;Service&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell am startservice -n com.google.android.network2/com.my.MainActivity
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>mysql 相关</title>
       <link>https://wuxiaosu.github.io/posts/mysql/</link>
       <pubDate>Fri, 18 Jun 2021 14:34:00 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/mysql/</guid>
-      <description>开启 mysql 远程访问 确认端口是否对外开放，默认是不开放的
-netstat -an | grep 3306 输出如下
-tcp 0 0 127.0.0.1:3306 0.0.0.0:* LISTEN 修改配置文件（不同版本可能位置不同）
-/etc/mysql/mysql.conf.d/mysqld.cnf 注释掉
-# bind-address = 127.0.0.1 为新增主键赋值 SET @mycnt = 0; UPDATE xxxxx SET RowNum=(@mycnt := @mycnt + 1) 使用 native_password 连接 ALTER USER &amp;#39;user&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED WITH mysql_native_password BY &amp;#39;password&amp;#39;; flush privileges; 修改用户密码 ALTER USER &amp;#39;username&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;new_password&amp;#39;; 使用默认密码修改数据库密码 查看默认用户密码
-cd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. DO NOT TOUCH!</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;开启 mysql 远程访问&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;确认端口是否对外开放，默认是不开放的&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -an &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep &lt;span class=&#34;m&#34;&gt;3306&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输出如下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tcp &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;   &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;   127.0.0.1:3306  0.0.0.0:*   LISTEN 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;修改配置文件（不同版本可能位置不同）&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/etc/mysql/mysql.conf.d/mysqld.cnf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;注释掉&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# bind-address = 127.0.0.1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>新服务器配置</title>
       <link>https://wuxiaosu.github.io/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Fri, 18 Jun 2021 14:33:00 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</guid>
-      <description>新服务器配置 安装 mysql sudo apt install mysql-server 安装 nginx sudo apt install nginx 安装 openjdk sudo apt-get install openjdk-8-jdk 安装 php、php-fpm、php-mysql sudo apt-get install php sudo apt-get install php-fpm sudo apt-get install php-mysql 验证mysql 运行情况 sudo systemctl status mysql 首次以 root 身份登录 sudo mysql 修改密码 ALTER USER &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED WITH mysql_native_password BY &amp;#39;password&amp;#39;; FLUSH PRIVILEGES; 创建数据库并设定字符集
-CREATE DATABASE database_name CHARACTER SET utf8 COLLATE utf8_general_ci; 另外再创建一个用户并授予所有权限
-CREATE USER &amp;#39;username&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;password&amp;#39;; GRANT ALL PRIVILEGES ON *.</description>
+      <description>&lt;h1 id=&#34;新服务器配置&#34;&gt;新服务器配置&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;安装 mysql&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install mysql-server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;安装 nginx&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;安装 openjdk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install openjdk-8-jdk
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;安装 php、php-fpm、php-mysql&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install php
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install php-fpm
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install php-mysql
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>Frida安装教程</title>
       <link>https://wuxiaosu.github.io/posts/frida%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
       <pubDate>Tue, 18 May 2021 10:22:48 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/frida%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
-      <description>Frida是个轻量级的hook框架。
-安装客户端 pip install frida pip install frida-tools 查看 frida 版本 frida --version 出现版本号表示安装成功
-在 Android 手机中安装服务端 在手机中查看设备信息
-getprop ro.product.cpu.abi 输出结果
-arm64-v8a 根据 cpu 版本去官网下载对应的 frida-server。
-frida-server-12.8.14-android-arm64.xz 将下载并解压后的文件放到设备上
-adb push frida-server-12.8.14-android-arm64 /data/local/tmp 端口转发
-adb forward tcp:27042 tcp:27042 adb forward tcp:27043 tcp:27043 使用 root 权限运行 frida
-chmod 755 frida-server-12.8.14-android-arm64 ./frida-server-12.8.14-android-arm64 打开终端，查看 frida-server64 是否运行成功
-frida-ps -U 出现设备进程信息表示运行成功。</description>
+      <description>&lt;p&gt;Frida是个轻量级的hook框架。&lt;/p&gt;
+&lt;h2 id=&#34;安装客户端&#34;&gt;安装客户端&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install frida
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install frida-tools
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;查看-frida-版本&#34;&gt;查看 frida 版本&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;frida --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;出现版本号表示安装成功&lt;/p&gt;
+&lt;h2 id=&#34;在-android-手机中安装服务端&#34;&gt;在 Android 手机中安装服务端&lt;/h2&gt;
+&lt;p&gt;在手机中查看设备信息&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;getprop ro.product.cpu.abi
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输出结果&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;arm64-v8a
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;根据 cpu 版本去官网下载对应的 &lt;a href=&#34;https://github.com/frida/frida/releases&#34;&gt;frida-server&lt;/a&gt;。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;frida-server-12.8.14-android-arm64.xz
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>docker常用操作</title>
       <link>https://wuxiaosu.github.io/posts/docker%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Wed, 28 Apr 2021 10:56:00 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/docker%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
-      <description>docker 常用操作 搜索镜像 docker search python 拉取镜像 docker pull python:3.7 查看所有镜像 docker images 删除镜像 docker rmi 正在运行的镜像列表 docker ps 使用镜像启动一个容器 docker run -itd openjdk:8 启动并直接进入镜像 docker run -it ubuntu:14.04 查看所有容器 docker ps -a 删除容器 docker rm 使用 Dockerfile 构建镜像 docker build -t docker_repo ./docker_repo 查看容器状态 docker stats 查看日志 docker compose logs 后台启动 docker compose up -d 启动 docker compose up 重启 docker compose restart 创建网络 docker network create mynet 查看网络 docker network ls 删除网络 docker network rm mynet 查看容器ip docker inspect -f &amp;#39;{{range .</description>
+      <description>&lt;h2 id=&#34;docker-常用操作&#34;&gt;docker 常用操作&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;搜索镜像&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker search python
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;拉取镜像&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker pull python:3.7
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;查看所有镜像&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker images
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;删除镜像&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker rmi
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;正在运行的镜像列表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker ps
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>git 常用操作</title>
       <link>https://wuxiaosu.github.io/posts/git/</link>
       <pubDate>Sun, 18 Apr 2021 10:18:00 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/git/</guid>
-      <description>git Git 回退到某个 commit git reset --hard HEAD^ 回退到上个版本 git reset --hard HEAD~3 回退到前3次提交之前，以此类推，回退到n次提交之前 git reset --hard commit_id 退到/进到 指定commit的sha码 强推到远程: git push origin HEAD --force 合并某个提交: git cherry-pick &amp;lt;commit id&amp;gt; 查看本地分支： git branch 删除本地分支： git branch -D tmp 查看 tag： git tag 在某个 commit 上打 tag： git tag test_tag c809ddbf83939a89659e51dc2a5fe183af384233 本地 tag 推送到线上： git push origin test_tag 本地删除 tag： git tag -d test_tag 删除线上 tag： git push origin :refs/tags/test_tag 修改远程地址先删后加 git remote rm origin git remote add origin [url] 创建新分支 git branch develop 切换到该分支 git checkout develop 提交到该分支 git push -u origin develop 修改源 git remote set-url origin url </description>
+      <description>&lt;h1 id=&#34;git&#34;&gt;git&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Git 回退到某个 commit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git reset --hard HEAD^ 回退到上个版本
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git reset --hard HEAD~3 回退到前3次提交之前，以此类推，回退到n次提交之前  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git reset --hard commit_id  退到/进到 指定commit的sha码  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;强推到远程:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push origin HEAD --force  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;合并某个提交:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git cherry-pick &amp;lt;commit id&amp;gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>正则表达式</title>
       <link>https://wuxiaosu.github.io/posts/%E6%AD%A3%E5%88%99/</link>
       <pubDate>Tue, 13 Apr 2021 15:23:00 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/%E6%AD%A3%E5%88%99/</guid>
-      <description>正则表达式 正则表达式是计算机科学的一个概念，正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。正则表达式通常用来检索、替换那些匹配某个模式的文本。
-元字符 所谓元字符就是指那些在正则表达式中具有特殊意义的专用字符。
-常用的元字符 代码 说明 . 匹配除换行符以外的任意字符 \w 匹配字母或数字或下划线或汉字 \s 匹配任意的空白符 \d 匹配数字 \b 匹配单词的开始或结束 \B 非单词边界匹配 ^ 匹配字符串的开始 $ 匹配字符串的结束 （） 标记一个子表达式的开始和结束 字符转义 如果你想查找元字符的话，需要使用 \ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \. ，要查找 \ 需要使用 \\ 。
-限定符 指定数量的代码。
-常用的限定符 代码/语法 说明 * 重复0次或更多次 + 重复1次或更多次 ？ 重复0次或1次 {n} 重复 n 次 {n,} 重复 n 次或更多次 {n,m} 重复 n 到 m 次 范围表达式 用于指定一个字符范围。
-比如：
-[aeiou] ：任何一个元音字母。
-[0-9] : 0-9，即一位数字。</description>
+      <description>&lt;h1 id=&#34;正则表达式&#34;&gt;正则表达式&lt;/h1&gt;
+&lt;p&gt;正则表达式是计算机科学的一个概念，正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。正则表达式通常用来检索、替换那些匹配某个模式的文本。&lt;/p&gt;
+&lt;h2 id=&#34;元字符&#34;&gt;元字符&lt;/h2&gt;
+&lt;p&gt;所谓元字符就是指那些在正则表达式中具有特殊意义的专用字符。&lt;/p&gt;
+&lt;h3 id=&#34;常用的元字符&#34;&gt;常用的元字符&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;代码&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;.&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;匹配除换行符以外的任意字符&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;\w&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;匹配字母或数字或下划线或汉字&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;\s&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;匹配任意的空白符&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;\d&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;匹配数字&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;\b&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;匹配单词的开始或结束&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;\B&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;非单词边界匹配&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;^&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;匹配字符串的开始&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;$&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;匹配字符串的结束&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;（）&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;标记一个子表达式的开始和结束&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;字符转义&#34;&gt;字符转义&lt;/h2&gt;
+&lt;p&gt;如果你想查找元字符的话，需要使用 &lt;strong&gt;\&lt;/strong&gt; 来取消这些字符的特殊含义。比如要查找 &lt;strong&gt;.&lt;/strong&gt; 的话需要使用 &lt;strong&gt;\.&lt;/strong&gt; ，要查找 &lt;strong&gt;\&lt;/strong&gt; 需要使用 &lt;strong&gt;\\&lt;/strong&gt; 。&lt;/p&gt;</description>
     </item>
     <item>
       <title>ubuntu 防火墙</title>
       <link>https://wuxiaosu.github.io/posts/ubuntu%E9%98%B2%E7%81%AB%E5%A2%99/</link>
       <pubDate>Wed, 24 Mar 2021 18:34:00 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/ubuntu%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
-      <description>ubuntu 防火墙 查看防火墙状态 sudo ufw status 允许访问端口 sudo ufw allow 9090/tcp 禁止访问端口 sudo ufw deny 9090 删除规则 sudo ufw delete deny 9090 </description>
+      <description>&lt;h1 id=&#34;ubuntu-防火墙&#34;&gt;ubuntu 防火墙&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;查看防火墙状态&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo ufw status
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;允许访问端口&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo ufw allow 9090/tcp
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;禁止访问端口&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo ufw deny &lt;span class=&#34;m&#34;&gt;9090&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;删除规则&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo ufw delete deny &lt;span class=&#34;m&#34;&gt;9090&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
       <title>JetBrains 重置试用</title>
       <link>https://wuxiaosu.github.io/posts/jetbrains/</link>
       <pubDate>Thu, 25 Feb 2021 16:30:00 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/jetbrains/</guid>
-      <description>JetBrains 2020.3 系列通用重置 30 天试用（不会影响其他配置） 以 IntelliJIdea 为例 删除此目录下所有文件 C:\Users\Administrator\AppData\Roaming\JetBrains\IntelliJIdea2020.3\eval 删除 other.xml 文件 C:\Users\Administrator\AppData\Roaming\JetBrains\IntelliJIdea2020.3\options\other.xml 删除注册表下所有项 计算机\HKEY_CURRENT_USER\Software\JavaSoft\Prefs\jetbrains\idea 其他诸如 DataGrip、PyCharm 类似 </description>
+      <description>&lt;h1 id=&#34;jetbrains-20203-系列通用重置-30-天试用不会影响其他配置&#34;&gt;JetBrains 2020.3 系列通用重置 30 天试用（不会影响其他配置）&lt;/h1&gt;
+&lt;h2 id=&#34;以-intellijidea-为例&#34;&gt;以 IntelliJIdea 为例&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;删除此目录下所有文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:&lt;span class=&#34;se&#34;&gt;\U&lt;/span&gt;sers&lt;span class=&#34;se&#34;&gt;\A&lt;/span&gt;dministrator&lt;span class=&#34;se&#34;&gt;\A&lt;/span&gt;ppData&lt;span class=&#34;se&#34;&gt;\R&lt;/span&gt;oaming&lt;span class=&#34;se&#34;&gt;\J&lt;/span&gt;etBrains&lt;span class=&#34;se&#34;&gt;\I&lt;/span&gt;ntelliJIdea2020.3&lt;span class=&#34;se&#34;&gt;\e&lt;/span&gt;val
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;删除 other.xml 文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:&lt;span class=&#34;se&#34;&gt;\U&lt;/span&gt;sers&lt;span class=&#34;se&#34;&gt;\A&lt;/span&gt;dministrator&lt;span class=&#34;se&#34;&gt;\A&lt;/span&gt;ppData&lt;span class=&#34;se&#34;&gt;\R&lt;/span&gt;oaming&lt;span class=&#34;se&#34;&gt;\J&lt;/span&gt;etBrains&lt;span class=&#34;se&#34;&gt;\I&lt;/span&gt;ntelliJIdea2020.3&lt;span class=&#34;se&#34;&gt;\o&lt;/span&gt;ptions&lt;span class=&#34;se&#34;&gt;\o&lt;/span&gt;ther.xml
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;删除注册表下所有项&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;计算机&lt;span class=&#34;se&#34;&gt;\H&lt;/span&gt;KEY_CURRENT_USER&lt;span class=&#34;se&#34;&gt;\S&lt;/span&gt;oftware&lt;span class=&#34;se&#34;&gt;\J&lt;/span&gt;avaSoft&lt;span class=&#34;se&#34;&gt;\P&lt;/span&gt;refs&lt;span class=&#34;se&#34;&gt;\j&lt;/span&gt;etbrains&lt;span class=&#34;se&#34;&gt;\i&lt;/span&gt;dea
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;其他诸如-datagrippycharm-类似&#34;&gt;其他诸如 DataGrip、PyCharm 类似&lt;/h2&gt;</description>
     </item>
     <item>
       <title>Android微信数据库密码计算</title>
       <link>https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</link>
       <pubDate>Mon, 04 Jan 2021 15:09:00 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</guid>
-      <description>0.省流助手 密码就是 md5(imei + uin) 取前七位，最新使用 8.0.28 验证还是可以的
-1.获取相关参数 查找主数据文件路径（当然是需要 root 权限了） ls -l /data/user/0/com.tencent.mm/MicroMsg/*/EnMicroMsg.db 如果出现多个文件的话，说明登录过多个微信号，看日期最新的就是当前登录的号了
-查看 _auth_uin 值 cat /data/data/com.tencent.mm/shared_prefs/auth_info_key_prefs.xml 正常的话应该是下面这样
-&amp;lt;?xml version=&amp;#39;1.0&amp;#39; encoding=&amp;#39;utf-8&amp;#39; standalone=&amp;#39;yes&amp;#39; ?&amp;gt; &amp;lt;map&amp;gt; &amp;lt;boolean name=&amp;#34;auth_info_prefs_use_new_ecdh&amp;#34; value=&amp;#34;true&amp;#34; /&amp;gt; &amp;lt;int name=&amp;#34;_auth_uin&amp;#34; value=&amp;#34;1054025641&amp;#34; /&amp;gt; &amp;lt;boolean name=&amp;#34;key_auth_info_prefs_created&amp;#34; value=&amp;#34;true&amp;#34; /&amp;gt; &amp;lt;int name=&amp;#34;key_auth_update_version&amp;#34; value=&amp;#34;671094359&amp;#34; /&amp;gt; &amp;lt;string name=&amp;#34;server_id&amp;#34;&amp;gt;4f031802000000000d385cc7c40600&amp;lt;/string&amp;gt; &amp;lt;string name=&amp;#34;_auth_key&amp;#34;&amp;gt;0a2408201220b9be5667ec69984f48ba4923c4e045eef3837d61871b7da350accb7b8a56405212b90108b30112b30108994e12a70186e1f98b9239ec3db321b36332fcc097ab11f7c173f6eb1b1411fd2afad5ce00e2b1e1e1b9588b0377bd47cb2db230d17fa9178a05791bb2725ff01c4df06a578a23b192a4e19f4c794e67dda2813522faa97dba324e0ef6b14c8b3e07dc0c11a5ca551f398832212aa9591a66b3be97c24f46b5dfd2299e4392f038da3f8f7e4bc602c3d2927232b30303664c5f00f624142231bc084ae8e04efe643481a23edc12091d8ceaf318bfa6ddb40a&amp;lt;/string&amp;gt; 查看设备 imei 值 getprop | grep imei [persist.radio.imei1]: [868619036811436] [persist.radio.imei2]: [868619036811444] [ro.ril.miui.imei0]: [868619036811436] [ro.ril.miui.imei1]: [868619036811444] 2.计算数据库密码 计算 imei + uin 的 md5 echo -n &amp;#34;8686190368114361054025641&amp;#34;|md5sum 密码取前七位（小写） 如果有多个 imei 那就都试一下</description>
+      <description>&lt;h2 id=&#34;0省流助手&#34;&gt;0.省流助手&lt;/h2&gt;
+&lt;p&gt;密码就是 md5(imei + uin) 取前七位，最新使用 8.0.28 验证还是可以的&lt;/p&gt;
+&lt;h2 id=&#34;1获取相关参数&#34;&gt;1.获取相关参数&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;查找主数据文件路径（当然是需要 root 权限了）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ls -l /data/user/0/com.tencent.mm/MicroMsg/*/EnMicroMsg.db
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果出现多个文件的话，说明登录过多个微信号，看日期最新的就是当前登录的号了&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;查看 _auth_uin 值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cat /data/data/com.tencent.mm/shared_prefs/auth_info_key_prefs.xml
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;正常的话应该是下面这样&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;?xml &lt;span class=&#34;nv&#34;&gt;version&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;1.0&amp;#39;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;encoding&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;utf-8&amp;#39;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;standalone&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;yes&amp;#39;&lt;/span&gt; ?&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;map&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;boolean &lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;auth_info_prefs_use_new_ecdh&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt; /&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;int &lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;_auth_uin&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;1054025641&amp;#34;&lt;/span&gt; /&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;boolean &lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;key_auth_info_prefs_created&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt; /&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;int &lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;key_auth_update_version&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;671094359&amp;#34;&lt;/span&gt; /&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;string &lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;server_id&amp;#34;&lt;/span&gt;&amp;gt;4f031802000000000d385cc7c40600&amp;lt;/string&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;string &lt;span class=&#34;nv&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;_auth_key&amp;#34;&lt;/span&gt;&amp;gt;0a2408201220b9be5667ec69984f48ba4923c4e045eef3837d61871b7da350accb7b8a56405212b90108b30112b30108994e12a70186e1f98b9239ec3db321b36332fcc097ab11f7c173f6eb1b1411fd2afad5ce00e2b1e1e1b9588b0377bd47cb2db230d17fa9178a05791bb2725ff01c4df06a578a23b192a4e19f4c794e67dda2813522faa97dba324e0ef6b14c8b3e07dc0c11a5ca551f398832212aa9591a66b3be97c24f46b5dfd2299e4392f038da3f8f7e4bc602c3d2927232b30303664c5f00f624142231bc084ae8e04efe643481a23edc12091d8ceaf318bfa6ddb40a&amp;lt;/string&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>pip切换国内源</title>
       <link>https://wuxiaosu.github.io/posts/pip%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</link>
       <pubDate>Fri, 03 Apr 2020 09:54:00 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/pip%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</guid>
-      <description>pip切换国内源 pip切换国内源
-1.pip 国内的一些镜像 阿里云 http://mirrors.aliyun.com/pypi/simple/ 中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/ 豆瓣(douban) http://pypi.douban.com/simple/ 清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/ 中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/ 2.临时修改 可以在使用 pip 的时候在后面加上 -i 参数，指定 pip 源
-$ pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple 3.永久修改 1.Linux 修改 ~/.pip/pip.conf (没有就创建一个)， 内容如下：
-[global] index-url = https://pypi.tuna.tsinghua.edu.cn/simple 2.Windows 直接在 user 目录中创建一个 pip 目录，如：C:\Users\xx\pip，新建文件 pip.ini ，内容如下
-[global] index-url = https://pypi.tuna.tsinghua.edu.cn/simple </description>
+      <description>&lt;h1 id=&#34;pip切换国内源&#34;&gt;pip切换国内源&lt;/h1&gt;
+&lt;p&gt;pip切换国内源&lt;/p&gt;
+&lt;h2 id=&#34;1pip-国内的一些镜像&#34;&gt;1.pip 国内的一些镜像&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;阿里云 http://mirrors.aliyun.com/pypi/simple/  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;豆瓣&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;douban&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; http://pypi.douban.com/simple/  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;2临时修改&#34;&gt;2.临时修改&lt;/h2&gt;
+&lt;p&gt;可以在使用 pip 的时候在后面加上 -i 参数，指定 pip 源&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;3永久修改&#34;&gt;3.永久修改&lt;/h2&gt;
+&lt;h3 id=&#34;1linux&#34;&gt;1.Linux&lt;/h3&gt;
+&lt;p&gt;修改 ~/.pip/pip.conf (没有就创建一个)， 内容如下：&lt;/p&gt;</description>
     </item>
     <item>
       <title>WSL更换国内源</title>
       <link>https://wuxiaosu.github.io/posts/wsl%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</link>
       <pubDate>Fri, 03 Apr 2020 09:54:00 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/wsl%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</guid>
-      <description>WSL Ubuntu18.04LTS 更换国内源 WSL Ubuntu18.04LTS 更换国内源
-1.查看 Linux 版本 $ lsb_release -a No LSB modules are available. Distributor ID: Ubuntu Description: Ubuntu 18.04.1 LTS Release: 18.04 Codename: bionic 2.备份数据源 $ sudo cp /etc/apt/sources.list /etc/apt/sources-backup.list 3.更换数据源 $ sudo vim /etc/apt/sources.list 更换源内容
-1.阿里源 deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse deb http://mirrors.</description>
+      <description>&lt;h1 id=&#34;wsl-ubuntu1804lts-更换国内源&#34;&gt;WSL Ubuntu18.04LTS 更换国内源&lt;/h1&gt;
+&lt;p&gt;WSL Ubuntu18.04LTS 更换国内源&lt;/p&gt;
+&lt;h2 id=&#34;1查看-linux-版本&#34;&gt;1.查看 Linux 版本&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ lsb_release -a
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;No LSB modules are available.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Distributor ID: Ubuntu
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Description:    Ubuntu 18.04.1 LTS
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Release:        18.04
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Codename:       bionic
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;2备份数据源&#34;&gt;2.备份数据源&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ sudo cp /etc/apt/sources.list /etc/apt/sources-backup.list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>关于我</title>
       <link>https://wuxiaosu.github.io/posts/about/</link>
       <pubDate>Tue, 08 Mar 2016 22:44:34 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/about/</guid>
-      <description>苟且在广州，勉强算个程序员吧。</description>
+      <description>&lt;p&gt;苟且在广州，勉强算个程序员吧。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Android 8.0 以上开启全局可调式</title>
       <link>https://wuxiaosu.github.io/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/</guid>
-      <description>Android 8.0 以上开启全局可调式 1.安装好 Magisk
-2.终端执行
-adb shell su magisk resetprop ro.debuggable 1 3.重启 system server stop;start 4.重启手机会失效 </description>
+      <description>&lt;h1 id=&#34;android-80-以上开启全局可调式&#34;&gt;Android 8.0 以上开启全局可调式&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1.安装好 Magisk&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2.终端执行&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;su
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;magisk resetprop ro.debuggable &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;3.重启 system server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;stop&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;start
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;4.重启手机会失效&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>使用MagiskHidePropsConf开启全局可调试</title>
       <link>https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</guid>
-      <description>1.安装好 Magisk 此处略过
-2.安装 MagiskHidePropsConf 下载地址 https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases 安装完成后重启 3.按流程操作 重启进入终端 按流程一步一步操作就行了 adb shell props MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== Select an option below. ===================================== 1 - Edit device fingerprint 2 - Force BASIC key attestation 3 - Device simulation (disabled) 4 - Edit MagiskHide props (active) 5 - Add/edit custom props 6 - Delete prop values 7 - Script settings 8 - Collect logs u - Perform module update check r - Reset all options/settings b - Reboot device e - Exit See the module readme or the support thread @ XDA for details.</description>
+      <description>&lt;h2 id=&#34;1安装好-magisk&#34;&gt;1.安装好 Magisk&lt;/h2&gt;
+&lt;p&gt;此处略过&lt;/p&gt;
+&lt;h2 id=&#34;2安装-magiskhidepropsconf&#34;&gt;2.安装 MagiskHidePropsConf&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;下载地址 &lt;a href=&#34;https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases&#34;&gt;https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;安装完成后重启&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3按流程操作&#34;&gt;3.按流程操作&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;重启进入终端&lt;/li&gt;
+&lt;li&gt;按流程一步一步操作就行了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;props
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;MagiskHide Props Config v6.1.2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;by Didgeridoohan @ XDA &lt;span class=&#34;nv&#34;&gt;Developers&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;=====================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; Select an option below.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;=====================================&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; - Edit device fingerprint
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; - Force BASIC key attestation
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt; - Device simulation &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;disabled&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;4&lt;/span&gt; - Edit MagiskHide props &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;active&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;5&lt;/span&gt; - Add/edit custom props
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;6&lt;/span&gt; - Delete prop values
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;7&lt;/span&gt; - Script settings
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;8&lt;/span&gt; - Collect logs
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;u - Perform module update check
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;r - Reset all options/settings
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;b - Reboot device
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;e - Exit
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;See the module readme or the
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;support thread @ XDA &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; details.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Enter your desired option: &lt;span class=&#34;m&#34;&gt;5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
   </channel>
 </rss>

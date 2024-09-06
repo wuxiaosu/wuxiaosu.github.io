@@ -10,7 +10,7 @@
 <meta name="description" content="苏的博客-wuxiaosu.github.io">
 <meta name="author" content="su">
 <link rel="canonical" href="https://wuxiaosu.github.io/tags/ubuntu/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://wuxiaosu.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://wuxiaosu.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://wuxiaosu.github.io/favicon-32x32.png">
@@ -56,10 +56,7 @@
         }
 
     </style>
-</noscript>
-  
-
-<meta property="og:title" content="Ubuntu" />
+</noscript><meta property="og:title" content="Ubuntu" />
 <meta property="og:description" content="苏的博客-wuxiaosu.github.io" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://wuxiaosu.github.io/tags/ubuntu/" />
@@ -156,7 +153,7 @@
 sudo apt install nginx 如果需要自定义安装，可以参考官方文档
 http://nginx.org/en/linux_packages.html#Ubuntu
 在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功
-2.查看默认配置 cat /etc/nginx/nginx.conf user www-data; worker_processes auto; pid /run/nginx.pid; include /etc/nginx/modules-enabled/*.conf; events { worker_connections 768; # multi_accept on; } http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.types; default_type application/octet-stream; ## # SSL Settings ## ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE ssl_prefer_server_ciphers on; ## # Logging Settings ## access_log /var/log/nginx/access....</p>
+2.查看默认配置 cat /etc/nginx/nginx.conf user www-data; worker_processes auto; pid /run/nginx.pid; include /etc/nginx/modules-enabled/*.conf; events { worker_connections 768; # multi_accept on; } http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.types; default_type application/octet-stream; ## # SSL Settings ## ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE ssl_prefer_server_ciphers on; ## # Logging Settings ## access_log /var/log/nginx/access.log; error_log /var/log/nginx/error.log; ## # Gzip Settings ## gzip on; # gzip_vary on; # gzip_proxied any; # gzip_comp_level 6; # gzip_buffers 16 8k; # gzip_http_version 1.1; # gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml&#43;rss text/javascript; ## # Virtual Host Configs ## include /etc/nginx/conf.d/*.conf; include /etc/nginx/sites-enabled/*; } #mail { # # See sample authentication script at: # # http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript # # # auth_http localhost/auth.php; # # pop3_capabilities &#34;TOP&#34; &#34;USER&#34;; # # imap_capabilities &#34;IMAP4rev1&#34; &#34;UIDPLUS&#34;; # # server { # listen localhost:110; # protocol pop3; # proxy on; # } # # server { # listen localhost:143; # protocol imap; # proxy on; # } #} ...</p>
   </div>
   <footer class="entry-footer"><span title='2022-05-24 22:55:15 +0800 CST'>五月 24, 2022</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to Ubuntu安装nginx" href="https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/"></a>
@@ -168,9 +165,7 @@ http://nginx.org/en/linux_packages.html#Ubuntu
     </h2>
   </header>
   <div class="entry-content">
-    <p>新服务器配置 安装 mysql sudo apt install mysql-server 安装 nginx sudo apt install nginx 安装 openjdk sudo apt-get install openjdk-8-jdk 安装 php、php-fpm、php-mysql sudo apt-get install php sudo apt-get install php-fpm sudo apt-get install php-mysql 验证mysql 运行情况 sudo systemctl status mysql 首次以 root 身份登录 sudo mysql 修改密码 ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED WITH mysql_native_password BY &#39;password&#39;; FLUSH PRIVILEGES; 创建数据库并设定字符集
-CREATE DATABASE database_name CHARACTER SET utf8 COLLATE utf8_general_ci; 另外再创建一个用户并授予所有权限
-CREATE USER &#39;username&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;password&#39;; GRANT ALL PRIVILEGES ON *....</p>
+    <p>新服务器配置 安装 mysql sudo apt install mysql-server 安装 nginx sudo apt install nginx 安装 openjdk sudo apt-get install openjdk-8-jdk 安装 php、php-fpm、php-mysql sudo apt-get install php sudo apt-get install php-fpm sudo apt-get install php-mysql ...</p>
   </div>
   <footer class="entry-footer"><span title='2021-06-18 14:33:00 +0800 CST'>六月 18, 2021</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to 新服务器配置" href="https://wuxiaosu.github.io/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/"></a>
@@ -196,6 +191,8 @@ CREATE USER &#39;username&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;password&#
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+		 · 备案号:
+		<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022000848号-1</a>
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">

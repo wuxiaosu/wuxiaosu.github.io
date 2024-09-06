@@ -9,7 +9,7 @@
       <url>https://wuxiaosu.github.io/papermod-cover.png</url>
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.127.0</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Thu, 25 Feb 2021 16:30:00 +0800</lastBuildDate>
     <atom:link href="https://wuxiaosu.github.io/tags/jetbrains/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +18,21 @@
       <link>https://wuxiaosu.github.io/posts/jetbrains/</link>
       <pubDate>Thu, 25 Feb 2021 16:30:00 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/jetbrains/</guid>
-      <description>JetBrains 2020.3 系列通用重置 30 天试用（不会影响其他配置） 以 IntelliJIdea 为例 删除此目录下所有文件 C:\Users\Administrator\AppData\Roaming\JetBrains\IntelliJIdea2020.3\eval 删除 other.xml 文件 C:\Users\Administrator\AppData\Roaming\JetBrains\IntelliJIdea2020.3\options\other.xml 删除注册表下所有项 计算机\HKEY_CURRENT_USER\Software\JavaSoft\Prefs\jetbrains\idea 其他诸如 DataGrip、PyCharm 类似 </description>
+      <description>&lt;h1 id=&#34;jetbrains-20203-系列通用重置-30-天试用不会影响其他配置&#34;&gt;JetBrains 2020.3 系列通用重置 30 天试用（不会影响其他配置）&lt;/h1&gt;
+&lt;h2 id=&#34;以-intellijidea-为例&#34;&gt;以 IntelliJIdea 为例&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;删除此目录下所有文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:&lt;span class=&#34;se&#34;&gt;\U&lt;/span&gt;sers&lt;span class=&#34;se&#34;&gt;\A&lt;/span&gt;dministrator&lt;span class=&#34;se&#34;&gt;\A&lt;/span&gt;ppData&lt;span class=&#34;se&#34;&gt;\R&lt;/span&gt;oaming&lt;span class=&#34;se&#34;&gt;\J&lt;/span&gt;etBrains&lt;span class=&#34;se&#34;&gt;\I&lt;/span&gt;ntelliJIdea2020.3&lt;span class=&#34;se&#34;&gt;\e&lt;/span&gt;val
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;删除 other.xml 文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:&lt;span class=&#34;se&#34;&gt;\U&lt;/span&gt;sers&lt;span class=&#34;se&#34;&gt;\A&lt;/span&gt;dministrator&lt;span class=&#34;se&#34;&gt;\A&lt;/span&gt;ppData&lt;span class=&#34;se&#34;&gt;\R&lt;/span&gt;oaming&lt;span class=&#34;se&#34;&gt;\J&lt;/span&gt;etBrains&lt;span class=&#34;se&#34;&gt;\I&lt;/span&gt;ntelliJIdea2020.3&lt;span class=&#34;se&#34;&gt;\o&lt;/span&gt;ptions&lt;span class=&#34;se&#34;&gt;\o&lt;/span&gt;ther.xml
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;删除注册表下所有项&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;计算机&lt;span class=&#34;se&#34;&gt;\H&lt;/span&gt;KEY_CURRENT_USER&lt;span class=&#34;se&#34;&gt;\S&lt;/span&gt;oftware&lt;span class=&#34;se&#34;&gt;\J&lt;/span&gt;avaSoft&lt;span class=&#34;se&#34;&gt;\P&lt;/span&gt;refs&lt;span class=&#34;se&#34;&gt;\j&lt;/span&gt;etbrains&lt;span class=&#34;se&#34;&gt;\i&lt;/span&gt;dea
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;其他诸如-datagrippycharm-类似&#34;&gt;其他诸如 DataGrip、PyCharm 类似&lt;/h2&gt;</description>
     </item>
   </channel>
 </rss>

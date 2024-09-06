@@ -10,7 +10,7 @@
 <meta name="description" content="苏的博客-wuxiaosu.github.io">
 <meta name="author" content="su">
 <link rel="canonical" href="https://wuxiaosu.github.io/tags/%E5%BE%AE%E4%BF%A1/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://wuxiaosu.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://wuxiaosu.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://wuxiaosu.github.io/favicon-32x32.png">
@@ -56,10 +56,7 @@
         }
 
     </style>
-</noscript>
-  
-
-<meta property="og:title" content="微信" />
+</noscript><meta property="og:title" content="微信" />
 <meta property="og:description" content="苏的博客-wuxiaosu.github.io" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://wuxiaosu.github.io/tags/%E5%BE%AE%E4%BF%A1/" />
@@ -155,7 +152,7 @@
     <p>0.省流助手 密码就是 md5(imei &#43; uin) 取前七位，最新使用 8.0.28 验证还是可以的
 1.获取相关参数 查找主数据文件路径（当然是需要 root 权限了） ls -l /data/user/0/com.tencent.mm/MicroMsg/*/EnMicroMsg.db 如果出现多个文件的话，说明登录过多个微信号，看日期最新的就是当前登录的号了
 查看 _auth_uin 值 cat /data/data/com.tencent.mm/shared_prefs/auth_info_key_prefs.xml 正常的话应该是下面这样
-&lt;?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39; standalone=&#39;yes&#39; ?&gt; &lt;map&gt; &lt;boolean name=&#34;auth_info_prefs_use_new_ecdh&#34; value=&#34;true&#34; /&gt; &lt;int name=&#34;_auth_uin&#34; value=&#34;1054025641&#34; /&gt; &lt;boolean name=&#34;key_auth_info_prefs_created&#34; value=&#34;true&#34; /&gt; &lt;int name=&#34;key_auth_update_version&#34; value=&#34;671094359&#34; /&gt; &lt;string name=&#34;server_id&#34;&gt;4f031802000000000d385cc7c40600&lt;/string&gt; &lt;string name=&#34;_auth_key&#34;&gt;0a2408201220b9be5667ec69984f48ba4923c4e045eef3837d61871b7da350accb7b8a56405212b90108b30112b30108994e12a70186e1f98b9239ec3db321b36332fcc097ab11f7c173f6eb1b1411fd2afad5ce00e2b1e1e1b9588b0377bd47cb2db230d17fa9178a05791bb2725ff01c4df06a578a23b192a4e19f4c794e67dda2813522faa97dba324e0ef6b14c8b3e07dc0c11a5ca551f398832212aa9591a66b3be97c24f46b5dfd2299e4392f038da3f8f7e4bc602c3d2927232b30303664c5f00f624142231bc084ae8e04efe643481a23edc12091d8ceaf318bfa6ddb40a&lt;/string&gt; 查看设备 imei 值 getprop | grep imei [persist.radio.imei1]: [868619036811436] [persist.radio.imei2]: [868619036811444] [ro.ril.miui.imei0]: [868619036811436] [ro.ril.miui.imei1]: [868619036811444] 2.计算数据库密码 计算 imei &#43; uin 的 md5 echo -n &#34;8686190368114361054025641&#34;|md5sum 密码取前七位（小写） 如果有多个 imei 那就都试一下...</p>
+&lt;?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39; standalone=&#39;yes&#39; ?&gt; &lt;map&gt; &lt;boolean name=&#34;auth_info_prefs_use_new_ecdh&#34; value=&#34;true&#34; /&gt; &lt;int name=&#34;_auth_uin&#34; value=&#34;1054025641&#34; /&gt; &lt;boolean name=&#34;key_auth_info_prefs_created&#34; value=&#34;true&#34; /&gt; &lt;int name=&#34;key_auth_update_version&#34; value=&#34;671094359&#34; /&gt; &lt;string name=&#34;server_id&#34;&gt;4f031802000000000d385cc7c40600&lt;/string&gt; &lt;string name=&#34;_auth_key&#34;&gt;0a2408201220b9be5667ec69984f48ba4923c4e045eef3837d61871b7da350accb7b8a56405212b90108b30112b30108994e12a70186e1f98b9239ec3db321b36332fcc097ab11f7c173f6eb1b1411fd2afad5ce00e2b1e1e1b9588b0377bd47cb2db230d17fa9178a05791bb2725ff01c4df06a578a23b192a4e19f4c794e67dda2813522faa97dba324e0ef6b14c8b3e07dc0c11a5ca551f398832212aa9591a66b3be97c24f46b5dfd2299e4392f038da3f8f7e4bc602c3d2927232b30303664c5f00f624142231bc084ae8e04efe643481a23edc12091d8ceaf318bfa6ddb40a&lt;/string&gt; ...</p>
   </div>
   <footer class="entry-footer"><span title='2021-01-04 15:09:00 +0800 CST'>一月 4, 2021</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to Android微信数据库密码计算" href="https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/"></a>
@@ -169,6 +166,8 @@
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+		 · 备案号:
+		<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022000848号-1</a>
     </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">

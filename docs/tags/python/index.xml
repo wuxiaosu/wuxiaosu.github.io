@@ -9,7 +9,7 @@
       <url>https://wuxiaosu.github.io/papermod-cover.png</url>
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.127.0</generator>
+    <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Thu, 10 Nov 2022 17:41:48 +0800</lastBuildDate>
     <atom:link href="https://wuxiaosu.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
@@ -18,18 +18,36 @@
       <link>https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</link>
       <pubDate>Thu, 10 Nov 2022 17:41:48 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</guid>
-      <description>1.解压 exe 文件 1.1 下载 pyinstxtractor https://github.com/extremecoders-re/pyinstxtractor
-1.2 执行解压操作 python pyinstxtractor.py &amp;lt;filename&amp;gt; 执行成功会出现一个 filename_extracted 目录,目录里面有相对应的 pyc 文件
-2.反编译 pyc 文件 2.1 安装 uncompyle6 pip install uncompyle6 2.1 反编译 pyc 文件 uncompyle6 xx.pyc 执行成功即可看到可运行的 python 源码</description>
+      <description>&lt;h2 id=&#34;1解压-exe-文件&#34;&gt;1.解压 exe 文件&lt;/h2&gt;
+&lt;h3 id=&#34;11-下载-pyinstxtractor&#34;&gt;1.1 下载 pyinstxtractor&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/extremecoders-re/pyinstxtractor&#34;&gt;https://github.com/extremecoders-re/pyinstxtractor&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;12-执行解压操作&#34;&gt;1.2 执行解压操作&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;python pyinstxtractor.py &amp;lt;filename&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;执行成功会出现一个 filename_extracted 目录,目录里面有相对应的 pyc 文件&lt;/p&gt;
+&lt;h2 id=&#34;2反编译-pyc-文件&#34;&gt;2.反编译 pyc 文件&lt;/h2&gt;
+&lt;h3 id=&#34;21-安装-uncompyle6&#34;&gt;2.1 安装 uncompyle6&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install uncompyle6
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;21-反编译-pyc-文件&#34;&gt;2.1 反编译 pyc 文件&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;uncompyle6 xx.pyc 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;执行成功即可看到可运行的 python 源码&lt;/p&gt;</description>
     </item>
     <item>
       <title>Python文件打包</title>
       <link>https://wuxiaosu.github.io/posts/python%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</link>
       <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/python%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</guid>
-      <description>0.省流助手 pyinstaller -F myfile.py 1.安装 Pyinstaller 1.1 先安装 pywin32 pip install pywin32 1.2 再安装 Pyinstaller pip install PyInstaller 2.使用 Pyinstaller pyinstaller -F myfile.py 2.1 输入参数含义 -F, --onefile 生成单个可执行文件 如果一切正常，会在 .py 文件同目录下的 dist 目录生成 .exe 文件
-查看更多参数
-pyinstaller -h </description>
+      <description>&lt;h2 id=&#34;0省流助手&#34;&gt;0.省流助手&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pyinstaller -F myfile.py
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;1安装-pyinstaller&#34;&gt;1.安装 Pyinstaller&lt;/h2&gt;
+&lt;h3 id=&#34;11-先安装-pywin32&#34;&gt;1.1 先安装 pywin32&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install pywin32
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;12-再安装-pyinstaller&#34;&gt;1.2 再安装 Pyinstaller&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install PyInstaller
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;2使用-pyinstaller&#34;&gt;2.使用 Pyinstaller&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pyinstaller -F myfile.py
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;21-输入参数含义&#34;&gt;2.1 输入参数含义&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-F, --onefile 生成单个可执行文件
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
   </channel>
 </rss>
