@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Sql on 苏的博客</title>
-    <link>https://wuxiaosu.com/tags/sql/</link>
+    <link>https://wuxiaosu.github.io/tags/sql/</link>
     <description>Recent content in Sql on 苏的博客</description>
     <image>
       <title>苏的博客</title>
-      <url>https://wuxiaosu.com/papermod-cover.png</url>
-      <link>https://wuxiaosu.com/papermod-cover.png</link>
+      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
+      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Fri, 07 Jan 2022 13:46:00 +0800</lastBuildDate>
-    <atom:link href="https://wuxiaosu.com/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wuxiaosu.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>sqlite常用操作</title>
-      <link>https://wuxiaosu.com/posts/sql/</link>
+      <link>https://wuxiaosu.github.io/posts/sql/</link>
       <pubDate>Fri, 07 Jan 2022 13:46:00 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/sql/</guid>
+      <guid>https://wuxiaosu.github.io/posts/sql/</guid>
       <description>&lt;h1 id=&#34;sql&#34;&gt;sql&lt;/h1&gt;
 &lt;h2 id=&#34;sqlite&#34;&gt;sqlite&lt;/h2&gt;
 &lt;h3 id=&#34;时间戳转日期&#34;&gt;时间戳转日期&lt;/h3&gt;

@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://wuxiaosu.com/sitemap.xml
+Sitemap: https://wuxiaosu.github.io/sitemap.xml

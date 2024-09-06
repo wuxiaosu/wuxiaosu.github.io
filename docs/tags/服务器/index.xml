@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>服务器 on 苏的博客</title>
-    <link>https://wuxiaosu.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+    <link>https://wuxiaosu.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
     <description>Recent content in 服务器 on 苏的博客</description>
     <image>
       <title>苏的博客</title>
-      <url>https://wuxiaosu.com/papermod-cover.png</url>
-      <link>https://wuxiaosu.com/papermod-cover.png</link>
+      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
+      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Fri, 18 Jun 2021 14:33:00 +0800</lastBuildDate>
-    <atom:link href="https://wuxiaosu.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wuxiaosu.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>新服务器配置</title>
-      <link>https://wuxiaosu.com/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</link>
+      <link>https://wuxiaosu.github.io/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Fri, 18 Jun 2021 14:33:00 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://wuxiaosu.github.io/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</guid>
       <description>&lt;h1 id=&#34;新服务器配置&#34;&gt;新服务器配置&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;安装 mysql&lt;/li&gt;

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>MagiskHidePropsConf on 苏的博客</title>
-    <link>https://wuxiaosu.com/tags/magiskhidepropsconf/</link>
+    <link>https://wuxiaosu.github.io/tags/magiskhidepropsconf/</link>
     <description>Recent content in MagiskHidePropsConf on 苏的博客</description>
     <image>
       <title>苏的博客</title>
-      <url>https://wuxiaosu.com/papermod-cover.png</url>
-      <link>https://wuxiaosu.com/papermod-cover.png</link>
+      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
+      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
-    <atom:link href="https://wuxiaosu.com/tags/magiskhidepropsconf/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wuxiaosu.github.io/tags/magiskhidepropsconf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用MagiskHidePropsConf开启全局可调试</title>
-      <link>https://wuxiaosu.com/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</link>
+      <link>https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://wuxiaosu.com/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</guid>
+      <guid>https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</guid>
       <description>&lt;h2 id=&#34;1安装好-magisk&#34;&gt;1.安装好 Magisk&lt;/h2&gt;
 &lt;p&gt;此处略过&lt;/p&gt;
 &lt;h2 id=&#34;2安装-magiskhidepropsconf&#34;&gt;2.安装 MagiskHidePropsConf&lt;/h2&gt;

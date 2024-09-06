@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Mysql on 苏的博客</title>
-    <link>https://wuxiaosu.com/tags/mysql/</link>
+    <link>https://wuxiaosu.github.io/tags/mysql/</link>
     <description>Recent content in Mysql on 苏的博客</description>
     <image>
       <title>苏的博客</title>
-      <url>https://wuxiaosu.com/papermod-cover.png</url>
-      <link>https://wuxiaosu.com/papermod-cover.png</link>
+      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
+      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Fri, 18 Jun 2021 14:34:00 +0800</lastBuildDate>
-    <atom:link href="https://wuxiaosu.com/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wuxiaosu.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>mysql 相关</title>
-      <link>https://wuxiaosu.com/posts/mysql/</link>
+      <link>https://wuxiaosu.github.io/posts/mysql/</link>
       <pubDate>Fri, 18 Jun 2021 14:34:00 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/mysql/</guid>
+      <guid>https://wuxiaosu.github.io/posts/mysql/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;开启 mysql 远程访问&lt;/li&gt;
 &lt;/ul&gt;

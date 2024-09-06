@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>苏的博客</title>
-    <link>https://wuxiaosu.com/</link>
+    <link>https://wuxiaosu.github.io/</link>
     <description>Recent content on 苏的博客</description>
     <image>
       <title>苏的博客</title>
-      <url>https://wuxiaosu.com/papermod-cover.png</url>
-      <link>https://wuxiaosu.com/papermod-cover.png</link>
+      <url>https://wuxiaosu.github.io/papermod-cover.png</url>
+      <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.134.1</generator>
     <language>zh</language>
     <lastBuildDate>Thu, 10 Nov 2022 17:41:48 +0800</lastBuildDate>
-    <atom:link href="https://wuxiaosu.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wuxiaosu.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>反编译Python打包生成的exe文件</title>
-      <link>https://wuxiaosu.com/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</link>
+      <link>https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</link>
       <pubDate>Thu, 10 Nov 2022 17:41:48 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</guid>
+      <guid>https://wuxiaosu.github.io/posts/%E5%8F%8D%E7%BC%96%E8%AF%91python%E6%89%93%E5%8C%85%E7%94%9F%E6%88%90%E7%9A%84exe%E6%96%87%E4%BB%B6/</guid>
       <description>&lt;h2 id=&#34;1解压-exe-文件&#34;&gt;1.解压 exe 文件&lt;/h2&gt;
 &lt;h3 id=&#34;11-下载-pyinstxtractor&#34;&gt;1.1 下载 pyinstxtractor&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/extremecoders-re/pyinstxtractor&#34;&gt;https://github.com/extremecoders-re/pyinstxtractor&lt;/a&gt;&lt;/p&gt;
@@ -33,16 +33,16 @@
     </item>
     <item>
       <title>Ubuntu安装nginx</title>
-      <link>https://wuxiaosu.com/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</link>
+      <link>https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</link>
       <pubDate>Tue, 24 May 2022 22:55:15 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</guid>
+      <guid>https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/</guid>
       <description>&lt;h2 id=&#34;1命令行安装&#34;&gt;1.命令行安装&lt;/h2&gt;
 &lt;p&gt;直接在终端运行命令进行安装&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install nginx
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果需要自定义安装，可以参考官方文档&lt;br&gt;
 &lt;a href=&#34;http://nginx.org/en/linux_packages.html#Ubuntu&#34;&gt;http://nginx.org/en/linux_packages.html#Ubuntu&lt;/a&gt;&lt;br&gt;
 在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://wuxiaosu.com/images/20230621151612.png&#34; alt=&#34;默认界面&#34;  /&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://wuxiaosu.github.io/images/20230621151612.png&#34; alt=&#34;默认界面&#34;  /&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;2查看默认配置&#34;&gt;2.查看默认配置&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cat /etc/nginx/nginx.conf
@@ -135,9 +135,9 @@
     </item>
     <item>
       <title>Android反编译odex</title>
-      <link>https://wuxiaosu.com/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</link>
+      <link>https://wuxiaosu.github.io/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</link>
       <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</guid>
+      <guid>https://wuxiaosu.github.io/posts/android%E5%8F%8D%E7%BC%96%E8%AF%91odex/</guid>
       <description>&lt;h2 id=&#34;0下载-baksmalijar-smalijar&#34;&gt;0.下载 baksmali.jar 、smali.jar&lt;/h2&gt;
 &lt;p&gt;下载地址
 &lt;a href=&#34;https://bitbucket.org/JesusFreke/smali/downloads/&#34;&gt;https://bitbucket.org/JesusFreke/smali/downloads/&lt;/a&gt;&lt;br&gt;
@@ -158,9 +158,9 @@ Github 地址
     </item>
     <item>
       <title>Python文件打包</title>
-      <link>https://wuxiaosu.com/posts/python%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</link>
+      <link>https://wuxiaosu.github.io/posts/python%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</link>
       <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/python%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</guid>
+      <guid>https://wuxiaosu.github.io/posts/python%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/</guid>
       <description>&lt;h2 id=&#34;0省流助手&#34;&gt;0.省流助手&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pyinstaller -F myfile.py
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;1安装-pyinstaller&#34;&gt;1.安装 Pyinstaller&lt;/h2&gt;
@@ -176,9 +176,9 @@ Github 地址
     </item>
     <item>
       <title>几个ip信息获取接口</title>
-      <link>https://wuxiaosu.com/posts/%E5%87%A0%E4%B8%AAip%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E6%8E%A5%E5%8F%A3/</link>
+      <link>https://wuxiaosu.github.io/posts/%E5%87%A0%E4%B8%AAip%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E6%8E%A5%E5%8F%A3/</link>
       <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/%E5%87%A0%E4%B8%AAip%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E6%8E%A5%E5%8F%A3/</guid>
+      <guid>https://wuxiaosu.github.io/posts/%E5%87%A0%E4%B8%AAip%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E6%8E%A5%E5%8F%A3/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://ipinfo.io/json&#34;&gt;http://ipinfo.io/json&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -197,9 +197,9 @@ Github 地址
     </item>
     <item>
       <title>sqlite常用操作</title>
-      <link>https://wuxiaosu.com/posts/sql/</link>
+      <link>https://wuxiaosu.github.io/posts/sql/</link>
       <pubDate>Fri, 07 Jan 2022 13:46:00 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/sql/</guid>
+      <guid>https://wuxiaosu.github.io/posts/sql/</guid>
       <description>&lt;h1 id=&#34;sql&#34;&gt;sql&lt;/h1&gt;
 &lt;h2 id=&#34;sqlite&#34;&gt;sqlite&lt;/h2&gt;
 &lt;h3 id=&#34;时间戳转日期&#34;&gt;时间戳转日期&lt;/h3&gt;
@@ -212,9 +212,9 @@ Github 地址
     </item>
     <item>
       <title>adb常用命令</title>
-      <link>https://wuxiaosu.com/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Wed, 14 Jul 2021 09:52:34 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description>&lt;h1 id=&#34;adb-常用命令&#34;&gt;adb 常用命令&lt;/h1&gt;
 &lt;h2 id=&#34;1查看最上层-activity-名字&#34;&gt;1.查看最上层 &lt;strong&gt;Activity&lt;/strong&gt; 名字&lt;/h2&gt;
 &lt;ul&gt;
@@ -238,9 +238,9 @@ Github 地址
     </item>
     <item>
       <title>mysql 相关</title>
-      <link>https://wuxiaosu.com/posts/mysql/</link>
+      <link>https://wuxiaosu.github.io/posts/mysql/</link>
       <pubDate>Fri, 18 Jun 2021 14:34:00 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/mysql/</guid>
+      <guid>https://wuxiaosu.github.io/posts/mysql/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;开启 mysql 远程访问&lt;/li&gt;
 &lt;/ul&gt;
@@ -256,9 +256,9 @@ Github 地址
     </item>
     <item>
       <title>新服务器配置</title>
-      <link>https://wuxiaosu.com/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</link>
+      <link>https://wuxiaosu.github.io/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Fri, 18 Jun 2021 14:33:00 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://wuxiaosu.github.io/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/</guid>
       <description>&lt;h1 id=&#34;新服务器配置&#34;&gt;新服务器配置&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;安装 mysql&lt;/li&gt;
@@ -282,9 +282,9 @@ Github 地址
     </item>
     <item>
       <title>Frida安装教程</title>
-      <link>https://wuxiaosu.com/posts/frida%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
+      <link>https://wuxiaosu.github.io/posts/frida%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
       <pubDate>Tue, 18 May 2021 10:22:48 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/frida%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
+      <guid>https://wuxiaosu.github.io/posts/frida%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
       <description>&lt;p&gt;Frida是个轻量级的hook框架。&lt;/p&gt;
 &lt;h2 id=&#34;安装客户端&#34;&gt;安装客户端&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install frida
@@ -303,9 +303,9 @@ Github 地址
     </item>
     <item>
       <title>docker常用操作</title>
-      <link>https://wuxiaosu.com/posts/docker%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
+      <link>https://wuxiaosu.github.io/posts/docker%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Wed, 28 Apr 2021 10:56:00 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/docker%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https://wuxiaosu.github.io/posts/docker%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid>
       <description>&lt;h2 id=&#34;docker-常用操作&#34;&gt;docker 常用操作&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;搜索镜像&lt;/li&gt;
@@ -331,9 +331,9 @@ Github 地址
     </item>
     <item>
       <title>git 常用操作</title>
-      <link>https://wuxiaosu.com/posts/git/</link>
+      <link>https://wuxiaosu.github.io/posts/git/</link>
       <pubDate>Sun, 18 Apr 2021 10:18:00 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/git/</guid>
+      <guid>https://wuxiaosu.github.io/posts/git/</guid>
       <description>&lt;h1 id=&#34;git&#34;&gt;git&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Git 回退到某个 commit&lt;/li&gt;
@@ -353,9 +353,9 @@ Github 地址
     </item>
     <item>
       <title>正则表达式</title>
-      <link>https://wuxiaosu.com/posts/%E6%AD%A3%E5%88%99/</link>
+      <link>https://wuxiaosu.github.io/posts/%E6%AD%A3%E5%88%99/</link>
       <pubDate>Tue, 13 Apr 2021 15:23:00 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/%E6%AD%A3%E5%88%99/</guid>
+      <guid>https://wuxiaosu.github.io/posts/%E6%AD%A3%E5%88%99/</guid>
       <description>&lt;h1 id=&#34;正则表达式&#34;&gt;正则表达式&lt;/h1&gt;
 &lt;p&gt;正则表达式是计算机科学的一个概念，正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。正则表达式通常用来检索、替换那些匹配某个模式的文本。&lt;/p&gt;
 &lt;h2 id=&#34;元字符&#34;&gt;元字符&lt;/h2&gt;
@@ -412,9 +412,9 @@ Github 地址
     </item>
     <item>
       <title>ubuntu 防火墙</title>
-      <link>https://wuxiaosu.com/posts/ubuntu%E9%98%B2%E7%81%AB%E5%A2%99/</link>
+      <link>https://wuxiaosu.github.io/posts/ubuntu%E9%98%B2%E7%81%AB%E5%A2%99/</link>
       <pubDate>Wed, 24 Mar 2021 18:34:00 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/ubuntu%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
+      <guid>https://wuxiaosu.github.io/posts/ubuntu%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
       <description>&lt;h1 id=&#34;ubuntu-防火墙&#34;&gt;ubuntu 防火墙&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;查看防火墙状态&lt;/li&gt;
@@ -436,9 +436,9 @@ Github 地址
     </item>
     <item>
       <title>JetBrains 重置试用</title>
-      <link>https://wuxiaosu.com/posts/jetbrains/</link>
+      <link>https://wuxiaosu.github.io/posts/jetbrains/</link>
       <pubDate>Thu, 25 Feb 2021 16:30:00 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/jetbrains/</guid>
+      <guid>https://wuxiaosu.github.io/posts/jetbrains/</guid>
       <description>&lt;h1 id=&#34;jetbrains-20203-系列通用重置-30-天试用不会影响其他配置&#34;&gt;JetBrains 2020.3 系列通用重置 30 天试用（不会影响其他配置）&lt;/h1&gt;
 &lt;h2 id=&#34;以-intellijidea-为例&#34;&gt;以 IntelliJIdea 为例&lt;/h2&gt;
 &lt;ul&gt;
@@ -457,9 +457,9 @@ Github 地址
     </item>
     <item>
       <title>Android微信数据库密码计算</title>
-      <link>https://wuxiaosu.com/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</link>
+      <link>https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</link>
       <pubDate>Mon, 04 Jan 2021 15:09:00 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</guid>
+      <guid>https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/</guid>
       <description>&lt;h2 id=&#34;0省流助手&#34;&gt;0.省流助手&lt;/h2&gt;
 &lt;p&gt;密码就是 md5(imei + uin) 取前七位，最新使用 8.0.28 验证还是可以的&lt;/p&gt;
 &lt;h2 id=&#34;1获取相关参数&#34;&gt;1.获取相关参数&lt;/h2&gt;
@@ -485,9 +485,9 @@ Github 地址
     </item>
     <item>
       <title>pip切换国内源</title>
-      <link>https://wuxiaosu.com/posts/pip%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</link>
+      <link>https://wuxiaosu.github.io/posts/pip%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</link>
       <pubDate>Fri, 03 Apr 2020 09:54:00 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/pip%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</guid>
+      <guid>https://wuxiaosu.github.io/posts/pip%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</guid>
       <description>&lt;h1 id=&#34;pip切换国内源&#34;&gt;pip切换国内源&lt;/h1&gt;
 &lt;p&gt;pip切换国内源&lt;/p&gt;
 &lt;h2 id=&#34;1pip-国内的一些镜像&#34;&gt;1.pip 国内的一些镜像&lt;/h2&gt;
@@ -505,9 +505,9 @@ Github 地址
     </item>
     <item>
       <title>WSL更换国内源</title>
-      <link>https://wuxiaosu.com/posts/wsl%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</link>
+      <link>https://wuxiaosu.github.io/posts/wsl%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</link>
       <pubDate>Fri, 03 Apr 2020 09:54:00 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/wsl%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</guid>
+      <guid>https://wuxiaosu.github.io/posts/wsl%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/</guid>
       <description>&lt;h1 id=&#34;wsl-ubuntu1804lts-更换国内源&#34;&gt;WSL Ubuntu18.04LTS 更换国内源&lt;/h1&gt;
 &lt;p&gt;WSL Ubuntu18.04LTS 更换国内源&lt;/p&gt;
 &lt;h2 id=&#34;1查看-linux-版本&#34;&gt;1.查看 Linux 版本&lt;/h2&gt;
@@ -524,16 +524,16 @@ Github 地址
     </item>
     <item>
       <title>关于我</title>
-      <link>https://wuxiaosu.com/posts/about/</link>
+      <link>https://wuxiaosu.github.io/posts/about/</link>
       <pubDate>Tue, 08 Mar 2016 22:44:34 +0800</pubDate>
-      <guid>https://wuxiaosu.com/posts/about/</guid>
+      <guid>https://wuxiaosu.github.io/posts/about/</guid>
       <description>&lt;p&gt;苟且在广州，勉强算个程序员吧。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Android 8.0 以上开启全局可调式</title>
-      <link>https://wuxiaosu.com/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/</link>
+      <link>https://wuxiaosu.github.io/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://wuxiaosu.com/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/</guid>
+      <guid>https://wuxiaosu.github.io/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/</guid>
       <description>&lt;h1 id=&#34;android-80-以上开启全局可调式&#34;&gt;Android 8.0 以上开启全局可调式&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -556,9 +556,9 @@ Github 地址
     </item>
     <item>
       <title>使用MagiskHidePropsConf开启全局可调试</title>
-      <link>https://wuxiaosu.com/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</link>
+      <link>https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://wuxiaosu.com/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</guid>
+      <guid>https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/</guid>
       <description>&lt;h2 id=&#34;1安装好-magisk&#34;&gt;1.安装好 Magisk&lt;/h2&gt;
 &lt;p&gt;此处略过&lt;/p&gt;
 &lt;h2 id=&#34;2安装-magiskhidepropsconf&#34;&gt;2.安装 MagiskHidePropsConf&lt;/h2&gt;
