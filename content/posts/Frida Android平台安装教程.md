@@ -4,7 +4,11 @@ date: 2021-05-18T10:22:48+08:00
 draft: false
 tags: ["frida"]
 ---
-Frida是个支持多平台的hook框架。下面是Android平台的简单安装教程。
+Frida是个支持多平台的hook框架。
+
+Frida 官网 <https://frida.re/>
+
+下面是Android平台的简单安装教程。
 
 ## 在电脑上安装客户端  
 
@@ -66,7 +70,7 @@ chmod 755 /data/local/tmp/frida-server-12.8.14-android-arm64
 ./data/local/tmp/frida-server-12.8.14-android-arm64
 ```
 
-查看 frida-server64 是否运行成功
+### 查看 frida-server 是否运行成功
 
 ```bash
 frida-ps -U
