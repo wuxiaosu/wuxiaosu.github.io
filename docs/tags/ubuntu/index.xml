@@ -24,8 +24,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果需要自定义安装，可以参考官方文档&lt;br&gt;
 &lt;a href=&#34;http://nginx.org/en/linux_packages.html#Ubuntu&#34;&gt;http://nginx.org/en/linux_packages.html#Ubuntu&lt;/a&gt;&lt;br&gt;
 在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://wuxiaosu.github.io/images/20230621151612.png&#34; alt=&#34;默认界面&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;默认界面&#34; loading=&#34;lazy&#34; src=&#34;https://wuxiaosu.github.io/images/20230621151612.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2查看默认配置&#34;&gt;2.查看默认配置&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cat /etc/nginx/nginx.conf
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;user www-data&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
