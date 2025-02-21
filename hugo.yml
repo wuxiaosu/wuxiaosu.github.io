@@ -1,7 +1,7 @@
 baseURL: https://wuxiaosu.github.io/
 languageCode: cn-zh
 title: 苏的博客
-paginate: 5
+pagination.pagerSize: 5
 theme: hugo-PaperMod
 publishDir: docs
 
@@ -144,7 +144,7 @@ privacy:
         disabled: false
         simple: true
 
-    twitter:
+    x:
         disabled: false
         enableDNT: true
         simple: true
@@ -160,5 +160,5 @@ privacy:
 services:
     instagram:
         disableInlineCSS: true
-    twitter:
+    x:
         disableInlineCSS: true

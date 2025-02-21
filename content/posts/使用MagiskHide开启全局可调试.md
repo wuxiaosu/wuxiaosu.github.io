@@ -1,6 +1,6 @@
 ---
 title: "使用MagiskHidePropsConf开启全局可调试"
-date: 2022-01-129T17:00:34+08:00
+date: 2022-01-12T17:00:34+08:00
 draft: false
 tags: ["MagiskHidePropsConf","android"]
 ---

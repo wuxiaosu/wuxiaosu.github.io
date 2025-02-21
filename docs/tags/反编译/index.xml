@@ -9,7 +9,7 @@
       <url>https://wuxiaosu.github.io/papermod-cover.png</url>
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.134.1</generator>
+    <generator>Hugo -- 0.144.2</generator>
     <language>zh</language>
     <lastBuildDate>Thu, 10 Nov 2022 17:41:48 +0800</lastBuildDate>
     <atom:link href="https://wuxiaosu.github.io/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/index.xml" rel="self" type="application/rss+xml" />
@@ -52,7 +52,13 @@ Github 地址
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar baksmali-2.5.2.jar deodex a.odex -b ./system/framework/arm64/boot.oat -o out
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;-deodex&lt;/strong&gt; : 指定 &lt;strong&gt;odex&lt;/strong&gt; 文件&lt;br&gt;
 &lt;strong&gt;-b&lt;/strong&gt; : 指定 &lt;strong&gt;bootclasspath&lt;/strong&gt; 文件&lt;br&gt;
-&lt;strong&gt;-o&lt;/strong&gt; : 指定 &lt;strong&gt;smali&lt;/strong&gt; 输出目录&lt;/p&gt;</description>
+&lt;strong&gt;-o&lt;/strong&gt; : 指定 &lt;strong&gt;smali&lt;/strong&gt; 输出目录&lt;/p&gt;
+&lt;h2 id=&#34;2-smali-files---dex&#34;&gt;2. &lt;strong&gt;smali files&lt;/strong&gt; -&amp;gt; &lt;strong&gt;dex&lt;/strong&gt;&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar smali-2.5.2.jar assemble out -o a.dex
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;-assemble&lt;/strong&gt; : 指定 &lt;strong&gt;smali files&lt;/strong&gt; 文件夹&lt;br&gt;
+&lt;strong&gt;-o&lt;/strong&gt; : 指定输出文件名&lt;/p&gt;
+&lt;h2 id=&#34;3-更多&#34;&gt;3. 更多&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/ysk-china/p/7162203.html?utm_source=itdadao&amp;amp;utm_medium=referral&#34;&gt;https://www.cnblogs.com/ysk-china/p/7162203.html?utm_source=itdadao&amp;utm_medium=referral&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

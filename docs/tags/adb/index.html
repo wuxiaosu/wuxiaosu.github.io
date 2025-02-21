@@ -149,7 +149,8 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep &#34;mResumedActivity&#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity ...</p>
+    <p>adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep &#34;mResumedActivity&#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop &lt;PACKAGE&gt; 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式
+...</p>
   </div>
   <footer class="entry-footer"><span title='2021-07-14 09:52:34 +0800 CST'>七月 14, 2021</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to adb常用命令" href="https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"></a>

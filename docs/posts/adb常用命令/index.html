@@ -26,7 +26,27 @@ adb shell am start -n com.google.android.network2/com.my.MainActivity
 启动 Service
 
 adb shell am startservice -n com.google.android.network2/com.my.MainActivity
-">
+
+发送 Broadcast
+
+adb shell am broadcast -a android.intent.action.BOOT_COMPLETED
+3.重启
+
+重启到 Recovery 界面
+
+adb reboot recovery
+
+重启到 bootloader 界面
+
+adb reboot bootloader
+4.其他
+
+强制结束应用
+
+adb shell am force-stop &lt;PACKAGE&gt;
+5.以调试模式启动应用
+adb shell am set-debug-app -w {package_name}
+清除调试模式">
 <meta name="author" content="su">
 <link rel="canonical" href="https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.9de45e225101e4f99701d2b68fc6b8a1ef6027928be6391fa15bf7f56326c909.css" integrity="sha256-neReIlEB5PmXAdK2j8a4oe9gJ5KL5jkfoVv39WMmyQk=" rel="preload stylesheet" as="style">
@@ -77,7 +97,7 @@ adb shell am startservice -n com.google.android.network2/com.my.MainActivity
 </noscript><meta property="og:url" content="https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
   <meta property="og:site_name" content="苏的博客">
   <meta property="og:title" content="adb常用命令">
-  <meta property="og:description" content="adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep &#34;mResumedActivity&#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity ">
+  <meta property="og:description" content="adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep &#34;mResumedActivity&#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop &lt;PACKAGE&gt; 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式">
   <meta property="og:locale" content="zh">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -108,7 +128,27 @@ adb shell am start -n com.google.android.network2/com.my.MainActivity
 启动 Service
 
 adb shell am startservice -n com.google.android.network2/com.my.MainActivity
-">
+
+发送 Broadcast
+
+adb shell am broadcast -a android.intent.action.BOOT_COMPLETED
+3.重启
+
+重启到 Recovery 界面
+
+adb reboot recovery
+
+重启到 bootloader 界面
+
+adb reboot bootloader
+4.其他
+
+强制结束应用
+
+adb shell am force-stop &lt;PACKAGE&gt;
+5.以调试模式启动应用
+adb shell am set-debug-app -w {package_name}
+清除调试模式">
 
 
 <script type="application/ld+json">
@@ -137,7 +177,7 @@ adb shell am startservice -n com.google.android.network2/com.my.MainActivity
   "@type": "BlogPosting",
   "headline": "adb常用命令",
   "name": "adb常用命令",
-  "description": "adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep \u0026#34;mResumedActivity\u0026#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity ",
+  "description": "adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep \u0026#34;mResumedActivity\u0026#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop \u0026lt;PACKAGE\u0026gt; 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式\n",
   "keywords": [
     "adb", "android"
   ],

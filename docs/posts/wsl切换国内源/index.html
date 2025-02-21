@@ -19,6 +19,46 @@ Release:        18.04
 Codename:       bionic
 2.备份数据源
 $ sudo cp /etc/apt/sources.list /etc/apt/sources-backup.list
+3.更换数据源
+$ sudo vim /etc/apt/sources.list
+更换源内容
+1.阿里源
+deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+2.163 源
+deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
+3.中科大源
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+4.更新源
+$ sudo apt-get update
+
+$ sudo apt-get upgrade
 ">
 <meta name="author" content="su">
 <link rel="canonical" href="https://wuxiaosu.github.io/posts/wsl%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/">
@@ -71,7 +111,8 @@ $ sudo cp /etc/apt/sources.list /etc/apt/sources-backup.list
   <meta property="og:site_name" content="苏的博客">
   <meta property="og:title" content="WSL更换国内源">
   <meta property="og:description" content="WSL Ubuntu18.04LTS 更换国内源 WSL Ubuntu18.04LTS 更换国内源
-1.查看 Linux 版本 $ lsb_release -a No LSB modules are available. Distributor ID: Ubuntu Description: Ubuntu 18.04.1 LTS Release: 18.04 Codename: bionic 2.备份数据源 $ sudo cp /etc/apt/sources.list /etc/apt/sources-backup.list ">
+1.查看 Linux 版本 $ lsb_release -a No LSB modules are available. Distributor ID: Ubuntu Description: Ubuntu 18.04.1 LTS Release: 18.04 Codename: bionic 2.备份数据源 $ sudo cp /etc/apt/sources.list /etc/apt/sources-backup.list 3.更换数据源 $ sudo vim /etc/apt/sources.list 更换源内容
+1.阿里源 deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse 2.163 源 deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse 3.中科大源 deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse 4.更新源 $ sudo apt-get update $ sudo apt-get upgrade ">
   <meta property="og:locale" content="zh">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -94,6 +135,46 @@ Release:        18.04
 Codename:       bionic
 2.备份数据源
 $ sudo cp /etc/apt/sources.list /etc/apt/sources-backup.list
+3.更换数据源
+$ sudo vim /etc/apt/sources.list
+更换源内容
+1.阿里源
+deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+2.163 源
+deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
+3.中科大源
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+4.更新源
+$ sudo apt-get update
+
+$ sudo apt-get upgrade
 ">
 
 
@@ -123,7 +204,7 @@ $ sudo cp /etc/apt/sources.list /etc/apt/sources-backup.list
   "@type": "BlogPosting",
   "headline": "WSL更换国内源",
   "name": "WSL更换国内源",
-  "description": "WSL Ubuntu18.04LTS 更换国内源 WSL Ubuntu18.04LTS 更换国内源\n1.查看 Linux 版本 $ lsb_release -a No LSB modules are available. Distributor ID: Ubuntu Description: Ubuntu 18.04.1 LTS Release: 18.04 Codename: bionic 2.备份数据源 $ sudo cp /etc/apt/sources.list /etc/apt/sources-backup.list ",
+  "description": "WSL Ubuntu18.04LTS 更换国内源 WSL Ubuntu18.04LTS 更换国内源\n1.查看 Linux 版本 $ lsb_release -a No LSB modules are available. Distributor ID: Ubuntu Description: Ubuntu 18.04.1 LTS Release: 18.04 Codename: bionic 2.备份数据源 $ sudo cp /etc/apt/sources.list /etc/apt/sources-backup.list 3.更换数据源 $ sudo vim /etc/apt/sources.list 更换源内容\n1.阿里源 deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse 2.163 源 deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse 3.中科大源 deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse 4.更新源 $ sudo apt-get update $ sudo apt-get upgrade ",
   "keywords": [
     "wsl"
   ],

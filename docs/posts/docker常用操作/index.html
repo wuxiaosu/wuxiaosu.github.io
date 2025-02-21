@@ -28,7 +28,76 @@ docker rmi
 正在运行的镜像列表
 
 docker ps
-">
+
+使用镜像启动一个容器
+
+docker run -itd openjdk:8
+
+启动并直接进入镜像
+
+docker run -it ubuntu:14.04
+
+查看所有容器
+
+docker ps -a
+
+删除容器
+
+docker rm
+
+使用 Dockerfile 构建镜像
+
+docker build -t docker_repo ./docker_repo
+
+查看容器状态
+
+docker stats
+
+查看日志
+
+docker compose logs
+
+后台启动
+
+docker compose up -d
+
+启动
+
+docker compose up
+
+重启
+
+docker compose restart
+
+创建网络
+
+docker network create mynet
+
+查看网络
+
+docker network ls
+
+删除网络
+
+docker network rm mynet
+
+查看容器ip
+
+docker inspect -f &#39;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&#39; mysql-container
+清除
+
+清除没用到的容器
+
+docker container prune
+
+清除没用到的镜像
+
+docker image prune
+DockerHub国内镜像源列表
+https://dockerhub.icu/
+https://docker.1panel.live/
+https://hub.rat.dev/
+随便拉取一个镜像，测试是否可用，以 alpine:latest 为例">
 <meta name="author" content="su">
 <link rel="canonical" href="https://wuxiaosu.github.io/posts/docker%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.9de45e225101e4f99701d2b68fc6b8a1ef6027928be6391fa15bf7f56326c909.css" integrity="sha256-neReIlEB5PmXAdK2j8a4oe9gJ5KL5jkfoVv39WMmyQk=" rel="preload stylesheet" as="style">
@@ -79,7 +148,7 @@ docker ps
 </noscript><meta property="og:url" content="https://wuxiaosu.github.io/posts/docker%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/">
   <meta property="og:site_name" content="苏的博客">
   <meta property="og:title" content="docker常用操作">
-  <meta property="og:description" content="docker 常用操作 搜索镜像 docker search python 拉取镜像 docker pull python:3.7 查看所有镜像 docker images 删除镜像 docker rmi 正在运行的镜像列表 docker ps ">
+  <meta property="og:description" content="docker 常用操作 搜索镜像 docker search python 拉取镜像 docker pull python:3.7 查看所有镜像 docker images 删除镜像 docker rmi 正在运行的镜像列表 docker ps 使用镜像启动一个容器 docker run -itd openjdk:8 启动并直接进入镜像 docker run -it ubuntu:14.04 查看所有容器 docker ps -a 删除容器 docker rm 使用 Dockerfile 构建镜像 docker build -t docker_repo ./docker_repo 查看容器状态 docker stats 查看日志 docker compose logs 后台启动 docker compose up -d 启动 docker compose up 重启 docker compose restart 创建网络 docker network create mynet 查看网络 docker network ls 删除网络 docker network rm mynet 查看容器ip docker inspect -f &#39;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&#39; mysql-container 清除 清除没用到的容器 docker container prune 清除没用到的镜像 docker image prune DockerHub国内镜像源列表 https://dockerhub.icu/ https://docker.1panel.live/ https://hub.rat.dev/ 随便拉取一个镜像，测试是否可用，以 alpine:latest 为例">
   <meta property="og:locale" content="zh">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -112,7 +181,76 @@ docker rmi
 正在运行的镜像列表
 
 docker ps
-">
+
+使用镜像启动一个容器
+
+docker run -itd openjdk:8
+
+启动并直接进入镜像
+
+docker run -it ubuntu:14.04
+
+查看所有容器
+
+docker ps -a
+
+删除容器
+
+docker rm
+
+使用 Dockerfile 构建镜像
+
+docker build -t docker_repo ./docker_repo
+
+查看容器状态
+
+docker stats
+
+查看日志
+
+docker compose logs
+
+后台启动
+
+docker compose up -d
+
+启动
+
+docker compose up
+
+重启
+
+docker compose restart
+
+创建网络
+
+docker network create mynet
+
+查看网络
+
+docker network ls
+
+删除网络
+
+docker network rm mynet
+
+查看容器ip
+
+docker inspect -f &#39;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&#39; mysql-container
+清除
+
+清除没用到的容器
+
+docker container prune
+
+清除没用到的镜像
+
+docker image prune
+DockerHub国内镜像源列表
+https://dockerhub.icu/
+https://docker.1panel.live/
+https://hub.rat.dev/
+随便拉取一个镜像，测试是否可用，以 alpine:latest 为例">
 
 
 <script type="application/ld+json">
@@ -141,7 +279,7 @@ docker ps
   "@type": "BlogPosting",
   "headline": "docker常用操作",
   "name": "docker常用操作",
-  "description": "docker 常用操作 搜索镜像 docker search python 拉取镜像 docker pull python:3.7 查看所有镜像 docker images 删除镜像 docker rmi 正在运行的镜像列表 docker ps ",
+  "description": "docker 常用操作 搜索镜像 docker search python 拉取镜像 docker pull python:3.7 查看所有镜像 docker images 删除镜像 docker rmi 正在运行的镜像列表 docker ps 使用镜像启动一个容器 docker run -itd openjdk:8 启动并直接进入镜像 docker run -it ubuntu:14.04 查看所有容器 docker ps -a 删除容器 docker rm 使用 Dockerfile 构建镜像 docker build -t docker_repo ./docker_repo 查看容器状态 docker stats 查看日志 docker compose logs 后台启动 docker compose up -d 启动 docker compose up 重启 docker compose restart 创建网络 docker network create mynet 查看网络 docker network ls 删除网络 docker network rm mynet 查看容器ip docker inspect -f \u0026#39;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}\u0026#39; mysql-container 清除 清除没用到的容器 docker container prune 清除没用到的镜像 docker image prune DockerHub国内镜像源列表 https://dockerhub.icu/ https://docker.1panel.live/ https://hub.rat.dev/ 随便拉取一个镜像，测试是否可用，以 alpine:latest 为例\n",
   "keywords": [
     "docker", "docker compose"
   ],

@@ -153,7 +153,9 @@
 netstat -an | grep 3306 输出如下
 tcp 0 0 127.0.0.1:3306 0.0.0.0:* LISTEN 修改配置文件（不同版本可能位置不同）
 /etc/mysql/mysql.conf.d/mysqld.cnf 注释掉
-# bind-address = 127.0.0.1 ...</p>
+# bind-address = 127.0.0.1 为新增主键赋值 SET @mycnt = 0; UPDATE xxxxx SET RowNum=(@mycnt := @mycnt &#43; 1) 使用 native_password 连接 ALTER USER &#39;user&#39;@&#39;%&#39; IDENTIFIED WITH mysql_native_password BY &#39;password&#39;; flush privileges; 修改用户密码 ALTER USER &#39;username&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;new_password&#39;; 使用默认密码修改数据库密码 查看默认用户密码
+cd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. DO NOT TOUCH! [client] host = localhost user = debian-sys-maint password = G0Gis29yv0dtUhng socket = /var/run/mysqld/mysqld.sock [mysql_upgrade] host = localhost user = debian-sys-maint password = G0Gis29yv0dtUhng socket = /var/run/mysqld/mysqld.sock 使用默认用户登录
+...</p>
   </div>
   <footer class="entry-footer"><span title='2021-06-18 14:34:00 +0800 CST'>六月 18, 2021</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to mysql 相关" href="https://wuxiaosu.github.io/posts/mysql/"></a>

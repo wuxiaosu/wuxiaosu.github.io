@@ -156,7 +156,11 @@ Frida 官网 https://frida.re/
 在 Android 手机中安装服务端 在手机终端执行命令，查看设备信息
 adb shell getprop ro.product.cpu.abi 输出设备架构信息
 arm64-v8a 根据 cpu 架构去官网下载对应的 frida-server。
-...</p>
+frida-server-12.8.14-android-arm64.xz 注意 .xz 是压缩文件，需要先解压，然后解压后的文件放到设备上
+adb push frida-server-12.8.14-android-arm64 /data/local/tmp 电脑上设置端口转发
+adb forward tcp:27042 tcp:27042 adb forward tcp:27043 tcp:27043 在 Android 终端使用 root 权限运行 frida-server
+chmod 755 /data/local/tmp/frida-server-12.8.14-android-arm64 ./data/local/tmp/frida-server-12.8.14-android-arm64 查看 frida-server 是否运行成功 frida-ps -U 出现 Android 设备进程信息表示运行成功。
+</p>
   </div>
   <footer class="entry-footer"><span title='2021-05-18 10:22:48 +0800 CST'>五月 18, 2021</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to Frida Android平台安装教程" href="https://wuxiaosu.github.io/posts/frida-android%E5%B9%B3%E5%8F%B0%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"></a>

@@ -59,7 +59,51 @@
   
 
 字符转义
-如果你想查找元字符的话，需要使用 \ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \. ，要查找 \ 需要使用 \\ 。">
+如果你想查找元字符的话，需要使用 \ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \. ，要查找 \ 需要使用 \\ 。
+限定符
+指定数量的代码。
+常用的限定符
+
+  
+      
+          代码/语法
+          说明
+      
+  
+  
+      
+          *
+          重复0次或更多次
+      
+      
+          &#43;
+          重复1次或更多次
+      
+      
+          ？
+          重复0次或1次
+      
+      
+          {n}
+          重复 n 次
+      
+      
+          {n,}
+          重复 n 次或更多次
+      
+      
+          {n,m}
+          重复 n 到 m 次
+      
+  
+
+范围表达式
+用于指定一个字符范围。
+比如：
+[aeiou] ：任何一个元音字母。
+[0-9] : 0-9，即一位数字。
+[.?!] ： 标点符号 . 或者 ？ 或者 ！。
+[a-z0-9A-Z_] ： 匹配任意一位数字或字母或者下划线。">
 <meta name="author" content="su">
 <link rel="canonical" href="https://wuxiaosu.github.io/posts/%E6%AD%A3%E5%88%99/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.9de45e225101e4f99701d2b68fc6b8a1ef6027928be6391fa15bf7f56326c909.css" integrity="sha256-neReIlEB5PmXAdK2j8a4oe9gJ5KL5jkfoVv39WMmyQk=" rel="preload stylesheet" as="style">
@@ -112,7 +156,14 @@
   <meta property="og:title" content="正则表达式">
   <meta property="og:description" content="正则表达式 正则表达式是计算机科学的一个概念，正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。正则表达式通常用来检索、替换那些匹配某个模式的文本。
 元字符 所谓元字符就是指那些在正则表达式中具有特殊意义的专用字符。
-常用的元字符 代码 说明 . 匹配除换行符以外的任意字符 \w 匹配字母或数字或下划线或汉字 \s 匹配任意的空白符 \d 匹配数字 \b 匹配单词的开始或结束 \B 非单词边界匹配 ^ 匹配字符串的开始 $ 匹配字符串的结束 （） 标记一个子表达式的开始和结束 字符转义 如果你想查找元字符的话，需要使用 \ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \. ，要查找 \ 需要使用 \\ 。">
+常用的元字符 代码 说明 . 匹配除换行符以外的任意字符 \w 匹配字母或数字或下划线或汉字 \s 匹配任意的空白符 \d 匹配数字 \b 匹配单词的开始或结束 \B 非单词边界匹配 ^ 匹配字符串的开始 $ 匹配字符串的结束 （） 标记一个子表达式的开始和结束 字符转义 如果你想查找元字符的话，需要使用 \ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \. ，要查找 \ 需要使用 \\ 。
+限定符 指定数量的代码。
+常用的限定符 代码/语法 说明 * 重复0次或更多次 &#43; 重复1次或更多次 ？ 重复0次或1次 {n} 重复 n 次 {n,} 重复 n 次或更多次 {n,m} 重复 n 到 m 次 范围表达式 用于指定一个字符范围。
+比如：
+[aeiou] ：任何一个元音字母。
+[0-9] : 0-9，即一位数字。
+[.?!] ： 标点符号 . 或者 ？ 或者 ！。
+[a-z0-9A-Z_] ： 匹配任意一位数字或字母或者下划线。">
   <meta property="og:locale" content="zh">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -175,7 +226,51 @@
   
 
 字符转义
-如果你想查找元字符的话，需要使用 \ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \. ，要查找 \ 需要使用 \\ 。">
+如果你想查找元字符的话，需要使用 \ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \. ，要查找 \ 需要使用 \\ 。
+限定符
+指定数量的代码。
+常用的限定符
+
+  
+      
+          代码/语法
+          说明
+      
+  
+  
+      
+          *
+          重复0次或更多次
+      
+      
+          &#43;
+          重复1次或更多次
+      
+      
+          ？
+          重复0次或1次
+      
+      
+          {n}
+          重复 n 次
+      
+      
+          {n,}
+          重复 n 次或更多次
+      
+      
+          {n,m}
+          重复 n 到 m 次
+      
+  
+
+范围表达式
+用于指定一个字符范围。
+比如：
+[aeiou] ：任何一个元音字母。
+[0-9] : 0-9，即一位数字。
+[.?!] ： 标点符号 . 或者 ？ 或者 ！。
+[a-z0-9A-Z_] ： 匹配任意一位数字或字母或者下划线。">
 
 
 <script type="application/ld+json">
@@ -204,7 +299,7 @@
   "@type": "BlogPosting",
   "headline": "正则表达式",
   "name": "正则表达式",
-  "description": "正则表达式 正则表达式是计算机科学的一个概念，正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。正则表达式通常用来检索、替换那些匹配某个模式的文本。\n元字符 所谓元字符就是指那些在正则表达式中具有特殊意义的专用字符。\n常用的元字符 代码 说明 . 匹配除换行符以外的任意字符 \\w 匹配字母或数字或下划线或汉字 \\s 匹配任意的空白符 \\d 匹配数字 \\b 匹配单词的开始或结束 \\B 非单词边界匹配 ^ 匹配字符串的开始 $ 匹配字符串的结束 （） 标记一个子表达式的开始和结束 字符转义 如果你想查找元字符的话，需要使用 \\ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \\. ，要查找 \\ 需要使用 \\\\ 。\n",
+  "description": "正则表达式 正则表达式是计算机科学的一个概念，正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。正则表达式通常用来检索、替换那些匹配某个模式的文本。\n元字符 所谓元字符就是指那些在正则表达式中具有特殊意义的专用字符。\n常用的元字符 代码 说明 . 匹配除换行符以外的任意字符 \\w 匹配字母或数字或下划线或汉字 \\s 匹配任意的空白符 \\d 匹配数字 \\b 匹配单词的开始或结束 \\B 非单词边界匹配 ^ 匹配字符串的开始 $ 匹配字符串的结束 （） 标记一个子表达式的开始和结束 字符转义 如果你想查找元字符的话，需要使用 \\ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \\. ，要查找 \\ 需要使用 \\\\ 。\n限定符 指定数量的代码。\n常用的限定符 代码/语法 说明 * 重复0次或更多次 + 重复1次或更多次 ？ 重复0次或1次 {n} 重复 n 次 {n,} 重复 n 次或更多次 {n,m} 重复 n 到 m 次 范围表达式 用于指定一个字符范围。\n比如：\n[aeiou] ：任何一个元音字母。\n[0-9] : 0-9，即一位数字。\n[.?!] ： 标点符号 . 或者 ？ 或者 ！。\n[a-z0-9A-Z_] ： 匹配任意一位数字或字母或者下划线。\n",
   "keywords": [
     "正则"
   ],
@@ -373,46 +468,46 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">代码</th>
-          <th style="text-align: left">说明</th>
+          <th>代码</th>
+          <th>说明</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">.</td>
-          <td style="text-align: left">匹配除换行符以外的任意字符</td>
+          <td>.</td>
+          <td>匹配除换行符以外的任意字符</td>
       </tr>
       <tr>
-          <td style="text-align: left">\w</td>
-          <td style="text-align: left">匹配字母或数字或下划线或汉字</td>
+          <td>\w</td>
+          <td>匹配字母或数字或下划线或汉字</td>
       </tr>
       <tr>
-          <td style="text-align: left">\s</td>
-          <td style="text-align: left">匹配任意的空白符</td>
+          <td>\s</td>
+          <td>匹配任意的空白符</td>
       </tr>
       <tr>
-          <td style="text-align: left">\d</td>
-          <td style="text-align: left">匹配数字</td>
+          <td>\d</td>
+          <td>匹配数字</td>
       </tr>
       <tr>
-          <td style="text-align: left">\b</td>
-          <td style="text-align: left">匹配单词的开始或结束</td>
+          <td>\b</td>
+          <td>匹配单词的开始或结束</td>
       </tr>
       <tr>
-          <td style="text-align: left">\B</td>
-          <td style="text-align: left">非单词边界匹配</td>
+          <td>\B</td>
+          <td>非单词边界匹配</td>
       </tr>
       <tr>
-          <td style="text-align: left">^</td>
-          <td style="text-align: left">匹配字符串的开始</td>
+          <td>^</td>
+          <td>匹配字符串的开始</td>
       </tr>
       <tr>
-          <td style="text-align: left">$</td>
-          <td style="text-align: left">匹配字符串的结束</td>
+          <td>$</td>
+          <td>匹配字符串的结束</td>
       </tr>
       <tr>
-          <td style="text-align: left">（）</td>
-          <td style="text-align: left">标记一个子表达式的开始和结束</td>
+          <td>（）</td>
+          <td>标记一个子表达式的开始和结束</td>
       </tr>
   </tbody>
 </table>
@@ -424,34 +519,34 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">代码/语法</th>
-          <th style="text-align: left">说明</th>
+          <th>代码/语法</th>
+          <th>说明</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">*</td>
-          <td style="text-align: left">重复0次或更多次</td>
+          <td>*</td>
+          <td>重复0次或更多次</td>
       </tr>
       <tr>
-          <td style="text-align: left">+</td>
-          <td style="text-align: left">重复1次或更多次</td>
+          <td>+</td>
+          <td>重复1次或更多次</td>
       </tr>
       <tr>
-          <td style="text-align: left">？</td>
-          <td style="text-align: left">重复0次或1次</td>
+          <td>？</td>
+          <td>重复0次或1次</td>
       </tr>
       <tr>
-          <td style="text-align: left">{n}</td>
-          <td style="text-align: left">重复 n 次</td>
+          <td>{n}</td>
+          <td>重复 n 次</td>
       </tr>
       <tr>
-          <td style="text-align: left">{n,}</td>
-          <td style="text-align: left">重复 n 次或更多次</td>
+          <td>{n,}</td>
+          <td>重复 n 次或更多次</td>
       </tr>
       <tr>
-          <td style="text-align: left">{n,m}</td>
-          <td style="text-align: left">重复 n 到 m 次</td>
+          <td>{n,m}</td>
+          <td>重复 n 到 m 次</td>
       </tr>
   </tbody>
 </table>
@@ -506,30 +601,30 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">代码</th>
-          <th style="text-align: left">说明</th>
+          <th>代码</th>
+          <th>说明</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">.？</td>
-          <td style="text-align: left">重复任意次，但尽可能少重复</td>
+          <td>.？</td>
+          <td>重复任意次，但尽可能少重复</td>
       </tr>
       <tr>
-          <td style="text-align: left">+？</td>
-          <td style="text-align: left">重复1次或更多次，但尽可能少重复</td>
+          <td>+？</td>
+          <td>重复1次或更多次，但尽可能少重复</td>
       </tr>
       <tr>
-          <td style="text-align: left">？？</td>
-          <td style="text-align: left">重复0次或1次，但尽可能少重复</td>
+          <td>？？</td>
+          <td>重复0次或1次，但尽可能少重复</td>
       </tr>
       <tr>
-          <td style="text-align: left">{n,m}?</td>
-          <td style="text-align: left">重复n到m次，但尽可能少重复</td>
+          <td>{n,m}?</td>
+          <td>重复n到m次，但尽可能少重复</td>
       </tr>
       <tr>
-          <td style="text-align: left">{n,}?</td>
-          <td style="text-align: left">重复n次以上，但尽可能少重复</td>
+          <td>{n,}?</td>
+          <td>重复n次以上，但尽可能少重复</td>
       </tr>
   </tbody>
 </table>

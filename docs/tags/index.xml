@@ -9,7 +9,7 @@
       <url>https://wuxiaosu.github.io/papermod-cover.png</url>
       <link>https://wuxiaosu.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.134.1</generator>
+    <generator>Hugo -- 0.144.2</generator>
     <language>zh</language>
     <lastBuildDate>Thu, 10 Nov 2022 17:41:48 +0800</lastBuildDate>
     <atom:link href="https://wuxiaosu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -60,6 +60,13 @@
       <link>https://wuxiaosu.github.io/tags/ip/</link>
       <pubDate>Tue, 24 May 2022 22:06:48 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/tags/ip/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MagiskHidePropsConf</title>
+      <link>https://wuxiaosu.github.io/tags/magiskhidepropsconf/</link>
+      <pubDate>Wed, 12 Jan 2022 17:00:34 +0800</pubDate>
+      <guid>https://wuxiaosu.github.io/tags/magiskhidepropsconf/</guid>
       <description></description>
     </item>
     <item>
@@ -165,13 +172,6 @@
       <link>https://wuxiaosu.github.io/tags/wsl/</link>
       <pubDate>Fri, 03 Apr 2020 09:54:00 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/tags/wsl/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MagiskHidePropsConf</title>
-      <link>https://wuxiaosu.github.io/tags/magiskhidepropsconf/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://wuxiaosu.github.io/tags/magiskhidepropsconf/</guid>
       <description></description>
     </item>
   </channel>

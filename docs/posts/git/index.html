@@ -22,6 +22,55 @@ git push origin HEAD --force
 合并某个提交:
 
 git cherry-pick &lt;commit id&gt; 
+
+查看本地分支：
+
+git branch
+
+删除本地分支：
+
+git branch -D tmp
+
+查看 tag：
+
+git tag
+
+在某个 commit 上打 tag：
+
+git tag test_tag c809ddbf83939a89659e51dc2a5fe183af384233
+
+本地 tag 推送到线上：
+
+git push origin test_tag
+
+本地删除 tag：
+
+git tag -d test_tag
+
+删除线上 tag：
+
+git push origin :refs/tags/test_tag
+
+修改远程地址先删后加
+
+git remote rm origin
+git remote add origin [url]
+
+创建新分支
+
+git branch develop
+
+切换到该分支
+
+git checkout develop
+
+提交到该分支
+
+git push -u origin develop
+
+修改源
+
+git remote set-url origin url
 ">
 <meta name="author" content="su">
 <link rel="canonical" href="https://wuxiaosu.github.io/posts/git/">
@@ -73,7 +122,7 @@ git cherry-pick &lt;commit id&gt;
 </noscript><meta property="og:url" content="https://wuxiaosu.github.io/posts/git/">
   <meta property="og:site_name" content="苏的博客">
   <meta property="og:title" content="git 常用操作">
-  <meta property="og:description" content="git Git 回退到某个 commit git reset --hard HEAD^ 回退到上个版本 git reset --hard HEAD~3 回退到前3次提交之前，以此类推，回退到n次提交之前 git reset --hard commit_id 退到/进到 指定commit的sha码 强推到远程: git push origin HEAD --force 合并某个提交: git cherry-pick &lt;commit id&gt; ">
+  <meta property="og:description" content="git Git 回退到某个 commit git reset --hard HEAD^ 回退到上个版本 git reset --hard HEAD~3 回退到前3次提交之前，以此类推，回退到n次提交之前 git reset --hard commit_id 退到/进到 指定commit的sha码 强推到远程: git push origin HEAD --force 合并某个提交: git cherry-pick &lt;commit id&gt; 查看本地分支： git branch 删除本地分支： git branch -D tmp 查看 tag： git tag 在某个 commit 上打 tag： git tag test_tag c809ddbf83939a89659e51dc2a5fe183af384233 本地 tag 推送到线上： git push origin test_tag 本地删除 tag： git tag -d test_tag 删除线上 tag： git push origin :refs/tags/test_tag 修改远程地址先删后加 git remote rm origin git remote add origin [url] 创建新分支 git branch develop 切换到该分支 git checkout develop 提交到该分支 git push -u origin develop 修改源 git remote set-url origin url ">
   <meta property="og:locale" content="zh">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -99,6 +148,55 @@ git push origin HEAD --force
 合并某个提交:
 
 git cherry-pick &lt;commit id&gt; 
+
+查看本地分支：
+
+git branch
+
+删除本地分支：
+
+git branch -D tmp
+
+查看 tag：
+
+git tag
+
+在某个 commit 上打 tag：
+
+git tag test_tag c809ddbf83939a89659e51dc2a5fe183af384233
+
+本地 tag 推送到线上：
+
+git push origin test_tag
+
+本地删除 tag：
+
+git tag -d test_tag
+
+删除线上 tag：
+
+git push origin :refs/tags/test_tag
+
+修改远程地址先删后加
+
+git remote rm origin
+git remote add origin [url]
+
+创建新分支
+
+git branch develop
+
+切换到该分支
+
+git checkout develop
+
+提交到该分支
+
+git push -u origin develop
+
+修改源
+
+git remote set-url origin url
 ">
 
 
@@ -128,7 +226,7 @@ git cherry-pick &lt;commit id&gt;
   "@type": "BlogPosting",
   "headline": "git 常用操作",
   "name": "git 常用操作",
-  "description": "git Git 回退到某个 commit git reset --hard HEAD^ 回退到上个版本 git reset --hard HEAD~3 回退到前3次提交之前，以此类推，回退到n次提交之前 git reset --hard commit_id 退到/进到 指定commit的sha码 强推到远程: git push origin HEAD --force 合并某个提交: git cherry-pick \u0026lt;commit id\u0026gt; ",
+  "description": "git Git 回退到某个 commit git reset --hard HEAD^ 回退到上个版本 git reset --hard HEAD~3 回退到前3次提交之前，以此类推，回退到n次提交之前 git reset --hard commit_id 退到/进到 指定commit的sha码 强推到远程: git push origin HEAD --force 合并某个提交: git cherry-pick \u0026lt;commit id\u0026gt; 查看本地分支： git branch 删除本地分支： git branch -D tmp 查看 tag： git tag 在某个 commit 上打 tag： git tag test_tag c809ddbf83939a89659e51dc2a5fe183af384233 本地 tag 推送到线上： git push origin test_tag 本地删除 tag： git tag -d test_tag 删除线上 tag： git push origin :refs/tags/test_tag 修改远程地址先删后加 git remote rm origin git remote add origin [url] 创建新分支 git branch develop 切换到该分支 git checkout develop 提交到该分支 git push -u origin develop 修改源 git remote set-url origin url ",
   "keywords": [
     "git"
   ],

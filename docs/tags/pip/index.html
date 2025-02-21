@@ -152,7 +152,8 @@
     <p>pip切换国内源 pip切换国内源
 1.pip 国内的一些镜像 阿里云 http://mirrors.aliyun.com/pypi/simple/ 中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/ 豆瓣(douban) http://pypi.douban.com/simple/ 清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/ 中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/ 2.临时修改 可以在使用 pip 的时候在后面加上 -i 参数，指定 pip 源
 $ pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple 3.永久修改 1.Linux 修改 ~/.pip/pip.conf (没有就创建一个)， 内容如下：
-...</p>
+[global] index-url = https://pypi.tuna.tsinghua.edu.cn/simple 2.Windows 直接在 user 目录中创建一个 pip 目录，如：C:\Users\xx\pip，新建文件 pip.ini ，内容如下
+[global] index-url = https://pypi.tuna.tsinghua.edu.cn/simple </p>
   </div>
   <footer class="entry-footer"><span title='2020-04-03 09:54:00 +0800 CST'>四月 3, 2020</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to pip切换国内源" href="https://wuxiaosu.github.io/posts/pip%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/"></a>

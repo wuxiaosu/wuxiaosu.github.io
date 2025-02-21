@@ -1,6 +1,6 @@
 ---
 title: "Android 8.0 以上开启全局可调式"
-date: 2022-04-129T17:21:00+08:00
+date: 2022-04-12T17:21:00+08:00
 draft: false
 tags: ["android"]
 ---

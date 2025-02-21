@@ -2,7 +2,7 @@
 <html lang="zh" dir="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.134.1"><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.144.2"><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -147,52 +147,13 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">sqlite常用操作
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>sql sqlite 时间戳转日期 select datetime(1613714753, &#39;unixepoch&#39;, &#39;localtime&#39;); 输出
-2021-02-19 14:05:53 当前时间戳 select strftime(&#39;%s&#39;,&#39;now&#39;); ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-01-07 13:46:00 +0800 CST'>一月 7, 2022</span>&nbsp;·&nbsp;su</footer>
-  <a class="entry-link" aria-label="post link to sqlite常用操作" href="https://wuxiaosu.github.io/posts/sql/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">adb常用命令
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep &#34;mResumedActivity&#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-07-14 09:52:34 +0800 CST'>七月 14, 2021</span>&nbsp;·&nbsp;su</footer>
-  <a class="entry-link" aria-label="post link to adb常用命令" href="https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">mysql 相关
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p> 开启 mysql 远程访问 确认端口是否对外开放，默认是不开放的
-netstat -an | grep 3306 输出如下
-tcp 0 0 127.0.0.1:3306 0.0.0.0:* LISTEN 修改配置文件（不同版本可能位置不同）
-/etc/mysql/mysql.conf.d/mysqld.cnf 注释掉
-# bind-address = 127.0.0.1 ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2021-06-18 14:34:00 +0800 CST'>六月 18, 2021</span>&nbsp;·&nbsp;su</footer>
-  <a class="entry-link" aria-label="post link to mysql 相关" href="https://wuxiaosu.github.io/posts/mysql/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
     <h2 class="entry-hint-parent">新服务器配置
     </h2>
   </header>
   <div class="entry-content">
-    <p>新服务器配置 安装 mysql sudo apt install mysql-server 安装 nginx sudo apt install nginx 安装 openjdk sudo apt-get install openjdk-8-jdk 安装 php、php-fpm、php-mysql sudo apt-get install php sudo apt-get install php-fpm sudo apt-get install php-mysql ...</p>
+    <p>新服务器配置 安装 mysql sudo apt install mysql-server 安装 nginx sudo apt install nginx 安装 openjdk sudo apt-get install openjdk-8-jdk 安装 php、php-fpm、php-mysql sudo apt-get install php sudo apt-get install php-fpm sudo apt-get install php-mysql 验证mysql 运行情况 sudo systemctl status mysql 首次以 root 身份登录 sudo mysql 修改密码 ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED WITH mysql_native_password BY &#39;password&#39;; FLUSH PRIVILEGES; 创建数据库并设定字符集
+CREATE DATABASE database_name CHARACTER SET utf8 COLLATE utf8_general_ci; 另外再创建一个用户并授予所有权限
+...</p>
   </div>
   <footer class="entry-footer"><span title='2021-06-18 14:33:00 +0800 CST'>六月 18, 2021</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to 新服务器配置" href="https://wuxiaosu.github.io/posts/%E6%96%B0%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/"></a>
@@ -211,10 +172,132 @@ Frida 官网 https://frida.re/
 在 Android 手机中安装服务端 在手机终端执行命令，查看设备信息
 adb shell getprop ro.product.cpu.abi 输出设备架构信息
 arm64-v8a 根据 cpu 架构去官网下载对应的 frida-server。
-...</p>
+frida-server-12.8.14-android-arm64.xz 注意 .xz 是压缩文件，需要先解压，然后解压后的文件放到设备上
+adb push frida-server-12.8.14-android-arm64 /data/local/tmp 电脑上设置端口转发
+adb forward tcp:27042 tcp:27042 adb forward tcp:27043 tcp:27043 在 Android 终端使用 root 权限运行 frida-server
+chmod 755 /data/local/tmp/frida-server-12.8.14-android-arm64 ./data/local/tmp/frida-server-12.8.14-android-arm64 查看 frida-server 是否运行成功 frida-ps -U 出现 Android 设备进程信息表示运行成功。
+</p>
   </div>
   <footer class="entry-footer"><span title='2021-05-18 10:22:48 +0800 CST'>五月 18, 2021</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to Frida Android平台安装教程" href="https://wuxiaosu.github.io/posts/frida-android%E5%B9%B3%E5%8F%B0%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">docker常用操作
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>docker 常用操作 搜索镜像 docker search python 拉取镜像 docker pull python:3.7 查看所有镜像 docker images 删除镜像 docker rmi 正在运行的镜像列表 docker ps 使用镜像启动一个容器 docker run -itd openjdk:8 启动并直接进入镜像 docker run -it ubuntu:14.04 查看所有容器 docker ps -a 删除容器 docker rm 使用 Dockerfile 构建镜像 docker build -t docker_repo ./docker_repo 查看容器状态 docker stats 查看日志 docker compose logs 后台启动 docker compose up -d 启动 docker compose up 重启 docker compose restart 创建网络 docker network create mynet 查看网络 docker network ls 删除网络 docker network rm mynet 查看容器ip docker inspect -f &#39;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&#39; mysql-container 清除 清除没用到的容器 docker container prune 清除没用到的镜像 docker image prune DockerHub国内镜像源列表 https://dockerhub.icu/ https://docker.1panel.live/ https://hub.rat.dev/ 随便拉取一个镜像，测试是否可用，以 alpine:latest 为例
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-04-28 10:56:00 +0800 CST'>四月 28, 2021</span>&nbsp;·&nbsp;su</footer>
+  <a class="entry-link" aria-label="post link to docker常用操作" href="https://wuxiaosu.github.io/posts/docker%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">git 常用操作
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>git Git 回退到某个 commit git reset --hard HEAD^ 回退到上个版本 git reset --hard HEAD~3 回退到前3次提交之前，以此类推，回退到n次提交之前 git reset --hard commit_id 退到/进到 指定commit的sha码 强推到远程: git push origin HEAD --force 合并某个提交: git cherry-pick &lt;commit id&gt; 查看本地分支： git branch 删除本地分支： git branch -D tmp 查看 tag： git tag 在某个 commit 上打 tag： git tag test_tag c809ddbf83939a89659e51dc2a5fe183af384233 本地 tag 推送到线上： git push origin test_tag 本地删除 tag： git tag -d test_tag 删除线上 tag： git push origin :refs/tags/test_tag 修改远程地址先删后加 git remote rm origin git remote add origin [url] 创建新分支 git branch develop 切换到该分支 git checkout develop 提交到该分支 git push -u origin develop 修改源 git remote set-url origin url </p>
+  </div>
+  <footer class="entry-footer"><span title='2021-04-18 10:18:00 +0800 CST'>四月 18, 2021</span>&nbsp;·&nbsp;su</footer>
+  <a class="entry-link" aria-label="post link to git 常用操作" href="https://wuxiaosu.github.io/posts/git/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">正则表达式
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>正则表达式 正则表达式是计算机科学的一个概念，正则表达式使用单个字符串来描述、匹配一系列匹配某个句法规则的字符串。正则表达式通常用来检索、替换那些匹配某个模式的文本。
+元字符 所谓元字符就是指那些在正则表达式中具有特殊意义的专用字符。
+常用的元字符 代码 说明 . 匹配除换行符以外的任意字符 \w 匹配字母或数字或下划线或汉字 \s 匹配任意的空白符 \d 匹配数字 \b 匹配单词的开始或结束 \B 非单词边界匹配 ^ 匹配字符串的开始 $ 匹配字符串的结束 （） 标记一个子表达式的开始和结束 字符转义 如果你想查找元字符的话，需要使用 \ 来取消这些字符的特殊含义。比如要查找 . 的话需要使用 \. ，要查找 \ 需要使用 \\ 。
+限定符 指定数量的代码。
+常用的限定符 代码/语法 说明 * 重复0次或更多次 &#43; 重复1次或更多次 ？ 重复0次或1次 {n} 重复 n 次 {n,} 重复 n 次或更多次 {n,m} 重复 n 到 m 次 范围表达式 用于指定一个字符范围。
+比如：
+[aeiou] ：任何一个元音字母。
+[0-9] : 0-9，即一位数字。
+[.?!] ： 标点符号 . 或者 ？ 或者 ！。
+[a-z0-9A-Z_] ： 匹配任意一位数字或字母或者下划线。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-04-13 15:23:00 +0800 CST'>四月 13, 2021</span>&nbsp;·&nbsp;su</footer>
+  <a class="entry-link" aria-label="post link to 正则表达式" href="https://wuxiaosu.github.io/posts/%E6%AD%A3%E5%88%99/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">ubuntu 防火墙
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>ubuntu 防火墙 查看防火墙状态 sudo ufw status 允许访问端口 sudo ufw allow 9090/tcp 禁止访问端口 sudo ufw deny 9090 删除规则 sudo ufw delete deny 9090 </p>
+  </div>
+  <footer class="entry-footer"><span title='2021-03-24 18:34:00 +0800 CST'>三月 24, 2021</span>&nbsp;·&nbsp;su</footer>
+  <a class="entry-link" aria-label="post link to ubuntu 防火墙" href="https://wuxiaosu.github.io/posts/ubuntu%E9%98%B2%E7%81%AB%E5%A2%99/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">JetBrains 重置试用
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>JetBrains 2020.3 系列通用重置 30 天试用（不会影响其他配置） 以 IntelliJIdea 为例 删除此目录下所有文件 C:\Users\Administrator\AppData\Roaming\JetBrains\IntelliJIdea2020.3\eval 删除 other.xml 文件 C:\Users\Administrator\AppData\Roaming\JetBrains\IntelliJIdea2020.3\options\other.xml 删除注册表下所有项 计算机\HKEY_CURRENT_USER\Software\JavaSoft\Prefs\jetbrains\idea 其他诸如 DataGrip、PyCharm 类似</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-02-25 16:30:00 +0800 CST'>二月 25, 2021</span>&nbsp;·&nbsp;su</footer>
+  <a class="entry-link" aria-label="post link to JetBrains 重置试用" href="https://wuxiaosu.github.io/posts/jetbrains/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Android微信数据库密码计算
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>0.省流助手 密码就是 md5(imei &#43; uin) 取前七位，最新使用 8.0.28 验证还是可以的
+1.获取相关参数 查找主数据文件路径（当然是需要 root 权限了） ls -l /data/user/0/com.tencent.mm/MicroMsg/*/EnMicroMsg.db 如果出现多个文件的话，说明登录过多个微信号，看日期最新的就是当前登录的号了
+查看 _auth_uin 值 cat /data/data/com.tencent.mm/shared_prefs/auth_info_key_prefs.xml 正常的话应该是下面这样
+&lt;?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39; standalone=&#39;yes&#39; ?&gt; &lt;map&gt; &lt;boolean name=&#34;auth_info_prefs_use_new_ecdh&#34; value=&#34;true&#34; /&gt; &lt;int name=&#34;_auth_uin&#34; value=&#34;1054025641&#34; /&gt; &lt;boolean name=&#34;key_auth_info_prefs_created&#34; value=&#34;true&#34; /&gt; &lt;int name=&#34;key_auth_update_version&#34; value=&#34;671094359&#34; /&gt; &lt;string name=&#34;server_id&#34;&gt;4f031802000000000d385cc7c40600&lt;/string&gt; &lt;string name=&#34;_auth_key&#34;&gt;0a2408201220b9be5667ec69984f48ba4923c4e045eef3837d61871b7da350accb7b8a56405212b90108b30112b30108994e12a70186e1f98b9239ec3db321b36332fcc097ab11f7c173f6eb1b1411fd2afad5ce00e2b1e1e1b9588b0377bd47cb2db230d17fa9178a05791bb2725ff01c4df06a578a23b192a4e19f4c794e67dda2813522faa97dba324e0ef6b14c8b3e07dc0c11a5ca551f398832212aa9591a66b3be97c24f46b5dfd2299e4392f038da3f8f7e4bc602c3d2927232b30303664c5f00f624142231bc084ae8e04efe643481a23edc12091d8ceaf318bfa6ddb40a&lt;/string&gt; 查看设备 imei 值 getprop | grep imei [persist.radio.imei1]: [868619036811436] [persist.radio.imei2]: [868619036811444] [ro.ril.miui.imei0]: [868619036811436] [ro.ril.miui.imei1]: [868619036811444] 2.计算数据库密码 计算 imei &#43; uin 的 md5 echo -n &#34;8686190368114361054025641&#34;|md5sum 密码取前七位（小写） 如果有多个 imei 那就都试一下
+echo -n &#34;8686190368114441054025641&#34;|md5sum 如果都不对的话，那可能是微信拿不到 imei ，使用的默认值 1234567890ABCDEF
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-01-04 15:09:00 +0800 CST'>一月 4, 2021</span>&nbsp;·&nbsp;su</footer>
+  <a class="entry-link" aria-label="post link to Android微信数据库密码计算" href="https://wuxiaosu.github.io/posts/%E5%BE%AE%E4%BF%A1%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AF%86%E7%A0%81%E8%AE%A1%E7%AE%97/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">pip切换国内源
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>pip切换国内源 pip切换国内源
+1.pip 国内的一些镜像 阿里云 http://mirrors.aliyun.com/pypi/simple/ 中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/ 豆瓣(douban) http://pypi.douban.com/simple/ 清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/ 中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/ 2.临时修改 可以在使用 pip 的时候在后面加上 -i 参数，指定 pip 源
+$ pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple 3.永久修改 1.Linux 修改 ~/.pip/pip.conf (没有就创建一个)， 内容如下：
+[global] index-url = https://pypi.tuna.tsinghua.edu.cn/simple 2.Windows 直接在 user 目录中创建一个 pip 目录，如：C:\Users\xx\pip，新建文件 pip.ini ，内容如下
+[global] index-url = https://pypi.tuna.tsinghua.edu.cn/simple </p>
+  </div>
+  <footer class="entry-footer"><span title='2020-04-03 09:54:00 +0800 CST'>四月 3, 2020</span>&nbsp;·&nbsp;su</footer>
+  <a class="entry-link" aria-label="post link to pip切换国内源" href="https://wuxiaosu.github.io/posts/pip%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">WSL更换国内源
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>WSL Ubuntu18.04LTS 更换国内源 WSL Ubuntu18.04LTS 更换国内源
+1.查看 Linux 版本 $ lsb_release -a No LSB modules are available. Distributor ID: Ubuntu Description: Ubuntu 18.04.1 LTS Release: 18.04 Codename: bionic 2.备份数据源 $ sudo cp /etc/apt/sources.list /etc/apt/sources-backup.list 3.更换数据源 $ sudo vim /etc/apt/sources.list 更换源内容
+1.阿里源 deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse 2.163 源 deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse 3.中科大源 deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse 4.更新源 $ sudo apt-get update $ sudo apt-get upgrade </p>
+  </div>
+  <footer class="entry-footer"><span title='2020-04-03 09:54:00 +0800 CST'>四月 3, 2020</span>&nbsp;·&nbsp;su</footer>
+  <a class="entry-link" aria-label="post link to WSL更换国内源" href="https://wuxiaosu.github.io/posts/wsl%E5%88%87%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

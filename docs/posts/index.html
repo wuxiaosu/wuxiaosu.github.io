@@ -183,7 +183,8 @@
 sudo apt install nginx 如果需要自定义安装，可以参考官方文档
 http://nginx.org/en/linux_packages.html#Ubuntu
 在浏览器输入服务器地址，出现 nginx 默认页面表示安装成功
-2.查看默认配置 cat /etc/nginx/nginx.conf user www-data; worker_processes auto; pid /run/nginx.pid; include /etc/nginx/modules-enabled/*.conf; events { worker_connections 768; # multi_accept on; } http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.types; default_type application/octet-stream; ## # SSL Settings ## ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE ssl_prefer_server_ciphers on; ## # Logging Settings ## access_log /var/log/nginx/access.log; error_log /var/log/nginx/error.log; ## # Gzip Settings ## gzip on; # gzip_vary on; # gzip_proxied any; # gzip_comp_level 6; # gzip_buffers 16 8k; # gzip_http_version 1.1; # gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml&#43;rss text/javascript; ## # Virtual Host Configs ## include /etc/nginx/conf.d/*.conf; include /etc/nginx/sites-enabled/*; } #mail { # # See sample authentication script at: # # http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript # # # auth_http localhost/auth.php; # # pop3_capabilities &#34;TOP&#34; &#34;USER&#34;; # # imap_capabilities &#34;IMAP4rev1&#34; &#34;UIDPLUS&#34;; # # server { # listen localhost:110; # protocol pop3; # proxy on; # } # # server { # listen localhost:143; # protocol imap; # proxy on; # } #} ...</p>
+2.查看默认配置 cat /etc/nginx/nginx.conf user www-data; worker_processes auto; pid /run/nginx.pid; include /etc/nginx/modules-enabled/*.conf; events { worker_connections 768; # multi_accept on; } http { ## # Basic Settings ## sendfile on; tcp_nopush on; tcp_nodelay on; keepalive_timeout 65; types_hash_max_size 2048; # server_tokens off; # server_names_hash_bucket_size 64; # server_name_in_redirect off; include /etc/nginx/mime.types; default_type application/octet-stream; ## # SSL Settings ## ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE ssl_prefer_server_ciphers on; ## # Logging Settings ## access_log /var/log/nginx/access.log; error_log /var/log/nginx/error.log; ## # Gzip Settings ## gzip on; # gzip_vary on; # gzip_proxied any; # gzip_comp_level 6; # gzip_buffers 16 8k; # gzip_http_version 1.1; # gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml&#43;rss text/javascript; ## # Virtual Host Configs ## include /etc/nginx/conf.d/*.conf; include /etc/nginx/sites-enabled/*; } #mail { # # See sample authentication script at: # # http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript # # # auth_http localhost/auth.php; # # pop3_capabilities &#34;TOP&#34; &#34;USER&#34;; # # imap_capabilities &#34;IMAP4rev1&#34; &#34;UIDPLUS&#34;; # # server { # listen localhost:110; # protocol pop3; # proxy on; # } # # server { # listen localhost:143; # protocol imap; # proxy on; # } #} 默认页面的服务器对应这一行配置
+...</p>
   </div>
   <footer class="entry-footer"><span title='2022-05-24 22:55:15 +0800 CST'>五月 24, 2022</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to Ubuntu安装nginx" href="https://wuxiaosu.github.io/posts/ubuntu%E5%AE%89%E8%A3%85nginx/"></a>
@@ -202,6 +203,9 @@ Github 地址 https://github.com/JesusFreke/smali
 java -jar baksmali-2.5.2.jar deodex a.odex -b ./system/framework/arm64/boot.oat -o out -deodex : 指定 odex 文件
 -b : 指定 bootclasspath 文件
 -o : 指定 smali 输出目录
+2. smali files -&gt; dex java -jar smali-2.5.2.jar assemble out -o a.dex -assemble : 指定 smali files 文件夹
+-o : 指定输出文件名
+3. 更多 https://www.cnblogs.com/ysk-china/p/7162203.html?utm_source=itdadao&amp;utm_medium=referral
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2022-05-24 22:06:48 +0800 CST'>五月 24, 2022</span>&nbsp;·&nbsp;su</footer>
@@ -214,7 +218,9 @@ java -jar baksmali-2.5.2.jar deodex a.odex -b ./system/framework/arm64/boot.oat 
     </h2>
   </header>
   <div class="entry-content">
-    <p>0.省流助手 pyinstaller -F myfile.py 1.安装 Pyinstaller 1.1 先安装 pywin32 pip install pywin32 1.2 再安装 Pyinstaller pip install PyInstaller 2.使用 Pyinstaller pyinstaller -F myfile.py 2.1 输入参数含义 -F, --onefile 生成单个可执行文件 ...</p>
+    <p>0.省流助手 pyinstaller -F myfile.py 1.安装 Pyinstaller 1.1 先安装 pywin32 pip install pywin32 1.2 再安装 Pyinstaller pip install PyInstaller 2.使用 Pyinstaller pyinstaller -F myfile.py 2.1 输入参数含义 -F, --onefile 生成单个可执行文件 如果一切正常，会在 .py 文件同目录下的 dist 目录生成 .exe 文件
+查看更多参数
+pyinstaller -h </p>
   </div>
   <footer class="entry-footer"><span title='2022-05-24 22:06:48 +0800 CST'>五月 24, 2022</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to Python文件打包" href="https://wuxiaosu.github.io/posts/python%E6%96%87%E4%BB%B6%E6%89%93%E5%8C%85/"></a>
@@ -226,10 +232,82 @@ java -jar baksmali-2.5.2.jar deodex a.odex -b ./system/framework/arm64/boot.oat 
     </h2>
   </header>
   <div class="entry-content">
-    <p> http://ipinfo.io/json { &#34;ip&#34;: &#34;59.42.111.132&#34;, &#34;hostname&#34;: &#34;132.111.42.59.broad.gz.gd.dynamic.163data.com.cn&#34;, &#34;city&#34;: &#34;Lianjiang&#34;, &#34;region&#34;: &#34;Guangdong&#34;, &#34;country&#34;: &#34;CN&#34;, &#34;loc&#34;: &#34;21.6467,110.2817&#34;, &#34;org&#34;: &#34;AS4134 CHINANET-BACKBONE&#34;, &#34;timezone&#34;: &#34;Asia/Urumqi&#34;, &#34;readme&#34;: &#34;https://ipinfo.io/missingauth&#34; } ...</p>
+    <p> http://ipinfo.io/json { &#34;ip&#34;: &#34;59.42.111.132&#34;, &#34;hostname&#34;: &#34;132.111.42.59.broad.gz.gd.dynamic.163data.com.cn&#34;, &#34;city&#34;: &#34;Lianjiang&#34;, &#34;region&#34;: &#34;Guangdong&#34;, &#34;country&#34;: &#34;CN&#34;, &#34;loc&#34;: &#34;21.6467,110.2817&#34;, &#34;org&#34;: &#34;AS4134 CHINANET-BACKBONE&#34;, &#34;timezone&#34;: &#34;Asia/Urumqi&#34;, &#34;readme&#34;: &#34;https://ipinfo.io/missingauth&#34; } http://whois.pconline.com.cn/ip.jsp 广东省广州市天河区 电信ADSL http://pv.sohu.com/cityjson?ie=utf-8 var returnCitySN = {&#34;cip&#34;: &#34;59.42.111.132&#34;, &#34;cid&#34;: &#34;440106&#34;, &#34;cname&#34;: &#34;广东省广州市天河区&#34;}; </p>
   </div>
   <footer class="entry-footer"><span title='2022-05-24 22:06:48 +0800 CST'>五月 24, 2022</span>&nbsp;·&nbsp;su</footer>
   <a class="entry-link" aria-label="post link to 几个ip信息获取接口" href="https://wuxiaosu.github.io/posts/%E5%87%A0%E4%B8%AAip%E4%BF%A1%E6%81%AF%E8%8E%B7%E5%8F%96%E6%8E%A5%E5%8F%A3/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Android 8.0 以上开启全局可调式
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Android 8.0 以上开启全局可调式 1.安装好 Magisk
+2.终端执行
+adb shell su magisk resetprop ro.debuggable 1 3.重启 system server stop;start 4.重启手机会失效 </p>
+  </div>
+  <footer class="entry-footer"><span title='2022-04-12 17:21:00 +0800 CST'>四月 12, 2022</span>&nbsp;·&nbsp;su</footer>
+  <a class="entry-link" aria-label="post link to Android 8.0 以上开启全局可调式" href="https://wuxiaosu.github.io/posts/android8.0%E4%BB%A5%E4%B8%8A%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E5%BC%8F/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">使用MagiskHidePropsConf开启全局可调试
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1.安装好 Magisk 此处略过
+2.安装 MagiskHidePropsConf 下载地址 https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases 安装完成后重启 3.按流程操作 重启进入终端 按流程一步一步操作就行了 adb shell props MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== Select an option below. ===================================== 1 - Edit device fingerprint 2 - Force BASIC key attestation 3 - Device simulation (disabled) 4 - Edit MagiskHide props (active) 5 - Add/edit custom props 6 - Delete prop values 7 - Script settings 8 - Collect logs u - Perform module update check r - Reset all options/settings b - Reboot device e - Exit See the module readme or the support thread @ XDA for details. Enter your desired option: 5 MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== Custom props Select an option below: ===================================== Set or edit custom prop values for your device. Currently no custom props set. Please add one by selecting &#34;New custom prop&#34; below. n - New custom prop b - Go back to main menu e - Exit See the module readme or the support thread @ XDA for details. Enter your desired option: n MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== New custom prop ===================================== Enter the prop to set. Example: ro.sf.lcd_density b - Go back e - Exit Enter your desired option: ro.debuggable MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== ro.debuggable ===================================== ro.debuggable is one of the sensitive props that can be set by the MagiskHide props option. Are you sure you want to proceed? y - Yes n - No e - Exit Enter your desired option: y MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== ro.debuggable ===================================== Enter the value you want to set ro.debuggable to, or select from the options below. The currently set value is: 0 Please enter the new value. b - Go back e - Exit Enter your desired option: 1 MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== ro.debuggable ===================================== This will set ro.debuggable to: 1 Pick an option below to change what boot stage the prop will be set in, or set/reset a delay: 1 - Default (current) 2 - post-fs-data 3 - late_start service 4 - Both boot stages d - Delay Do you want to continue? Enter y(es), n(o), e(xit) or an option from above: y Working. Please wait... Working. Please wait... Working. Please wait... Working. Please wait... Working. Please wait... MagiskHide Props Config v6.1.2 by Didgeridoohan @ XDA Developers ===================================== Reboot - ro.debuggable ===================================== Reboot for changes to take effect. Do you want to reboot now (y/n)? Enter y(es), n(o) or e(xit): y Rebooting... </p>
+  </div>
+  <footer class="entry-footer"><span title='2022-01-12 17:00:34 +0800 CST'>一月 12, 2022</span>&nbsp;·&nbsp;su</footer>
+  <a class="entry-link" aria-label="post link to 使用MagiskHidePropsConf开启全局可调试" href="https://wuxiaosu.github.io/posts/%E4%BD%BF%E7%94%A8magiskhide%E5%BC%80%E5%90%AF%E5%85%A8%E5%B1%80%E5%8F%AF%E8%B0%83%E8%AF%95/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">sqlite常用操作
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>sql sqlite 时间戳转日期 select datetime(1613714753, &#39;unixepoch&#39;, &#39;localtime&#39;); 输出
+2021-02-19 14:05:53 当前时间戳 select strftime(&#39;%s&#39;,&#39;now&#39;); 输出
+1613714753 查询所有表 SELECT * FROM sqlite_master </p>
+  </div>
+  <footer class="entry-footer"><span title='2022-01-07 13:46:00 +0800 CST'>一月 7, 2022</span>&nbsp;·&nbsp;su</footer>
+  <a class="entry-link" aria-label="post link to sqlite常用操作" href="https://wuxiaosu.github.io/posts/sql/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">adb常用命令
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>adb 常用命令 1.查看最上层 Activity 名字 Linux adb shell dumpsys activity | grep &#34;mResumedActivity&#34; Windows adb shell dumpsys activity activities | findstr mResumedActivity 2.启动组件 启动 Activity adb shell am start -n com.google.android.network2/com.my.MainActivity 启动 Service adb shell am startservice -n com.google.android.network2/com.my.MainActivity 发送 Broadcast adb shell am broadcast -a android.intent.action.BOOT_COMPLETED 3.重启 重启到 Recovery 界面 adb reboot recovery 重启到 bootloader 界面 adb reboot bootloader 4.其他 强制结束应用 adb shell am force-stop &lt;PACKAGE&gt; 5.以调试模式启动应用 adb shell am set-debug-app -w {package_name} 清除调试模式
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-07-14 09:52:34 +0800 CST'>七月 14, 2021</span>&nbsp;·&nbsp;su</footer>
+  <a class="entry-link" aria-label="post link to adb常用命令" href="https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">mysql 相关
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 开启 mysql 远程访问 确认端口是否对外开放，默认是不开放的
+netstat -an | grep 3306 输出如下
+tcp 0 0 127.0.0.1:3306 0.0.0.0:* LISTEN 修改配置文件（不同版本可能位置不同）
+/etc/mysql/mysql.conf.d/mysqld.cnf 注释掉
+# bind-address = 127.0.0.1 为新增主键赋值 SET @mycnt = 0; UPDATE xxxxx SET RowNum=(@mycnt := @mycnt &#43; 1) 使用 native_password 连接 ALTER USER &#39;user&#39;@&#39;%&#39; IDENTIFIED WITH mysql_native_password BY &#39;password&#39;; flush privileges; 修改用户密码 ALTER USER &#39;username&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;new_password&#39;; 使用默认密码修改数据库密码 查看默认用户密码
+cd /etc/mysql sudo cat debian.cnf # Automatically generated for Debian scripts. DO NOT TOUCH! [client] host = localhost user = debian-sys-maint password = G0Gis29yv0dtUhng socket = /var/run/mysqld/mysqld.sock [mysql_upgrade] host = localhost user = debian-sys-maint password = G0Gis29yv0dtUhng socket = /var/run/mysqld/mysqld.sock 使用默认用户登录
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-06-18 14:34:00 +0800 CST'>六月 18, 2021</span>&nbsp;·&nbsp;su</footer>
+  <a class="entry-link" aria-label="post link to mysql 相关" href="https://wuxiaosu.github.io/posts/mysql/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
