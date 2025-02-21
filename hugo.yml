@@ -112,6 +112,8 @@ params:
     #     favicon32x32: "<link / abs url>"
     #     apple_touch_icon: "<link / abs url>"
     #     safari_pinned_tab: "<link / abs url>"
+    assets:
+        disableFingerprinting: true
 
     # cover:
     #     hidden: true # hide everywhere but not in structured data
