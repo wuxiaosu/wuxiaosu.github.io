@@ -18,8 +18,7 @@
       <link>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Wed, 14 Jul 2021 09:52:34 +0800</pubDate>
       <guid>https://wuxiaosu.github.io/posts/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>&lt;h1 id=&#34;adb-常用命令&#34;&gt;adb 常用命令&lt;/h1&gt;
-&lt;h2 id=&#34;1查看最上层-activity-名字&#34;&gt;1.查看最上层 &lt;strong&gt;Activity&lt;/strong&gt; 名字&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;1查看最上层-activity-名字&#34;&gt;1.查看最上层 &lt;strong&gt;Activity&lt;/strong&gt; 名字&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Linux&lt;/li&gt;
 &lt;/ul&gt;
@@ -41,7 +40,7 @@
 &lt;li&gt;发送 &lt;strong&gt;Broadcast&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell am broadcast -a android.intent.action.BOOT_COMPLETED
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;3重启&#34;&gt;3.重启&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;3重启设备&#34;&gt;3.重启设备&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;重启到 &lt;strong&gt;Recovery&lt;/strong&gt; 界面&lt;/li&gt;
 &lt;/ul&gt;
@@ -54,10 +53,10 @@
 &lt;ul&gt;
 &lt;li&gt;强制结束应用&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;adb shell am force-stop &amp;lt;PACKAGE&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;5以调试模式启动应用&#34;&gt;5.以调试模式启动应用&lt;/h2&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;adb shell am set-debug-app -w {package_name}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;清除调试模式&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell am force-stop &amp;lt;PACKAGE&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;5以调试模式启动应用&#34;&gt;5.以调试模式启动应用&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb shell am set-debug-app -w &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;package_name&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;清除调试模式&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
